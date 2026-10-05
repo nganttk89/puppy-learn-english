@@ -321,8 +321,14 @@ const PlayerStorage = {
                     hasBigImage = true;
                 }
                 
+                let disableSpelling = false;
+                if (lvl && lvl.disableSpelling) disableSpelling = true;
+
                 let isLastMode = false;
-                if (hasThumbnails && stageKey === 's4') isLastMode = true;
+                if (hasThumbnails) {
+                    if (disableSpelling && stageKey === 's3') isLastMode = true;
+                    else if (!disableSpelling && stageKey === 's4') isLastMode = true;
+                }
                 if (!hasThumbnails && hasBigImage && stageKey === 's2') isLastMode = true;
 
                 if (isLastMode) {
