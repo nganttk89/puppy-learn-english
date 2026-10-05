@@ -1,5 +1,99 @@
 [
     {
+        "id": "lvl_02dvwk",
+        "name": "Natural",
+        "image": "data/uploads/forest.png",
+        "questions": [
+            "scene_p1mchz",
+            "scene_starters_animals_3",
+            "scene_starters_animals_2",
+            "scene_starters_animals_4",
+            "scene_jepujm"
+        ],
+        "subLevels": [
+            {
+                "id": "level_scene_starters_animals_3",
+                "name": "Forest Animals",
+                "type": "lesson",
+                "image": "data/uploads/forest_water_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_3"
+                ]
+            },
+            {
+                "id": "level_scene_starters_animals_2",
+                "name": "Jungle Animals",
+                "type": "lesson",
+                "image": "data/uploads/jungle_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_2"
+                ]
+            },
+            {
+                "id": "level_scene_starters_animals_4",
+                "name": "Sea Animals",
+                "type": "lesson",
+                "image": "data/uploads/sea_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_4"
+                ]
+            }
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_p1mchz",
+                "name": "What's the weather like?",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "data/uploads/cloudy.png",
+                "questions": [
+                    "scene_p1mchz"
+                ]
+            },
+            {
+                "id": "level_scene_starters_animals_3",
+                "name": "Forest Animals",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/forest_water_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_3"
+                ]
+            },
+            {
+                "id": "level_scene_starters_animals_2",
+                "name": "Jungle Animals",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/jungle_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_2"
+                ]
+            },
+            {
+                "id": "level_scene_starters_animals_4",
+                "name": "Sea Animals",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/sea_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_4"
+                ]
+            },
+            {
+                "id": "level_scene_jepujm",
+                "name": "Natural object",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "",
+                "questions": [
+                    "scene_jepujm"
+                ]
+            }
+        ]
+    },
+    {
         "id": "region_starters",
         "name": "Home",
         "image": "data/uploads/house.png",
@@ -8,11 +102,11 @@
             "scene_starters_family_1",
             "scene_routine_morning",
             "scene_living_room",
-            "scene_tg6jy4",
             "scene_starters_kitchen_1",
             "scene_5tzbp8",
             "scene_starters_bedroom_1",
-            "scene_starters_bathroom_1"
+            "scene_starters_bathroom_1",
+            "scene_tg6jy4"
         ],
         "subLevels": [
             {
@@ -120,16 +214,6 @@
                 ]
             },
             {
-                "id": "level_scene_tg6jy4",
-                "name": "Everyday items",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/task-list.png",
-                "questions": [
-                    "scene_tg6jy4"
-                ]
-            },
-            {
                 "id": "level_scene_starters_kitchen_1",
                 "name": "Kitchen",
                 "difficulty": "Easy",
@@ -167,6 +251,16 @@
                 "image": "data/uploads/bathroom-icon.png",
                 "questions": [
                     "scene_starters_bathroom_1"
+                ]
+            },
+            {
+                "id": "level_scene_tg6jy4",
+                "name": "Everyday items",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/task-list.png",
+                "questions": [
+                    "scene_tg6jy4"
                 ]
             }
         ]
@@ -460,99 +554,6 @@
                 "image": "data/uploads/school_supplies_1.jpg",
                 "questions": [
                     "scene_starters_school_1"
-                ]
-            }
-        ]
-    },
-    {
-        "id": "lvl_02dvwk",
-        "name": "Natural",
-        "image": "data/uploads/forest.png",
-        "questions": [
-            "scene_starters_animals_3",
-            "scene_starters_animals_2",
-            "scene_starters_animals_4",
-            "scene_jepujm",
-            "scene_p1mchz"
-        ],
-        "subLevels": [
-            {
-                "id": "level_scene_starters_animals_3",
-                "name": "Forest Animals",
-                "type": "lesson",
-                "image": "data/uploads/forest_water_animals.jpg",
-                "questions": [
-                    "scene_starters_animals_3"
-                ]
-            },
-            {
-                "id": "level_scene_starters_animals_2",
-                "name": "Jungle Animals",
-                "type": "lesson",
-                "image": "data/uploads/jungle_animals.jpg",
-                "questions": [
-                    "scene_starters_animals_2"
-                ]
-            },
-            {
-                "id": "level_scene_starters_animals_4",
-                "name": "Sea Animals",
-                "type": "lesson",
-                "image": "data/uploads/sea_animals.jpg",
-                "questions": [
-                    "scene_starters_animals_4"
-                ]
-            }
-        ],
-        "subScenes": [
-            {
-                "id": "level_scene_starters_animals_3",
-                "name": "Forest Animals",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/forest_water_animals.jpg",
-                "questions": [
-                    "scene_starters_animals_3"
-                ]
-            },
-            {
-                "id": "level_scene_starters_animals_2",
-                "name": "Jungle Animals",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/jungle_animals.jpg",
-                "questions": [
-                    "scene_starters_animals_2"
-                ]
-            },
-            {
-                "id": "level_scene_starters_animals_4",
-                "name": "Sea Animals",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/sea_animals.jpg",
-                "questions": [
-                    "scene_starters_animals_4"
-                ]
-            },
-            {
-                "id": "level_scene_jepujm",
-                "name": "Natural object",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "",
-                "questions": [
-                    "scene_jepujm"
-                ]
-            },
-            {
-                "id": "level_scene_p1mchz",
-                "name": "What's the weather like?",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "",
-                "questions": [
-                    "scene_p1mchz"
                 ]
             }
         ]

@@ -210,6 +210,7 @@ function openEditor() {
     document.getElementById('edit-scene-name').value = currentScene.name;
 
     document.getElementById('edit-difficulty').value = currentScene.difficulty || 'Easy';
+    document.getElementById('edit-disable-spelling').checked = currentScene.disableSpelling === true;
     
     // Populate Question Set Dropdown
     const qsetSelect = document.getElementById('edit-question-set');
@@ -604,6 +605,7 @@ function onMouseUp() {
 document.getElementById('btn-save').addEventListener('click', () => {
     currentScene.name = document.getElementById('edit-scene-name').value;
     currentScene.difficulty = document.getElementById('edit-difficulty').value;
+    currentScene.disableSpelling = document.getElementById('edit-disable-spelling').checked;
     
     currentScene.questionSetId = document.getElementById('edit-question-set').value;
     currentScene.objects = currentObjects;
@@ -651,7 +653,9 @@ document.getElementById('btn-save').addEventListener('click', () => {
             region.subScenes.push({
                 id: 'level_' + currentScene.id,
                 name: currentScene.name,
-                type: 'hidden_object',
+                difficulty: currentScene.difficulty || 'Easy',
+                type: currentScene.type || 'lesson',
+                disableSpelling: currentScene.disableSpelling || false,
                 image: currentScene.thumbnail || 'images/puppy.png',
                 questions: [currentScene.id]
             });

@@ -339,7 +339,7 @@ function showGameOver() {
     playSound('correct'); 
     
     if (typeof PlayerStorage !== 'undefined' && currentPlayer) {
-        let nextUrl = PlayerStorage.getNextLevelUrl(levelId);
+        let nextUrl = 'shuffle.html?level=' + levelId;
         
         PlayerStorage.showSuccessModal(
             currentPlayer, 

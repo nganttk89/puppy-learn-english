@@ -332,7 +332,7 @@ function renderMap() {
             
             node.innerHTML = `
                 ${isCompleted ? '<div class="zone-badge">✓</div>' : ''}
-                <img src="${lvl.image || 'images/puppy.png'}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'80\\' height=\\'80\\'><rect width=\\'80\\' height=\\'80\\' fill=\\'#eee\\'/></svg>'">
+                <img src="${(lvl.image && lvl.image.trim() !== '') ? lvl.image : 'images/default_avatar.png'}" onerror="this.src='images/default_avatar.png'">
                 <div class="zone-name">${lvl.name}</div>
                 ${starsHtml}
             `;
@@ -369,7 +369,7 @@ function renderMap() {
                 node.style.animationDelay = `${index * 0.15}s`;
                 node.innerHTML = `
                     ${!isRegionUnlocked ? '<div class="lock-icon" style="position:absolute;top:-10px;right:-10px;background:#e74c3c;color:white;border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:16px;box-shadow:0 2px 5px rgba(0,0,0,0.3);z-index:10;">🔒</div>' : ''}
-                    <img src="${region.image || 'images/puppy.png'}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'80\\' height=\\'80\\'><rect width=\\'80\\' height=\\'80\\' fill=\\'#eee\\'/></svg>'">
+                    <img src="${(region.image && region.image.trim() !== '') ? region.image : 'images/default_avatar.png'}" onerror="this.src='images/default_avatar.png'">
                     <div class="zone-name">${region.name || 'Unknown'}</div>
                 `;
                 if (isRegionUnlocked) {
@@ -425,6 +425,7 @@ function openProgressionPopup(lvlId) {
     const btn2 = document.getElementById('btn-stage-2');
     const btn3 = document.getElementById('btn-stage-3');
     const btn4 = document.getElementById('btn-stage-4');
+    const btn5 = document.getElementById('btn-stage-5');
     
     const sceneIds = foundLvl ? (foundLvl.questions || []) : [];
     const scenes = sceneIds.map(id => typeof SceneStorage !== 'undefined' ? SceneStorage.getScene(id) : null).filter(q => q);
@@ -446,10 +447,13 @@ function openProgressionPopup(lvlId) {
         hasThumbnails = true; // Default legacy assumption
     }
 
+    const disableSpelling = foundLvl && foundLvl.disableSpelling === true;
+
     btn1.style.display = hasThumbnails ? 'block' : 'none';
     btn2.style.display = hasBigImage ? 'block' : 'none';
     btn3.style.display = hasThumbnails ? 'block' : 'none';
-    btn4.style.display = hasThumbnails ? 'block' : 'none';
+    btn4.style.display = (hasThumbnails && !disableSpelling) ? 'block' : 'none';
+    if(btn5) btn5.style.display = hasThumbnails ? 'block' : 'none';
     
     if (hasThumbnails) {
         // Stage 1 (Flashcards/Quiz) is always unlocked if available
@@ -511,22 +515,50 @@ function openProgressionPopup(lvlId) {
         }
         
         // Stage 4 (Spelling) requires Stage 3
-        if (stageProg.s3) {
-            btn4.className = 'btn-large';
-            btn4.style.backgroundColor = stageProg.s4 ? '#27ae60' : '#e74c3c';
-            btn4.style.color = 'white';
-            btn4.innerText = stageProg.s4 ? (hasBigImage ? '4. ✍️ Spelling ✓' : '3. ✍️ Spelling ✓') : (hasBigImage ? '4. ✍️ Spelling' : '3. ✍️ Spelling');
-            btn4.disabled = false;
-            btn4.onclick = () => {
-                document.getElementById('progression-popup').classList.add('hidden');
-                startScene(lvlId, false, 'spelling');
-            };
-        } else {
-            btn4.className = 'btn-large btn-disabled';
-            btn4.style.backgroundColor = '#bdc3c7';
-            btn4.style.color = '#7f8c8d';
-            btn4.innerText = hasBigImage ? '4. ✍️ Spelling (Locked)' : '3. ✍️ Spelling (Locked)';
-            btn4.disabled = true;
+        if (!disableSpelling) {
+            if (stageProg.s3) {
+                btn4.className = 'btn-large';
+                btn4.style.backgroundColor = stageProg.s4 ? '#27ae60' : '#e74c3c';
+                btn4.style.color = 'white';
+                btn4.innerText = stageProg.s4 ? (hasBigImage ? '4. ✍️ Spelling ✓' : '3. ✍️ Spelling ✓') : (hasBigImage ? '4. ✍️ Spelling' : '3. ✍️ Spelling');
+                btn4.disabled = false;
+                btn4.onclick = () => {
+                    document.getElementById('progression-popup').classList.add('hidden');
+                    startScene(lvlId, false, 'spelling');
+                };
+            } else {
+                btn4.className = 'btn-large btn-disabled';
+                btn4.style.backgroundColor = '#bdc3c7';
+                btn4.style.color = '#7f8c8d';
+                btn4.innerText = hasBigImage ? '4. ✍️ Spelling (Locked)' : '3. ✍️ Spelling (Locked)';
+                btn4.disabled = true;
+            }
+        }
+
+        if (btn5) {
+            // Stage 5 (Shuffle Game) requires Stage 4 (or Stage 3 if Spelling is disabled)
+            const s5Unlocked = disableSpelling ? stageProg.s3 : stageProg.s4;
+            let shuffleNum = hasBigImage ? 5 : 4;
+            if (disableSpelling) shuffleNum -= 1;
+            
+            if (s5Unlocked) {
+                const s5Completed = (player.progress.completedStages && player.progress.completedStages.includes(lvlId + '-s5')) || (player.progress[lvlId] && player.progress[lvlId].s5);
+                btn5.className = 'btn-large';
+                btn5.style.backgroundColor = s5Completed ? '#27ae60' : '#f1c40f';
+                btn5.style.color = s5Completed ? 'white' : '#333';
+                btn5.innerText = s5Completed ? `${shuffleNum}. 🏆 2-Player Shuffle ✓` : `${shuffleNum}. 🏆 2-Player Shuffle`;
+                btn5.disabled = false;
+                btn5.onclick = () => {
+                    document.getElementById('progression-popup').classList.add('hidden');
+                    window.location.href = `shuffle.html?level=${lvlId}`;
+                };
+            } else {
+                btn5.className = 'btn-large btn-disabled';
+                btn5.style.backgroundColor = '#bdc3c7';
+                btn5.style.color = '#7f8c8d';
+                btn5.innerText = `${shuffleNum}. 🏆 2-Player Shuffle (Locked)`;
+                btn5.disabled = true;
+            }
         }
     }
 

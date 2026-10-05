@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>2-Player Shuffle - Puppy Learn English</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { background-color: #f1c40f; margin: 0; overflow: hidden; display: flex; flex-direction: column; }
+        
+        .top-bar-shuffle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 240, 240, 0.9));
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            z-index: 100;
+            width: 85%;
+            margin: 20px auto 0;
+            border-radius: 50px;
+            border: 4px solid white;
+            backdrop-filter: blur(10px);
+        }
+
+        .score-board {
+            display: flex;
+            align-items: center;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+            background: white;
+            padding: 8px 25px;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            min-width: 100px;
+            justify-content: center;
+        }
+
+        .score-red { color: #e74c3c; border: 4px solid #e74c3c; }
+        .score-blue { color: #3498db; border: 4px solid #3498db; }
+
+        .score-icon { width: 35px; height: 35px; margin-right: 15px; mix-blend-mode: multiply; }
+
+        .turn-indicator {
+            font-family: 'Fredoka One', cursive;
+            font-size: 2.2rem;
+            text-align: center;
+            flex: 1;
+            margin: 0 20px;
+            background: white;
+            padding: 8px 30px;
+            border-radius: 40px;
+            box-shadow: inset 0 3px 10px rgba(0,0,0,0.05);
+            border: 3px dashed #eee;
+        }
+
+        .active-turn-red { color: #e74c3c; border-color: #f5b7b1; }
+        .active-turn-blue { color: #3498db; border-color: #aed6f1; }
+
+        .game-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .target-word-display {
+            font-family: 'Fredoka One', cursive;
+            font-size: 4rem;
+            color: white;
+            text-shadow: 3px 3px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+            margin-bottom: 40px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .target-word-display:hover { transform: scale(1.1); }
+
+        .cups-wrapper {
+            position: relative;
+            width: 800px;
+            height: 250px;
+        }
+
+        .cup-slot {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            bottom: 0;
+            transition: left 0.5s ease-in-out, top 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .cup-image, .hidden-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .cup-image {
+            z-index: 10;
+            mix-blend-mode: multiply;
+        }
+
+        .hidden-item {
+            z-index: 5;
+            width: 160px;
+            height: 160px;
+            margin: auto;
+            position: absolute;
+            left: 0; right: 0; bottom: 20px;
+            background: white;
+            border: 4px solid #fff;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: opacity 0.3s ease;
+        }
+
+        /* Modal specific */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            width: 90%;
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Animations */
+        @keyframes dropWord {
+            0% { transform: translateY(-300px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .drop-word-anim {
+            animation: dropWord 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        @keyframes dropCup {
+            0% { transform: translateY(-300px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        .drop-cup-anim {
+            animation: dropCup 0.5s ease-in forwards;
+        }
+
+        .lift-cup .cup-image {
+            transform: translateY(-220px) !important;
+            transition: transform 0.5s ease;
+        }
+
+        /* Modal specific */
+        .gift-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .gift-box {
+            width: 150px;
+            height: 150px;
+            background-image: url('images/shuffle/giftbox.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+            mix-blend-mode: multiply;
+        }
+
+        .gift-box:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .reward-result {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            animation: popIn 0.5s ease;
+        }
+
+        .reward-apples {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .reward-apple-icon {
+            width: 60px;
+            height: 60px;
+            animation: dropIn 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        @keyframes dropIn {
+            0% { transform: translateY(-50px) scale(0); opacity: 0; }
+            100% { transform: translateY(0) scale(1); opacity: 1; }
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="top-bar-shuffle">
+        <div class="score-board score-red">
+            <img src="images/shuffle/apple.jpg" class="score-icon" alt="Apple">
+            <span id="score-red">0</span>
+        </div>
+        
+        <div class="turn-indicator active-turn-red" id="turn-display">
+            🔴 Red Team's Turn!
+        </div>
+
+        <div class="score-board score-blue">
+            <span id="score-blue">0</span>
+            <img src="images/shuffle/apple.jpg" class="score-icon" alt="Apple" style="margin-left: 10px; margin-right: 0;">
+        </div>
+
+        <button id="btn-quit-zone" class="btn-quit" style="margin-left: 20px; font-size: 1.4rem; padding: 12px 25px; border-radius: 30px; border: 3px solid #e74c3c; background: #ff7675; color: white; box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4); transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">✖ Quit</button>
+    </div>
+
+    <div class="game-area">
+        <div class="target-word-display" id="target-word" style="opacity: 0;">
+            Listen... 🔊
+        </div>
+
+        <div class="cups-wrapper" id="cups-wrapper">
+            <!-- Cups will be generated by JS -->
+        </div>
+    </div>
+
+    <!-- Ready Modal -->
+    <div id="ready-modal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 500px;">
+            <h2 style="font-size: 3rem; color: #27ae60; text-shadow: 2px 2px 0 #333;">Are you ready?</h2>
+            <p style="font-size: 1.5rem; color: #e74c3c; margin: 20px 0;">🔴 Red Team goes first!</p>
+            <button id="btn-start-play" class="btn-large" style="background-color: #3498db; color: white; padding: 15px 40px; font-size: 2rem;">▶️ Play</button>
+        </div>
+    </div>
+
+    <!-- Modal Pick a Gift -->
+    <div id="gift-modal" class="modal-overlay hidden">
+        <div class="modal-content" style="max-width: 600px;">
+            <h2 id="gift-title" style="color: #27ae60; font-size: 2.5rem; margin-bottom: 10px;">Correct! 🎉</h2>
+            <p style="font-size: 1.2rem; color: #666;">Pick a gift box to reveal your apples!</p>
+            
+            <div class="gift-container" id="gift-boxes-area">
+                <div class="gift-box" onclick="pickGift(0)"></div>
+                <div class="gift-box" onclick="pickGift(1)"></div>
+                <div class="gift-box" onclick="pickGift(2)"></div>
+            </div>
+
+            <div class="reward-result" id="reward-result-area">
+                <h3 style="font-size: 2rem; color: #e74c3c;" id="reward-text">+2 Apples!</h3>
+                <div class="reward-apples" id="reward-apples-container">
+                    <!-- Apples generated by JS -->
+                </div>
+                <button class="btn-large" style="background: #3498db; color: white;" onclick="nextTurn()">Continue ➔</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Victory Modal -->
+    <div id="victory-modal" class="modal-overlay hidden">
+        <div class="modal-content" style="max-width: 500px;">
+            <h2 style="font-size: 3rem; color: #f1c40f; text-shadow: 2px 2px 0 #333;">Game Over!</h2>
+            <div id="victory-icon" style="font-size: 5rem; margin: 20px 0;">🏆</div>
+            <h3 id="victory-text" style="font-size: 2rem; color: #333; margin-bottom: 30px;">Red Team Wins!</h3>
+            
+            <div style="display: flex; justify-content: center; gap: 20px;">
+                <button id="btn-replay" class="btn-large" style="background-color: #3498db; color: white;">🔄 Play Again</button>
+                <button id="btn-back-map" class="btn-large btn-secondary">🗺️ Back to Map</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shared data storage and logic -->
+    <script src="js/storage.js"></script>
+    <script src="js/shuffle.js"></script>
+</body>
+</html>

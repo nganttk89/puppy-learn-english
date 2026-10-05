@@ -349,8 +349,13 @@ function showGameOver() {
     playSound('correct'); // Fanfare
     
     if (typeof PlayerStorage !== 'undefined' && currentPlayer) {
+        let disableSpelling = false;
+        if (typeof ZoneStorage !== 'undefined') {
+            const zone = ZoneStorage.getZone(levelId);
+            if (zone && zone.disableSpelling) disableSpelling = true;
+        }
         const cacheBuster = '&v=' + Date.now();
-        const nextUrl = levelId ? `spell.html?level=${levelId}${cacheBuster}` : null;
+        const nextUrl = levelId ? (disableSpelling ? `shuffle.html?level=${levelId}${cacheBuster}` : `spell.html?level=${levelId}${cacheBuster}`) : null;
         PlayerStorage.showSuccessModal(
             currentPlayer, 
             currentLives, 

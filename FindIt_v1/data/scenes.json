@@ -1858,7 +1858,9 @@
             }
         ],
         "questionSetId": "none",
-        "type": "lesson"
+        "type": "lesson",
+        "disableSpelling": true,
+        "thumbnail": "data/uploads/cloudy.png"
     },
     {
         "id": "scene_jepujm",

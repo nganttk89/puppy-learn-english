@@ -96,6 +96,7 @@ const ZoneStorage = {
                         name: scene.name,
                         difficulty: scene.difficulty || 'Easy',
                         type: scene.type || 'hidden_object',
+                        disableSpelling: scene.disableSpelling || false,
                         image: scene.thumbnail || scene.image,
                         questions: [qId]
                     };
