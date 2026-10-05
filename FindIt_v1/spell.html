@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Spelling - Puppy Learn English</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { 
+            background-color: #ffeaa7; 
+            margin: 0; 
+            overflow: hidden; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .spell-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            text-align: center;
+        }
+
+        #spell-image {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            background: white;
+            border-radius: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        
+        #spell-image:active {
+            transform: scale(0.95);
+        }
+
+        .audio-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #2980b9;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.1s;
+        }
+        
+        .audio-btn:active {
+            transform: translateY(5px);
+            box-shadow: 0 0 0 #2980b9;
+        }
+
+        .slots-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+
+        .slot {
+            width: 50px;
+            height: 60px;
+            border-bottom: 4px solid #2c3e50;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            font-size: 3rem;
+            font-family: 'Fredoka One', cursive;
+            color: #2c3e50;
+            padding-bottom: 5px;
+        }
+
+        .slot.filled {
+            color: #27ae60;
+        }
+
+        .letters-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 600px;
+        }
+
+        .letter-btn {
+            background: #fff;
+            color: #e67e22;
+            border: 3px solid #e67e22;
+            border-radius: 10px;
+            width: 60px;
+            height: 60px;
+            font-size: 2rem;
+            font-family: 'Fredoka One', cursive;
+            cursor: pointer;
+            box-shadow: 0 5px 0 #d35400;
+            transition: all 0.1s;
+            text-transform: uppercase;
+        }
+        
+        .letter-btn:active {
+            transform: translateY(5px);
+            box-shadow: 0 0 0 #d35400;
+        }
+        
+        .letter-btn.used {
+            opacity: 0.3;
+            pointer-events: none;
+            transform: translateY(5px);
+            box-shadow: 0 0 0 #d35400;
+        }
+
+        .shake {
+            animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+        }
+        
+        @keyframes shake {
+            10%, 90% { transform: translate3d(-1px, 0, 0); }
+            20%, 80% { transform: translate3d(2px, 0, 0); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+            40%, 60% { transform: translate3d(4px, 0, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="game-container" style="display: flex; flex-direction: column; width: 100%; max-width: 900px; background: #fff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; height: 90vh;">
+        <!-- Top Bar -->
+        <div id="top-bar">
+            <div id="lives">❤️❤️❤️</div>
+            <h2 style="color:white; margin:0; font-family:'Fredoka One'; text-shadow:2px 2px 0 #333;">Spell it!</h2>
+            <div style="margin-left: auto; display: flex; align-items: center; gap: 20px;">
+                <div id="score" style="color: #f1c40f; font-weight: bold; font-size: 1.5rem; display: flex; align-items: center;">
+                    <img src="images/coin.png" class="coin-icon" alt="Coin"> <span id="score-count">0</span>
+                </div>
+                <button id="btn-toggle-music" class="btn-topbar btn-music">🔇 Music: OFF</button>
+                <button id="btn-quit-zone" class="btn-topbar btn-quit">✖ Quit</button>
+            </div>
+        </div>
+
+        <div class="spell-container">
+            <img id="spell-image" src="" alt="Spell this">
+            
+            <button class="audio-btn" onclick="playCurrentWordAudio()">
+                <svg viewBox="0 0 24 24" width="30" height="30" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 10 0 0 0 0 14.14M15.54 8.46a5 5 5 0 0 0 0 7.07"></path>
+                </svg>
+            </button>
+            
+            <div class="slots-container" id="slots-container">
+                <!-- Slots will go here -->
+            </div>
+            
+            <div class="letters-container" id="letters-container">
+                <!-- Letter buttons will go here -->
+            </div>
+            
+            <div style="display: flex; gap: 15px; margin-top: 20px;">
+                <button id="btn-clear" class="btn" style="background:#e74c3c; color:white; padding:15px 30px; font-size:1.5em; border-radius:15px; border:none; font-family:'Fredoka One', cursive; cursor:pointer; box-shadow:0 5px 0 #c0392b; transition:all 0.1s; display:none;">Clear</button>
+                <button id="btn-submit" class="btn" style="background:#2ecc71; color:white; padding:15px 30px; font-size:1.5em; border-radius:15px; border:none; font-family:'Fredoka One', cursive; cursor:pointer; box-shadow:0 5px 0 #27ae60; transition:all 0.1s; display:none;">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="hidden" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <h1 id="game-over-title" style="color: #f1c40f; font-size: 4rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); font-family: 'Fredoka One'; text-align: center;">Scene Mastered! 🏆</h1>
+        <p style="color: white; font-size: 1.5rem;">You have completed all 4 stages!</p>
+        <button id="btn-finish" class="btn-large" style="margin-top: 30px;">Back to Map</button>
+    </div>
+
+    <script src="js/storage.js?v=2"></script>
+    <script src="js/spell.js?v=2"></script>
+</body>
+</html>

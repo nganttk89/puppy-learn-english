@@ -1,0 +1,20 @@
+[
+    {
+        "id": "qset_default12",
+        "name": "Find It (12 Random Questions)",
+        "questions": [
+            "Where is {name}?",
+            "Can you find {name}?",
+            "Show me {name}.",
+            "Do you see {name}?",
+            "Let's look for {name}!",
+            "I'm looking for {name}.",
+            "Point to {name}.",
+            "Help me find {name}.",
+            "Where can you see {name}?",
+            "Spot {name}!",
+            "Can you spot {name}?",
+            "Let's find {name}!"
+        ]
+    }
+]

@@ -1,0 +1,121 @@
+--- js/storage.js
++++ js/storage.js
+@@ -304,36 +304,74 @@
+             if (stageKey) {
+                 player.progress[levelId][stageKey] = true;
+                 
+-                if (stageKey === 's4') {
+-                    let mistakes = parseInt(sessionStorage.getItem('currentTopicMistakes') || '0');
+-                    let N = 5; // default fallback
+-                    const lvl = typeof ZoneStorage !== 'undefined' ? ZoneStorage.getZone(levelId) : null;
+-                    if (lvl && lvl.questions && lvl.questions.length > 0) {
+-                        const scene = typeof SceneStorage !== 'undefined' ? SceneStorage.getScene(lvl.questions[0]) : null;
+-                        if (scene && scene.objects) {
+-                            // Find unique valid objects count
+-                            const uniqueNames = new Set();
+-                            for (let obj of scene.objects) {
+-                                const lowerName = obj.name.toLowerCase().trim();
+-                                if (obj.image && !uniqueNames.has(lowerName)) {
+-                                    uniqueNames.add(lowerName);
+-                                }
+-                            }
+-                            if(uniqueNames.size > 0) N = uniqueNames.size;
++                let hasThumbnails = false;
++                let hasBigImage = false;
++                const lvl = typeof ZoneStorage !== 'undefined' ? ZoneStorage.getZone(levelId) : null;
++                if (lvl) {
++                    const allQs = typeof SceneStorage !== 'undefined' ? SceneStorage.getScenes() : [];
++                    const levelScenes = allQs.filter(q => lvl.questions && lvl.questions.includes(q.id));
++                    for (let t of levelScenes) {
++                        if (t.image && t.image.trim() !== '') hasBigImage = true;
++                        let objects = t.objects || t.quizData || [];
++                        if (objects.some(o => o.image && o.image.trim() !== '')) hasThumbnails = true;
++                    }
++                } else {
++                    hasThumbnails = true;
++                    hasBigImage = true;
++                }
++                
++                let isLastMode = false;
++                if (hasThumbnails && stageKey === 's4') isLastMode = true;
++                if (!hasThumbnails && hasBigImage && stageKey === 's2') isLastMode = true;
++
++                if (isLastMode) {
++                    let mistakes = 0;
++                    let N = 5;
++                    if (stageKey === 's4') {
++                        mistakes = parseInt(sessionStorage.getItem('currentTopicMistakes') || '0');
++                        if (lvl && lvl.questions && lvl.questions.length > 0) {
++                            const scene = typeof SceneStorage !== 'undefined' ? SceneStorage.getScene(lvl.questions[0]) : null;
++                            if (scene && scene.objects) {
++                                const uniqueNames = new Set();
++                                for (let obj of scene.objects) {
++                                    const lowerName = obj.name.toLowerCase().trim();
++                                    if (obj.image && !uniqueNames.has(lowerName)) {
++                                        uniqueNames.add(lowerName);
++                                    }
++                                }
++                                if(uniqueNames.size > 0) N = uniqueNames.size;
++                            }
+                         }
++                        
++                        let earnedStars = 1;
++                        if (mistakes === 0) earnedStars = 3;
++                        else if (mistakes <= N) earnedStars = 2;
++                        else earnedStars = 1;
++                        
++                        if (!player.progress.stars) player.progress.stars = {};
++                        if (!player.progress.stars[levelId] || player.progress.stars[levelId] < earnedStars) {
++                            player.progress.stars[levelId] = earnedStars;
++                        }
++                    } else if (stageKey === 's2') {
++                        // Find It ONLY topic
++                        let earnedStars = 1;
++                        if (currentLives === 3) earnedStars = 3;
++                        else if (currentLives === 2) earnedStars = 2;
++                        else earnedStars = 1;
++                        
++                        if (!player.progress.stars) player.progress.stars = {};
++                        if (!player.progress.stars[levelId] || player.progress.stars[levelId] < earnedStars) {
++                            player.progress.stars[levelId] = earnedStars;
++                        }
+                     }
+-                    
+-                    let earnedStars = 1;
+-                    if (mistakes === 0) earnedStars = 3;
+-                    else if (mistakes <= N) earnedStars = 2;
+-                    else earnedStars = 1;
+-                    
+-                    if (!player.progress.stars) player.progress.stars = {};
+-                    if (!player.progress.stars[levelId] || player.progress.stars[levelId] < earnedStars) {
+-                        player.progress.stars[levelId] = earnedStars;
+-                    }
+                 }
+             }
+             player.progress.score = currentScore;
+@@ -422,6 +460,25 @@
+             }
+         };
+     }
++    ,
++    getNextLevelUrl: function(currentId) {
++        if (typeof ZoneStorage === 'undefined') return null;
++        const regions = ZoneStorage.getZones();
++        for (let rIndex = 0; rIndex < regions.length; rIndex++) {
++            const region = regions[rIndex];
++            if (region.subScenes) {
++                const index = region.subScenes.findIndex(s => s.id === currentId);
++                if (index > -1) {
++                    if (index < region.subScenes.length - 1) {
++                        return 'index.html?playScene=' + region.subScenes[index + 1].id + '&v=' + Date.now();
++                    } else if (rIndex < regions.length - 1 && regions[rIndex+1].subScenes && regions[rIndex+1].subScenes.length > 0) {
++                        return 'index.html?playScene=' + regions[rIndex+1].subScenes[0].id + '&v=' + Date.now();
++                    }
++                }
++            }
++        }
++        return null;
++    }
+ };
+ 
+ const QuestionSetStorage = {

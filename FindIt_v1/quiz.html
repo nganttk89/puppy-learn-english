@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game - Puppy Learn English</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background: var(--bg-color); font-family: 'Nunito', sans-serif; overflow: hidden; }
+        .quiz-container { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; box-sizing: border-box; padding: 20px; text-align: center; }
+        #progress-bar { width: 80%; max-width: 600px; height: 15px; background: #dfe6e9; border-radius: 10px; margin: 0 auto 15px auto; overflow: hidden; }
+        
+        .question-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        #puppy-character { width: 120px; }
+        
+        .speech-bubble {
+            background: #e3f2fd;
+            border-radius: 20px;
+            padding: 10px 20px;
+            position: relative;
+            font-size: 1.5em;
+            font-family: 'Fredoka One', cursive;
+            color: #2d3436;
+        }
+        .speech-bubble::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 10px solid transparent;
+            border-right-color: #e3f2fd;
+        }
+        
+        #question-image {
+            max-width: 300px;
+            max-height: 160px;
+            border-radius: 15px;
+            display: none;
+            border: 4px solid #74b9ff;
+            margin: 0 auto 15px auto;
+        }
+
+        .answers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Image Buttons */
+        .ans-img-btn {
+            background: white;
+            border: 4px solid #dfe6e9;
+            border-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+            transition: all 0.2s;
+            height: 140px;
+        }
+        .ans-img-btn:hover { transform: scale(1.05); border-color: #74b9ff; }
+        .ans-img-btn img { width: 100%; height: 100%; object-fit: cover; border-radius: 10px; }
+
+        /* Text Buttons */
+        .ans-txt-btn {
+            background: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 15px;
+            font-size: 1.5em;
+            font-family: 'Fredoka One', cursive;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 8px 0 #074b83;
+        }
+        .ans-txt-btn:hover { transform: translateY(-5px); box-shadow: 0 13px 0 #074b83; }
+        .ans-txt-btn:active { transform: translateY(8px); box-shadow: none; }
+
+        .correct-anim { animation: pulse 0.5s; border-color: #00b894 !important; background-color: #00b894 !important; }
+        .wrong-anim { animation: shake 0.5s; border-color: #ff7675 !important; background-color: #ff7675 !important;}
+
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-10px); } 75% { transform: translateX(10px); } }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #ff7675;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1.2em;
+            font-family: 'Fredoka One', cursive;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 0 #d63031;
+            text-decoration: none;
+        }
+        
+
+        #progress-fill {
+            width: 0%;
+            height: 100%;
+            background: #00b894;
+            transition: width 0.3s ease;
+        }
+
+        #success-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.9);
+            z-index: 100;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #success-overlay h1 { font-size: 5em; color: #00b894; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div id="game-container" style="display: flex; flex-direction: column; width: 100%; max-width: 900px; background: #fff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; height: 90vh;">
+        <div id="top-bar">
+        <div id="lives">❤️❤️❤️</div>
+        
+        <div style="margin-left: auto; display: flex; align-items: center; gap: 20px;">
+            <div id="score" style="color: #f1c40f; font-weight: bold; font-size: 1.5rem; display: flex; align-items: center;">
+                <img src="images/coin.png" class="coin-icon" alt="Coin"> <span id="score-count">0</span>
+            </div>
+            <button id="btn-toggle-music" class="btn-topbar btn-music">🔇 Music: OFF</button>
+            <button id="btn-quit-zone" class="btn-topbar btn-quit">✖ Quit</button>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+        <div id="progress-bar"><div id="progress-fill"></div></div>
+        
+        <div class="question-area">
+            <div id="character-image-container" style="width: 140px; height: 140px;">
+                <svg id="svg-puppy" class="idle" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%; overflow: visible; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));">
+                    <defs>
+                        <radialGradient id="furGradient" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+                            <stop offset="0%" stop-color="#fceabb" />
+                            <stop offset="100%" stop-color="#f8b500" />
+                        </radialGradient>
+                        <radialGradient id="snoutGradient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#ffffff" />
+                            <stop offset="100%" stop-color="#fde3a7" />
+                        </radialGradient>
+                        <radialGradient id="eyeGradient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#6e4c25" />
+                            <stop offset="100%" stop-color="#3e2723" />
+                        </radialGradient>
+                        <linearGradient id="earGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stop-color="#f8b500" />
+                            <stop offset="100%" stop-color="#d35400" />
+                        </linearGradient>
+                    </defs>
+
+                    <!-- Tail -->
+                    <path id="puppy-tail" class="wagging" d="M 120 140 C 160 110, 180 120, 170 90" fill="none" stroke="url(#earGradient)" stroke-width="16" stroke-linecap="round" transform-origin="120 140" style="animation: tailWag 0.5s infinite alternate;"/>
+                    
+                    <!-- Back Legs -->
+                    <path d="M 55 150 C 45 160, 55 185, 75 185 C 85 185, 85 170, 75 160 Z" fill="url(#furGradient)"/>
+                    <path d="M 145 150 C 155 160, 145 185, 125 185 C 115 185, 115 170, 125 160 Z" fill="url(#furGradient)"/>
+                    
+                    <!-- Body -->
+                    <g id="puppy-body" style="animation: breathe 2s infinite alternate ease-in-out; transform-origin: 100px 180px;">
+                        <path d="M 65 110 C 65 85, 135 85, 135 110 C 145 160, 125 180, 100 180 C 75 180, 55 160, 65 110 Z" fill="url(#furGradient)"/>
+                        <!-- Chest fluff -->
+                        <path d="M 85 105 C 85 95, 115 95, 115 105 C 125 130, 110 145, 100 145 C 90 145, 75 130, 85 105 Z" fill="#ffffff" opacity="0.8"/>
+                    </g>
+
+                    <!-- Front Legs -->
+                    <g id="front-legs">
+                        <rect x="75" y="135" width="18" height="50" rx="9" fill="url(#furGradient)"/>
+                        <rect x="107" y="135" width="18" height="50" rx="9" fill="url(#furGradient)"/>
+                        <line x1="80" y1="175" x2="80" y2="183" stroke="#d35400" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="87" y1="175" x2="87" y2="183" stroke="#d35400" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="112" y1="175" x2="112" y2="183" stroke="#d35400" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="119" y1="175" x2="119" y2="183" stroke="#d35400" stroke-width="2" stroke-linecap="round"/>
+                    </g>
+
+                    <!-- Collar -->
+                    <path d="M 72 108 Q 100 120 128 108" fill="none" stroke="#e74c3c" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="100" cy="116" r="7" fill="#f1c40f"/>
+                    <circle cx="100" cy="116" r="4" fill="#f39c12"/>
+
+                    <!-- Head Group -->
+                    <g id="puppy-head" class="asking" transform-origin="100 95">
+                        <!-- Ears -->
+                        <path id="left-ear" d="M 55 60 C 35 65, 20 115, 40 125 C 55 130, 65 95, 68 80 Z" fill="url(#earGradient)" transform-origin="60 70" style="animation: earFlopLeft 2s infinite alternate ease-in-out;"/>
+                        <path id="right-ear" d="M 145 60 C 165 65, 180 115, 160 125 C 145 130, 135 95, 132 80 Z" fill="url(#earGradient)" transform-origin="140 70" style="animation: earFlopRight 2s infinite alternate ease-in-out;"/>
+                        
+                        <!-- Face/Head Base -->
+                        <ellipse cx="100" cy="72" rx="48" ry="42" fill="url(#furGradient)"/>
+                        
+                        <!-- Snout Base -->
+                        <ellipse cx="100" cy="92" rx="28" ry="20" fill="url(#snoutGradient)"/>
+                        
+                        <!-- Eyes Group -->
+                        <g id="puppy-eyes" class="blinking" transform-origin="100 70">
+                            <!-- Left Eye -->
+                            <ellipse cx="80" cy="68" rx="11" ry="15" fill="#fff"/>
+                            <ellipse cx="80" cy="68" rx="8" ry="12" fill="url(#eyeGradient)"/>
+                            <circle cx="78" cy="64" r="3.5" fill="#fff"/>
+                            <circle cx="83" cy="71" r="1.5" fill="#fff"/>
+                            <!-- Right Eye -->
+                            <ellipse cx="120" cy="68" rx="11" ry="15" fill="#fff"/>
+                            <ellipse cx="120" cy="68" rx="8" ry="12" fill="url(#eyeGradient)"/>
+                            <circle cx="118" cy="64" r="3.5" fill="#fff"/>
+                            <circle cx="123" cy="71" r="1.5" fill="#fff"/>
+                        </g>
+                        
+                        <!-- Eyebrows -->
+                        <path d="M 68 50 Q 80 45 88 52" fill="none" stroke="#d35400" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M 132 50 Q 120 45 112 52" fill="none" stroke="#d35400" stroke-width="3" stroke-linecap="round"/>
+
+                        <!-- Nose -->
+                        <path d="M 90 86 Q 100 82 110 86 C 112 91, 106 95, 100 95 C 94 95, 88 91, 90 86 Z" fill="#3e2723"/>
+                        <ellipse cx="96" cy="87" rx="3.5" ry="1.5" fill="#6e4c25" transform="rotate(-15 96 87)"/>
+                        
+                        <!-- Mouth & Tongue -->
+                        <g id="puppy-mouth-group">
+                            <path id="puppy-mouth" d="M 88 98 Q 100 110 112 98" fill="none" stroke="#3e2723" stroke-width="3" stroke-linecap="round"/>
+                            <path id="puppy-tongue" class="hidden" d="M 94 103 Q 100 118 106 103 Z" fill="#ff7675"/>
+                        </g>
+                        
+                        <!-- Cheeks -->
+                        <ellipse cx="65" cy="85" rx="9" ry="6" fill="#ff9999" opacity="0.7"/>
+                        <ellipse cx="135" cy="85" rx="9" ry="6" fill="#ff9999" opacity="0.7"/>
+                    </g>
+                </svg>
+                <img id="puppy-character" src="" alt="Character" style="display: none; width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            <div class="speech-bubble" id="question-text" style="cursor: pointer;" onclick="if(window.replayAudio) window.replayAudio();" title="Click to hear again">Loading...</div>
+        </div>
+
+        <img id="question-image" src="" alt="Question Image">
+
+        <div class="answers-grid" id="answers-container">
+            <!-- Buttons generated by JS -->
+        </div>
+    </div>
+    </div>
+
+    <div id="success-overlay">
+        <h1>Great Job!</h1>
+        <p style="font-size: 2em; color: #2d3436; margin-bottom: 30px;">You are so smart!</p>
+        <div style="display: flex; gap: 20px;">
+            <a href="index.html" class="btn" style="background:#0984e3; color:white; padding:15px 40px; font-size:1.5em; border-radius:30px; text-decoration:none; box-shadow:0 5px 0 #074b83;">Back to Map</a>
+            <a href="#" id="btn-next-zone" class="btn" style="display:none; background:#00b894; color:white; padding:15px 40px; font-size:1.5em; border-radius:30px; text-decoration:none; box-shadow:0 5px 0 #009879;">Next Scene ➔</a>
+        </div>
+    </div>
+
+    <script src="js/questions.js?v=1790760309"></script>
+    <script src="js/storage.js?v=2"></script>
+    <script src="js/quiz.js?v=2"></script>
+</body>
+</html>

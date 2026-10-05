@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find It! - Admin Editor</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <!-- LIST VIEW -->
+    <div id="list-view" class="view-container">
+        <div class="header">
+            <h1>FIND IT ADMIN</h1>
+            <div style="display: flex; gap: 10px;">
+                <button id="tab-questions" class="btn primary">Scenes</button>
+                <button id="tab-qsets" class="btn secondary">Question Sets</button>
+                <button id="tab-zones" class="btn secondary">Zones</button>
+            </div>
+        </div>
+
+        <!-- QUESTIONS SECTION -->
+        <div id="questions-section">
+            <div style="margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                <div style="display: flex; gap: 10px;">
+                    <input type="text" id="search-questions" placeholder="Search scenes by ID or Name..." style="padding: 8px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; width: 300px;">
+                    <select id="filter-zone" style="padding: 8px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc;">
+                        <option value="">All Zones</option>
+                    </select>
+                    <select id="sort-questions" style="padding: 8px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc;">
+                        <option value="">Sort: Default</option>
+                        <option value="name_asc">Name: A-Z</option>
+                        <option value="name_desc">Name: Z-A</option>
+                        <option value="diff_asc">Difficulty: A-Z</option>
+                        <option value="diff_desc">Difficulty: Z-A</option>
+                    </select>
+                </div>
+                <button id="btn-new-question" class="btn primary">New Scene</button>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th style="width: 50px;">STT</th>
+                        <th>Scene Name</th>
+                        <th>Vocabs Count <span id="total-vocabs-count" style="font-weight:normal; font-size: 0.9em; color: #555;"></span></th>
+                        <th>Difficulty</th>
+                        <th>Zone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="question-list-body"></tbody>
+            </table>
+        </div>
+
+        <!-- QUESTION SETS SECTION -->
+        <div id="qsets-section" class="hidden">
+            <div style="margin-bottom: 10px; display: flex; justify-content: space-between;">
+                <h3>Manage Question Sets</h3>
+                <button id="btn-new-qset" class="btn primary">New Question Set</button>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th style="width: 50px;">STT</th>
+                        <th>Set Name</th>
+                        <th>Count</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="qsets-list"></tbody>
+            </table>
+        </div>
+
+        <!-- LEVELS SECTION -->
+        <div id="levels-section" class="hidden">
+            <div style="margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+                <input type="text" id="search-zones" placeholder="Search zones by ID or Name..." style="padding: 8px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; width: 300px;">
+                <button id="btn-new-zone" class="btn primary">New Zone</button>
+            </div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th style="width: 50px;">STT</th>
+                        <th>Name</th>
+                        <th>Scenes</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="zone-list-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- QUESTION EDITOR VIEW -->
+    <div id="editor-view" class="view-container hidden">
+        <div class="editor-header">
+            <h2>SCENE EDITOR</h2>
+            <div class="header-actions">
+                <button id="btn-save" class="btn primary">Save Scene</button>
+                <button id="btn-preview" class="btn secondary">Preview Game</button>
+                <button id="btn-cancel" class="btn secondary">Cancel</button>
+            </div>
+        </div>
+        
+        <div class="editor-layout">
+            <div class="col-left">
+                <h3>SCENE SETTINGS</h3>
+                <label>ID</label>
+                <input type="text" id="edit-id" readonly>
+                <label>Scene Name (For Admin)</label>
+                <input type="text" id="edit-scene-name" placeholder="e.g. Farm Animals">
+
+                <label>Zone (Map Level)</label>
+                <select id="edit-scene-region">
+                    <option value="">-- No Zone --</option>
+                </select>
+
+                <label>Scene Avatar (Map Icon)</label>
+                <div style="display:flex; align-items:center; margin-bottom:10px; gap: 10px;">
+                    <img id="edit-scene-thumbnail-preview" src="" style="width: 50px; height: 50px; object-fit: cover; border-radius:10px; border:1px solid #ccc; display: none;">
+                    <input type="file" id="thumbnail-upload" accept="image/*" class="hidden">
+                    <button id="btn-upload-thumbnail" class="btn secondary btn-sm">Upload Avatar</button>
+                    <button id="btn-remove-thumbnail" class="btn danger btn-sm hidden">✖</button>
+                </div>
+
+                <!-- Removed Scene Type and Sub-questions -->
+
+
+                <label>Difficulty</label>
+                <select id="edit-difficulty">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+
+                <label>Question Set</label>
+                <select id="edit-question-set">
+                    <option value="">Default (System Smart Logic)</option>
+                    <option value="none">No Questions (Read vocabulary only)</option>
+                </select>
+            </div>
+
+            <div class="col-middle">
+                <h3>IMAGE EDITOR</h3>
+                <div class="image-upload-area">
+                    <input type="file" id="image-upload" accept="image/*" class="hidden">
+                    <button id="btn-upload" class="btn">Upload Image</button>
+                    <button id="btn-remove-image" class="btn danger hidden" style="margin-left: 10px;">Remove Image</button>
+                    <span id="image-info" style="margin-left: 10px; font-size: 14px;"></span>
+                </div>
+                
+                <div id="editor-workspace" class="workspace">
+                    <img id="edit-scene-image" src="" alt="">
+                    <div id="edit-hotspots-container"></div>
+                </div>
+                <p class="instruction">Drag to move, drag corners to resize.</p>
+            </div>
+
+            <div class="col-right">
+                <h3>VOCABULARIES</h3>
+                <button id="btn-add-object" class="btn secondary" style="width: 100%; margin-bottom: 10px;">+ Add Vocabulary</button>
+                <div id="objects-list"></div>
+                
+                <div id="hotspot-properties" class="hidden">
+                    <hr>
+                    <h4>PROPERTIES</h4>
+                    <label>Vocabulary Word</label>
+                    <input type="text" id="prop-name">
+                    
+                    <label>Thumbnail (for Flashcards)</label>
+                    <input type="file" id="prop-thumbnail-upload" accept="image/*" class="hidden">
+                    <button id="btn-prop-upload-thumb" class="btn secondary btn-sm" style="width:100%; margin-bottom:10px;">Upload Thumbnail</button>
+                    <img id="prop-thumbnail-preview" src="" style="width: 100%; max-height: 100px; object-fit: contain; margin-bottom: 10px; display: none;">
+
+                    <label>Bounding Box (Hidden Object)</label>
+                    <div class="prop-grid">
+                        <div><label>X:</label><input type="number" id="prop-x"></div>
+                        <div><label>Y:</label><input type="number" id="prop-y"></div>
+                        <div><label>W:</label><input type="number" id="prop-w"></div>
+                        <div><label>H:</label><input type="number" id="prop-h"></div>
+                    </div>
+                    <button id="btn-delete-object" class="btn danger" style="margin-top:15px; width: 100%;">Delete Object</button>
+                </div>
+            </div>
+
+            <!-- Removed col-quiz -->
+        </div>
+    </div>
+
+    <!-- LEVEL EDITOR VIEW -->
+    <div id="zone-editor-view" class="view-container hidden">
+        <div class="editor-header">
+            <h2>LEVEL EDITOR</h2>
+            <div class="header-actions">
+                <button id="btn-save-zone" class="btn primary">Save Zone</button>
+                <button id="btn-cancel-zone" class="btn secondary">Cancel</button>
+            </div>
+        </div>
+        
+        <div class="editor-layout">
+            <div class="col-left">
+                <h3>LEVEL DETAILS</h3>
+                <label>Zone ID</label>
+                <input type="text" id="zone-edit-id" readonly>
+
+                <label>Zone Name</label>
+                <input type="text" id="zone-edit-name" placeholder="e.g. The Farm">
+
+                <label>Zone Icon</label>
+                <div class="image-upload-area">
+                    <input type="file" id="zone-image-upload" accept="image/*" class="hidden">
+                    <button id="btn-zone-upload" class="btn secondary">Upload Icon</button>
+                    <img id="zone-edit-image-preview" src="" style="width: 100px; height: 100px; object-fit: contain; margin-top: 10px; display: block; border: 1px solid #ddd;">
+                </div>
+
+                <label>Zone Background (Map Screen)</label>
+                <div class="image-upload-area">
+                    <input type="file" id="zone-bg-upload" accept="image/*" class="hidden">
+                    <button id="btn-zone-bg-upload" class="btn secondary">Upload Background</button>
+                    <img id="zone-edit-bg-preview" src="" style="width: 100px; height: 100px; object-fit: contain; margin-top: 10px; display: none; border: 1px solid #ddd;">
+                </div>
+            </div>
+            <div class="col-middle">
+                <h3>REORDER SCENES IN THIS ZONE</h3>
+                <p>Drag and drop to change the order of scenes.</p>
+                <div id="zone-questions-list" style="max-height: 500px; overflow-y: auto; border: 1px solid #ccc; padding: 10px; background: white;">
+                    <!-- Scenes injected by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PREVIEW OVERLAY -->
+    <div id="preview-overlay" class="hidden">
+        <div class="preview-header">
+            <button id="btn-close-preview" class="btn danger">Back to Editor</button>
+        </div>
+        <iframe id="preview-frame" src=""></iframe>
+    </div>
+
+    <!-- QUESTION SET EDITOR MODAL -->
+    <div id="qset-editor-modal" class="modal hidden">
+        <div class="modal-content" style="width: 600px;">
+            <h3>Question Set Editor</h3>
+            <label>Set Name</label>
+            <input type="text" id="edit-qset-name" placeholder="e.g. Action Verbs">
+            
+            <label>Questions (1 per line)</label>
+            <textarea id="edit-qset-questions" rows="20" placeholder="Listen and choose: {name}"></textarea>
+            <small style="color:#666; display:block; margin-bottom:10px;">Use {name} for the vocabulary word.</small>
+            
+            <div style="text-align: right; margin-top: 15px;">
+                <button id="btn-cancel-qset" class="btn secondary">Cancel</button>
+                <button id="btn-save-qset" class="btn primary">Save Set</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JSON data loaded via fetch in admin.js -->
+    <script src="js/storage.js?v=1790760309"></script>
+    <script src="js/admin.js?v=1790760309"></script>
+</body>
+</html>

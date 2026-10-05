@@ -1,0 +1,3601 @@
+[
+    {
+        "id": "scene_starters_bathroom_1",
+        "name": "Bathroom",
+        "image": "data/uploads/bathroom.png",
+        "originalWidth": 1312,
+        "originalHeight": 1199,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "bathtub",
+                "name": "bathtub",
+                "x": 13.297866264126299,
+                "y": 576.0194647201946,
+                "width": 300,
+                "height": 156.8515815085158,
+                "image": "data/uploads/bathtub.jpg"
+            },
+            {
+                "id": "shower",
+                "name": "shower",
+                "x": 484.989270123618,
+                "y": 56.1167883211679,
+                "width": 153.0987719799274,
+                "height": 209.21654501216545,
+                "image": "data/uploads/shower.jpg"
+            },
+            {
+                "id": "toilet",
+                "name": "toilet",
+                "x": 559.7940516502794,
+                "y": 598.2871046228711,
+                "width": 199.67304475541593,
+                "height": 218.8418491484185,
+                "image": "data/uploads/toilet.jpg"
+            },
+            {
+                "id": "sink",
+                "name": "sink",
+                "x": 944.9394965525682,
+                "y": 616.8029197080293,
+                "width": 254.48468034759904,
+                "height": 155.13868613138686,
+                "image": "data/uploads/sink.jpg"
+            },
+            {
+                "id": "mirror",
+                "name": "mirror",
+                "x": 1022.0183591040757,
+                "y": 30.74939172749393,
+                "width": 309.6232711843662,
+                "height": 390.1313868613139,
+                "image": "data/uploads/mirror.jpg"
+            },
+            {
+                "id": "towel",
+                "name": "towel",
+                "x": 766.3966382440537,
+                "y": 204.40389294403894,
+                "width": 100,
+                "height": 200,
+                "image": "data/uploads/towel.jpg"
+            },
+            {
+                "id": "soap",
+                "name": "soap",
+                "x": 1044.9394965525682,
+                "y": 561.338199513382,
+                "width": 50,
+                "height": 50,
+                "image": "data/uploads/soap.jpg"
+            },
+            {
+                "id": "toothbrush",
+                "name": "toothbrush",
+                "x": 1201.2151279017585,
+                "y": 467.12895377128956,
+                "width": 72.26722695932439,
+                "height": 77.7323600973236,
+                "image": "data/uploads/toothbrush.jpg"
+            },
+            {
+                "id": "toothpaste",
+                "name": "toothpaste",
+                "x": 1262.146220064461,
+                "y": 545.9221411192214,
+                "width": 50,
+                "height": 100,
+                "image": "data/uploads/toothpaste.jpg"
+            },
+            {
+                "id": "shampoo",
+                "name": "shampoo",
+                "x": 488.0099547142099,
+                "y": 283.1970802919708,
+                "width": 97.96018114316021,
+                "height": 60.60340632603407,
+                "image": "data/uploads/shampoo.jpg"
+            },
+            {
+                "id": "toilet paper roll",
+                "name": "toilet paper roll",
+                "x": 773.8606340010608,
+                "y": 719.0766423357665,
+                "width": 76.0199094284199,
+                "height": 77.7323600973236,
+                "image": "data/uploads/toilet_paper_roll.jpg"
+            }
+        ],
+        "type": "lesson",
+        "thumbnail": "data/uploads/bathroom-icon.png",
+        "questionTemplates": [],
+        "questionSetId": "qset_default12"
+    },
+    {
+        "id": "scene_starters_bedroom_1",
+        "name": "Bedroom",
+        "image": "data/uploads/bedroom_find_it.jpg",
+        "originalWidth": 1024,
+        "originalHeight": 1024,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "bed",
+                "name": "bed",
+                "x": 400.1485714285714,
+                "y": 609.9771428571429,
+                "width": 250,
+                "height": 150,
+                "image": "data/uploads/bed.jpg"
+            },
+            {
+                "id": "pillow",
+                "name": "pillow",
+                "x": 102.25142857142858,
+                "y": 504.3885714285714,
+                "width": 173.14285714285714,
+                "height": 121.68,
+                "image": "data/uploads/pillow.jpg"
+            },
+            {
+                "id": "blanket",
+                "name": "blanket",
+                "x": 200,
+                "y": 650,
+                "width": 192.42285714285714,
+                "height": 118.75428571428571,
+                "image": "data/uploads/blanket_2.jpg"
+            },
+            {
+                "id": "lamp",
+                "name": "lamp",
+                "x": 8.937142857142874,
+                "y": 558.5142857142857,
+                "width": 88.77714285714286,
+                "height": 162.90285714285716,
+                "image": "data/uploads/lamp.jpg"
+            },
+            {
+                "id": "window",
+                "name": "window",
+                "x": 377.11999999999995,
+                "y": 112.99428571428574,
+                "width": 220.1142857142857,
+                "height": 204.74285714285713,
+                "image": "data/uploads/window.jpg"
+            },
+            {
+                "id": "clock",
+                "name": "clock",
+                "x": 418.2285714285714,
+                "y": 422.6171428571429,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/clock.jpg"
+            },
+            {
+                "id": "rug",
+                "name": "rug",
+                "x": 590.9599999999999,
+                "y": 784.5828571428572,
+                "width": 337.7714285714286,
+                "height": 188.9714285714286,
+                "image": "data/uploads/rug_1.jpg"
+            },
+            {
+                "id": "closet",
+                "name": "closet",
+                "x": 757.5771428571429,
+                "y": 176.18285714285713,
+                "width": 262.90285714285716,
+                "height": 566.5028571428571,
+                "image": "data/uploads/closet.jpg"
+            },
+            {
+                "id": "mirror",
+                "name": "mirror",
+                "x": 595.3828571428571,
+                "y": 414.89142857142855,
+                "width": 136.57142857142856,
+                "height": 165.15428571428572,
+                "image": "data/uploads/mirror.jpg"
+            },
+            {
+                "id": "picture",
+                "name": "picture",
+                "x": 647.3371428571428,
+                "y": 307.31428571428575,
+                "width": 104.38857142857142,
+                "height": 126.33142857142857,
+                "image": "data/uploads/picture.jpg"
+            }
+        ],
+        "type": "lesson",
+        "thumbnail": "data/uploads/bedroom.png",
+        "questionSetId": ""
+    },
+    {
+        "id": "scene_starters_family_1",
+        "name": "Family",
+        "image": "data/uploads/family.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "father",
+                "name": "father",
+                "x": 520.1608040201005,
+                "y": 349.4241198607252,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "mother",
+                "name": "mother",
+                "x": 749.5879396984925,
+                "y": 348.66781556641934,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "grandfather",
+                "name": "grandfather",
+                "x": 512.7236180904522,
+                "y": 109.35152815390568,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "grandmother",
+                "name": "grandmother",
+                "x": 754.0100502512563,
+                "y": 114.4295712728168,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "brother",
+                "name": "brother",
+                "x": 466.9346733668342,
+                "y": 563.2421482080682,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "sister",
+                "name": "sister",
+                "x": 641.0050251256281,
+                "y": 562.5571694861604,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "baby",
+                "name": "baby",
+                "x": 804.3819095477387,
+                "y": 560.9365174269335,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "uncle",
+                "name": "uncle",
+                "x": 303.7185929648241,
+                "y": 344.30935884359724,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "aunt",
+                "name": "aunt",
+                "x": 969.5678391959799,
+                "y": 356.0860971406464,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "cousin",
+                "name": "cousin",
+                "x": 1074.0904522613066,
+                "y": 566.0145605458446,
+                "width": 100,
+                "height": 100
+            }
+        ],
+        "type": "lesson",
+        "thumbnail": "data/uploads/home.png",
+        "questionSetId": ""
+    },
+    {
+        "id": "scene_starters_animals_1",
+        "name": "Farm Animals",
+        "image": "data/uploads/farm_animals_1.jpg",
+        "originalWidth": 1024,
+        "originalHeight": 1024,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "cat",
+                "name": "cat",
+                "x": 842.043015075377,
+                "y": 170.52254573408163,
+                "width": 92.81987078248385,
+                "height": 124.53996493008627,
+                "image": "data/uploads/cat.jpg"
+            },
+            {
+                "id": "dog",
+                "name": "dog",
+                "x": 652.2637185929649,
+                "y": 717.9426425029267,
+                "width": 193.83603732950465,
+                "height": 139.3560175048108,
+                "image": "data/uploads/dog.jpg"
+            },
+            {
+                "id": "cow",
+                "name": "cow",
+                "x": 35.9859870782484,
+                "y": 406.16550949349596,
+                "width": 242.6469490308686,
+                "height": 180.74669935839142,
+                "image": "data/uploads/cow.jpg"
+            },
+            {
+                "id": "duck",
+                "name": "duck",
+                "x": 358.4,
+                "y": 580.7542857142857,
+                "width": 86.83428571428571,
+                "height": 82.44571428571429,
+                "image": "data/uploads/duck.jpg"
+            },
+            {
+                "id": "goat",
+                "name": "goat",
+                "x": 659.7266331658292,
+                "y": 555.5975010927946,
+                "width": 117.68844221105527,
+                "height": 119.44782471072345,
+                "image": "data/uploads/goat.jpg"
+            },
+            {
+                "id": "horse",
+                "name": "horse",
+                "x": 784.2716439339556,
+                "y": 424.7271832026167,
+                "width": 220.71511844938985,
+                "height": 227.9888097834006,
+                "image": "data/uploads/horse.jpg"
+            },
+            {
+                "id": "sheep",
+                "name": "sheep",
+                "x": 549,
+                "y": 471.04,
+                "width": 104.57969849246233,
+                "height": 113.06729182891111,
+                "image": "data/uploads/sheep.jpg"
+            },
+            {
+                "id": "mouse",
+                "name": "mouse",
+                "x": 481.28,
+                "y": 895.2685714285715,
+                "width": 83.91959798994975,
+                "height": 85.4141314669574,
+                "image": "data/uploads/mouse.jpg"
+            },
+            {
+                "id": "obj_zq7s2v",
+                "name": "buffalo",
+                "x": 288.37714285714287,
+                "y": 391.0514285714286,
+                "width": 230.1942857142857,
+                "height": 155.5885714285714,
+                "image": "data/uploads/buffalo.jpg"
+            },
+            {
+                "id": "obj_ah3wrt",
+                "name": "pig",
+                "x": 48.46857142857141,
+                "y": 689.4742857142858,
+                "width": 192.16,
+                "height": 138.03428571428572,
+                "image": "data/uploads/pig.jpg"
+            },
+            {
+                "id": "obj_gbky4r",
+                "name": "rooster",
+                "x": 342.5028571428571,
+                "y": 690.9371428571428,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/rooster.jpg"
+            },
+            {
+                "id": "obj_vx6t4w",
+                "name": "hen",
+                "x": 251.80571428571426,
+                "y": 749.4514285714286,
+                "width": 72.2057142857143,
+                "height": 100,
+                "image": "data/uploads/hen.jpg"
+            },
+            {
+                "id": "obj_o8vl08",
+                "name": "goose",
+                "x": 475.62285714285713,
+                "y": 588.5371428571428,
+                "width": 108.77714285714286,
+                "height": 130.72,
+                "image": "data/uploads/goose.jpg"
+            },
+            {
+                "id": "obj_qnn77y",
+                "name": "rabbit",
+                "x": 872.0571428571428,
+                "y": 850.3885714285715,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/rabbit.jpg"
+            }
+        ],
+        "type": "lesson",
+        "thumbnail": "data/uploads/animal.png",
+        "questionSetId": ""
+    },
+    {
+        "id": "scene_starters_animals_3",
+        "name": "Forest Animals",
+        "image": "data/uploads/forest_water_animals.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "bear",
+                "name": "bear",
+                "x": 113.34673366834171,
+                "y": 294.3702036366194,
+                "width": 209.3467336683417,
+                "height": 205.34238384975205
+            },
+            {
+                "id": "polar bear",
+                "name": "polar bear",
+                "x": 564.7638190954774,
+                "y": 304.5262898744417,
+                "width": 138.5929648241206,
+                "height": 177.7912988428938
+            },
+            {
+                "id": "bird",
+                "name": "bird",
+                "x": 490.03015075376885,
+                "y": 51.59652516442162,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "fish",
+                "name": "fish",
+                "x": 411.356783919598,
+                "y": 507.10779727781096,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "frog",
+                "name": "frog",
+                "x": 585.2261306532663,
+                "y": 598.1884430063659,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "owl",
+                "name": "owl",
+                "x": 808.78391959799,
+                "y": 104.54936165722927,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "turtle",
+                "name": "turtle",
+                "x": 1066.2713567839196,
+                "y": 597.5517180740688,
+                "width": 162.71356783919597,
+                "height": 108.10326029613478
+            },
+            {
+                "id": "squirrel",
+                "name": "squirrel",
+                "x": 1219.2763819095476,
+                "y": 240.9002215735237,
+                "width": 100,
+                "height": 124.30978088840432
+            },
+            {
+                "id": "fox",
+                "name": "fox",
+                "x": 822.4924623115578,
+                "y": 423.8178173249393,
+                "width": 169.1457286432161,
+                "height": 161.58477825062428
+            },
+            {
+                "id": "deer",
+                "name": "deer",
+                "x": 1025.6683417085426,
+                "y": 286.0623922906482,
+                "width": 161.10552763819095,
+                "height": 257.2032497450146
+            }
+        ],
+        "type": "lesson"
+    },
+    {
+        "id": "scene_starters_animals_2",
+        "name": "Jungle Animals",
+        "image": "data/uploads/jungle_animals.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "crocodile",
+                "name": "crocodile",
+                "x": 676.9246231155779,
+                "y": 587.7082263566983,
+                "width": 317.0854271356784,
+                "height": 77.31087117082264
+            },
+            {
+                "id": "elephant",
+                "name": "elephant",
+                "x": 930.391959798995,
+                "y": 346.6632434143425,
+                "width": 307.43718592964825,
+                "height": 161.58477825062428
+            },
+            {
+                "id": "giraffe",
+                "name": "giraffe",
+                "x": 1121.0251256281408,
+                "y": 151.6447789540323,
+                "width": 177.1859296482412,
+                "height": 177.7912988428938
+            },
+            {
+                "id": "hippo",
+                "name": "hippo",
+                "x": 445.96984924623115,
+                "y": 498.788450040446,
+                "width": 206.13065326633165,
+                "height": 122.68912882917736
+            },
+            {
+                "id": "monkey",
+                "name": "monkey",
+                "x": 497.42713567839195,
+                "y": 52.244785988112426,
+                "width": 178.79396984924625,
+                "height": 181.03260296134772
+            },
+            {
+                "id": "tiger",
+                "name": "tiger",
+                "x": 676.2010050251257,
+                "y": 362.6652129567756,
+                "width": 185.22613065326635,
+                "height": 135.654345302993
+            },
+            {
+                "id": "zebra",
+                "name": "zebra",
+                "x": 1076.643216080402,
+                "y": 519.4362888193297,
+                "width": 267.23618090452266,
+                "height": 161.58477825062428
+            },
+            {
+                "id": "spider",
+                "name": "spider",
+                "x": 310.251256281407,
+                "y": 45.55762670136812,
+                "width": 116.08040201005025,
+                "height": 182.6532550205747
+            },
+            {
+                "id": "snake",
+                "name": "snake",
+                "x": 151.6582914572864,
+                "y": 280.55217528927653,
+                "width": 231.85929648241208,
+                "height": 138.8956494214469
+            },
+            {
+                "id": "lizard",
+                "name": "lizard",
+                "x": 60.20100502512559,
+                "y": 503.7699855801358,
+                "width": 314.5929648241206,
+                "height": 147.75521401188757
+            }
+        ],
+        "type": "lesson"
+    },
+    {
+        "id": "scene_starters_kitchen_1",
+        "name": "Kitchen",
+        "image": "data/uploads/kitchen.png",
+        "originalWidth": 1470,
+        "originalHeight": 1070,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "fridge",
+                "name": "fridge",
+                "x": 39.05778894472362,
+                "y": 80.23462150427443,
+                "width": 286.7964824120603,
+                "height": 512.6528410776408,
+                "image": "data/uploads/fridge.png"
+            },
+            {
+                "id": "stove",
+                "name": "stove",
+                "x": 399.86180904522615,
+                "y": 364.7741430921496,
+                "width": 284.8115577889447,
+                "height": 29.685553248294276,
+                "image": "data/uploads/stove.png"
+            },
+            {
+                "id": "oven",
+                "name": "oven",
+                "x": 479.2713567839196,
+                "y": 411.08060731911223,
+                "width": 233.1030150753769,
+                "height": 240.4916264394164,
+                "image": "data/uploads/oven.png"
+            },
+            {
+                "id": "sink",
+                "name": "sink",
+                "x": 1065.929648241206,
+                "y": 322.1612146382244,
+                "width": 250,
+                "height": 100,
+                "image": "data/uploads/sink.png"
+            },
+            {
+                "id": "plate",
+                "name": "plate",
+                "x": 212.18592964824117,
+                "y": 839.8052911194411,
+                "width": 362.2361809045226,
+                "height": 136.798090666379,
+                "image": "data/uploads/plate.png"
+            },
+            {
+                "id": "bowl",
+                "name": "bowl",
+                "x": 590.4899497487437,
+                "y": 760.394271999137,
+                "width": 225.43969849246233,
+                "height": 105.40303659556108,
+                "image": "data/uploads/bowl.png"
+            },
+            {
+                "id": "spoon",
+                "name": "spoon",
+                "x": 623.5929648241206,
+                "y": 885.6600415307031,
+                "width": 273.45477386934675,
+                "height": 152.96728782934656,
+                "image": "data/uploads/spoon.png"
+            },
+            {
+                "id": "cup",
+                "name": "cup",
+                "x": 899.5854271356784,
+                "y": 778.8619508643241,
+                "width": 168.19095477386935,
+                "height": 149.72546587200992,
+                "image": "data/uploads/cup.png"
+            }
+        ],
+        "type": "lesson",
+        "thumbnail": "data/uploads/kitchen.png"
+    },
+    {
+        "id": "scene_living_room",
+        "name": "Living Room",
+        "image": "data/uploads/living_room.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "sofa",
+                "name": "televison",
+                "x": 287.28447954055997,
+                "y": 333.94287121101735,
+                "width": 148.78977745872214,
+                "height": 131.2992159010405,
+                "image": "data/uploads/television.jpg"
+            },
+            {
+                "id": "fan",
+                "name": "fan",
+                "x": 448.6764680545584,
+                "y": 338.41607669157065,
+                "width": 95.09547738693466,
+                "height": 134.5739105968417,
+                "image": "data/uploads/fan.jpg"
+            },
+            {
+                "id": "air_conditioner",
+                "name": "air conditioner",
+                "x": 1183.0970854271357,
+                "y": 56.60886474971237,
+                "width": 154.12571428571428,
+                "height": 104.38857142857142,
+                "image": "data/uploads/pexels-neosiam-38788452.png"
+            },
+            {
+                "id": "curtain",
+                "name": "curtain",
+                "x": 457.1758793969849,
+                "y": 147.56290226145677,
+                "width": 131.63819095477385,
+                "height": 165.69043013399926,
+                "image": "data/uploads/curtain.jpg"
+            },
+            {
+                "id": "lamp",
+                "name": "lamp",
+                "x": 1130.0344580043072,
+                "y": 260.6840642914923,
+                "width": 84.56281407035176,
+                "height": 100,
+                "image": "data/uploads/lamp.jpg"
+            },
+            {
+                "id": "clock",
+                "name": "clock",
+                "x": 981.7864178033021,
+                "y": 112.93549286292084,
+                "width": 60.12060301507539,
+                "height": 90.78029050750888,
+                "image": "data/uploads/clock.jpg"
+            },
+            {
+                "id": "picture",
+                "name": "picture",
+                "x": 943.1467623833454,
+                "y": 223.0492821721239,
+                "width": 137.10093323761666,
+                "height": 105.58708221332355,
+                "image": "data/uploads/picture.jpg"
+            },
+            {
+                "id": "bookshelf",
+                "name": "bookshelf",
+                "x": 30.546446518305785,
+                "y": 135.10858549673162,
+                "width": 144.1103804737976,
+                "height": 526.2408038948705,
+                "image": "data/uploads/bookshelf.jpg"
+            },
+            {
+                "id": "remote_control",
+                "name": "remote control",
+                "x": 856.3719741564968,
+                "y": 469.8771202475996,
+                "width": 38.91262024407753,
+                "height": 33.32935834116293,
+                "image": "data/uploads/remote-control.jpg"
+            },
+            {
+                "id": "plant",
+                "name": "plant",
+                "x": 200.57797559224696,
+                "y": 311.45941044359927,
+                "width": 77.39738693467338,
+                "height": 334.84868990257803
+            },
+            {
+                "id": "vase",
+                "name": "vase",
+                "x": 655.2786216798277,
+                "y": 538.1798871532576,
+                "width": 56.11428571428572,
+                "height": 61.9657142857143
+            },
+            {
+                "id": "cushion",
+                "name": "cushion",
+                "x": 774.4561665470208,
+                "y": 411.01961644165976,
+                "width": 75.12683417085427,
+                "height": 55.284151715059465
+            },
+            {
+                "id": "ceiling_light",
+                "name": "ceiling light",
+                "x": 604.2331083991385,
+                "y": 35.34459737427839,
+                "width": 170.21714285714287,
+                "height": 107.31428571428572
+            },
+            {
+                "id": "obj_3a83ey",
+                "name": "cushion",
+                "x": 910.2412060301508,
+                "y": 415.9014525375444,
+                "width": 61.40703517587939,
+                "height": 67.73101677628108
+            },
+            {
+                "id": "obj_sh1ta8",
+                "name": "cushion",
+                "x": 1202.6231155778896,
+                "y": 499.45506981324525,
+                "width": 67.8391959798995,
+                "height": 104.60985474624556
+            },
+            {
+                "id": "obj_ony71x",
+                "name": "cushion",
+                "x": 1014.8844221105528,
+                "y": 419.35884359722854,
+                "width": 82.4321608040201,
+                "height": 72.91710336580734
+            },
+            {
+                "id": "obj_u7g9f5",
+                "name": "curtain",
+                "x": 773.2361809045226,
+                "y": 145.07248619561776,
+                "width": 103.49748743718594,
+                "height": 215.246368656139
+            }
+        ],
+        "type": "lesson",
+        "thumbnail": "data/uploads/interior-design.png",
+        "questionSetId": ""
+    },
+    {
+        "id": "scene_routine_morning",
+        "name": "Morning Routine",
+        "type": "lesson",
+        "image": "",
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "morning_wake",
+                "name": "Wake up",
+                "image": "data/uploads/wake-up.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "morning_brush",
+                "name": "Brush teeth",
+                "image": "data/uploads/brush-teeth.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "morning_dress",
+                "name": "Get dressed",
+                "image": "data/uploads/get-dressed.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "morning_eat",
+                "name": "Eat breakfast",
+                "image": "data/uploads/eat-breakfast.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "thumbnail": "data/uploads/good-morning.png"
+    },
+    {
+        "id": "scene_routine_park",
+        "name": "Park Activities",
+        "type": "lesson",
+        "image": "",
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "park_bike",
+                "name": "Ride a bike",
+                "image": "data/uploads/park_bike.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "park_kite",
+                "name": "Fly a kite",
+                "image": "data/uploads/park_kite.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "park_picnic",
+                "name": "Have a picnic",
+                "image": "data/uploads/park_picnic.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "park_hide",
+                "name": "Play hide and seek",
+                "image": "data/uploads/park_hide.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "originalWidth": 0,
+        "originalHeight": 0
+    },
+    {
+        "id": "scene_starters_school_1",
+        "name": "School Supplies",
+        "image": "data/uploads/school_supplies_1.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "pen",
+                "name": "pen",
+                "x": 724.2814070351758,
+                "y": 507.6354236274751,
+                "width": 100,
+                "height": 50,
+                "image": "data/uploads/pen.jpg"
+            },
+            {
+                "id": "pencil",
+                "name": "pencil",
+                "x": 740.0100502512563,
+                "y": 570.516723525481,
+                "width": 94.8140703517588,
+                "height": 46.54260894031583,
+                "image": "data/uploads/pencil.jpg"
+            },
+            {
+                "id": "eraser",
+                "name": "eraser",
+                "x": 911.9597989949749,
+                "y": 506.5308620265185,
+                "width": 48.2713567839196,
+                "height": 41.356522350789575,
+                "image": "data/uploads/eraser.jpg"
+            },
+            {
+                "id": "ruler",
+                "name": "ruler",
+                "x": 880.2814070351759,
+                "y": 575.5706397495867,
+                "width": 98.01005025125627,
+                "height": 50,
+                "image": "data/uploads/ruler.jpg"
+            },
+            {
+                "id": "book",
+                "name": "book",
+                "x": 742.391959798995,
+                "y": 401.50107269721804,
+                "width": 158.643216080402,
+                "height": 94.81391341047375,
+                "image": "data/uploads/book.jpg"
+            },
+            {
+                "id": "notebook",
+                "name": "notebook",
+                "x": 459.53768844221105,
+                "y": 462.9778074772272,
+                "width": 204.31155778894473,
+                "height": 100.7563042943059,
+                "image": "data/uploads/notebook.jpg"
+            },
+            {
+                "id": "backpack",
+                "name": "backpack",
+                "x": 172.8040201005025,
+                "y": 506.31477508528826,
+                "width": 239.8894472361809,
+                "height": 250.13217036542045,
+                "image": "data/uploads/backpack.jpg"
+            },
+            {
+                "id": "pencil case",
+                "name": "pencil case",
+                "x": 491.57788944723615,
+                "y": 381.18890022157353,
+                "width": 194.94472361809045,
+                "height": 50,
+                "image": "data/uploads/pencil_case.jpg"
+            },
+            {
+                "id": "scissors",
+                "name": "scissors",
+                "x": 979.8592964824121,
+                "y": 470.66042978229524,
+                "width": 96.5427135678392,
+                "height": 58.51130728378996,
+                "image": "data/uploads/scissors.jpg"
+            },
+            {
+                "id": "glue",
+                "name": "glue",
+                "x": 1094.5929648241206,
+                "y": 391.88520381247145,
+                "width": 37.89949748743719,
+                "height": 98.27130447015792,
+                "image": "data/uploads/glue.jpg"
+            },
+            {
+                "id": "obj_92pf3k",
+                "name": "board",
+                "x": 778.4221105527638,
+                "y": 24.765237576055966,
+                "width": 545.9899497487437,
+                "height": 284.9704216931031,
+                "image": "data/uploads/board.jpg"
+            },
+            {
+                "id": "obj_msvkof",
+                "name": "marker",
+                "x": 1091.3065326633166,
+                "y": 320.3721731790525,
+                "width": 148.40201005025125,
+                "height": 34.30956986600077,
+                "image": "data/uploads/marker.jpg"
+            }
+        ],
+        "type": "lesson",
+        "questionSetId": ""
+    },
+    {
+        "id": "scene_starters_animals_4",
+        "name": "Sea Animals",
+        "image": "data/uploads/sea_animals.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "shark",
+                "name": "shark",
+                "x": 140.50251256281405,
+                "y": 154.86195617768087,
+                "width": 377.86934673366835,
+                "height": 134.5739105968417,
+                "image": "data/uploads/shark.jpg"
+            },
+            {
+                "id": "dolphin",
+                "name": "dolphin",
+                "x": 748.1407035175879,
+                "y": 444.5265008968452,
+                "width": 323.31658291457285,
+                "height": 220.14433932402488,
+                "image": "data/uploads/dolphin.jpg"
+            },
+            {
+                "id": "whale",
+                "name": "whale",
+                "x": 655.8391959798996,
+                "y": 113.91348081454646,
+                "width": 435.79899497487435,
+                "height": 260.33651039285337,
+                "image": "data/uploads/whale.jpg"
+            },
+            {
+                "id": "octopus",
+                "name": "octopus",
+                "x": 1115.0552763819094,
+                "y": 314.65824921745855,
+                "width": 180.68341708542712,
+                "height": 204.69412302606128,
+                "image": "data/uploads/octopus.jpg"
+            },
+            {
+                "id": "turtle",
+                "name": "turtle",
+                "x": 73.20603015075375,
+                "y": 398.83564871803895,
+                "width": 209.3467336683417,
+                "height": 101.62065205922696,
+                "image": "data/uploads/turtle.jpg"
+            },
+            {
+                "id": "seahorse",
+                "name": "seahorse",
+                "x": 339.6180904522613,
+                "y": 519.5202053951394,
+                "width": 101.7286432160804,
+                "height": 186.43477649210425,
+                "image": "data/uploads/seahorse.jpg"
+            },
+            {
+                "id": "crab",
+                "name": "crab",
+                "x": 490.01005025125625,
+                "y": 620.9730243027468,
+                "width": 165.68844221105527,
+                "height": 117.28695529842085,
+                "image": "data/uploads/crab.jpg"
+            },
+            {
+                "id": "jellyfish",
+                "name": "jellyfish",
+                "x": 578.7738693467336,
+                "y": 368.36739000457214,
+                "width": 108.64321608040201,
+                "height": 176.06260331305174,
+                "image": "data/uploads/jellyfish.jpg"
+            },
+            {
+                "id": "starfish",
+                "name": "starfish",
+                "x": 80.72361809045226,
+                "y": 563.8295642387367,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/starfish.jpg"
+            },
+            {
+                "id": "fish",
+                "name": "fish",
+                "x": 339.8190954773869,
+                "y": 334.8854500052756,
+                "width": 89.62814070351759,
+                "height": 55.05391622410579,
+                "image": "data/uploads/fish.jpg"
+            }
+        ],
+        "type": "lesson"
+    },
+    {
+        "id": "scene_starters",
+        "name": "Starters Beach",
+        "image": "data/uploads/beach_starters.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "difficulty": "Easy",
+        "objects": [
+            {
+                "id": "dog",
+                "name": "dog",
+                "x": 701.6884422110552,
+                "y": 383.841311152534,
+                "width": 247.93969849246233,
+                "height": 158.34347413217037,
+                "image": "data/uploads/dog.jpg"
+            },
+            {
+                "id": "crab",
+                "name": "crab",
+                "x": 790.9748743718593,
+                "y": 642.9171737066084,
+                "width": 80,
+                "height": 80,
+                "image": "data/uploads/crab.jpg"
+            },
+            {
+                "id": "ball",
+                "name": "ball",
+                "x": 609.0251256281408,
+                "y": 528.2832624063587,
+                "width": 80,
+                "height": 80,
+                "image": "data/uploads/ball.jpg"
+            },
+            {
+                "id": "seagull",
+                "name": "seagull",
+                "x": 449.3467336683417,
+                "y": 97.16674286920129,
+                "width": 148.24120603015075,
+                "height": 101.06847676995041,
+                "image": "data/uploads/seagull.jpg"
+            },
+            {
+                "id": "boat",
+                "name": "boat",
+                "x": 122.2713567839196,
+                "y": 329.21956881088875,
+                "width": 269.27638190954775,
+                "height": 144.2017374177892,
+                "image": "data/uploads/boat.jpg"
+            }
+        ],
+        "type": "lesson"
+    },
+    {
+        "id": "scene_flyers",
+        "name": "Flyers City",
+        "image": "images/city_flyers.jpg",
+        "originalWidth": 1280,
+        "originalHeight": 720,
+        "difficulty": "Medium",
+        "objects": [
+            {
+                "id": "car",
+                "name": "car",
+                "x": 182.31155778894473,
+                "y": 511.34456441458866,
+                "width": 174.67336683417085,
+                "height": 125.93043294763127
+            },
+            {
+                "id": "robot",
+                "name": "robot",
+                "x": 432.8643216080402,
+                "y": 531.9326135124679,
+                "width": 89.64824120603015,
+                "height": 117.8271726514965
+            },
+            {
+                "id": "drone",
+                "name": "drone",
+                "x": 591.8090452261307,
+                "y": 43.03696409102099,
+                "width": 100,
+                "height": 80
+            },
+            {
+                "id": "hoverboard",
+                "name": "hoverboard",
+                "x": 1111.1055276381908,
+                "y": 335.41413146695743,
+                "width": 113.5678391959799,
+                "height": 41.656525867829636
+            },
+            {
+                "id": "alien",
+                "name": "alien",
+                "x": 1115.9296482412062,
+                "y": 139.48369851932614,
+                "width": 80,
+                "height": 80
+            }
+        ],
+        "type": "hidden_object"
+    },
+    {
+        "id": "scene_cinema",
+        "name": "Cinema",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "difficulty": "Medium",
+        "objects": [
+            {
+                "id": "popcorn",
+                "name": "popcorn",
+                "x": 50.78857142857143,
+                "y": 638.56,
+                "width": 165.82857142857142,
+                "height": 277.00571428571425,
+                "image": "data/uploads/popcorn.jpg"
+            },
+            {
+                "id": "screen",
+                "name": "screen",
+                "x": 600,
+                "y": 166.3542857142857,
+                "width": 349.7371428571429,
+                "height": 233.6457142857143,
+                "image": "data/uploads/screen.jpg"
+            },
+            {
+                "id": "soda",
+                "name": "soda",
+                "x": 231.24571428571429,
+                "y": 754.6514285714286,
+                "width": 63.16571428571429,
+                "height": 144.3657142857143,
+                "image": "data/uploads/soda.jpg"
+            },
+            {
+                "id": "glasses",
+                "name": "glasses",
+                "x": 310.7657142857143,
+                "y": 828.3199999999999,
+                "width": 131.2,
+                "height": 99.73714285714286,
+                "image": "data/uploads/glasses.jpg"
+            }
+        ],
+        "type": "lesson"
+    },
+    {
+        "id": "scene_1hn8ui",
+        "name": "Fruit Market ",
+        "difficulty": "Easy",
+        "image": "data/uploads/fruit_scene.jpg",
+        "originalWidth": 1024,
+        "originalHeight": 1024,
+        "objects": [
+            {
+                "id": "orange",
+                "name": "orange",
+                "x": 61.17714285714288,
+                "y": 481.01714285714286,
+                "width": 143.8857142857143,
+                "height": 117.55428571428571,
+                "image": "data/uploads/orange.jpg"
+            },
+            {
+                "id": "grape",
+                "name": "grape",
+                "x": 416.6514285714286,
+                "y": 792.6057142857143,
+                "width": 117.55428571428571,
+                "height": 98.53714285714285,
+                "image": "data/uploads/grape.jpg"
+            },
+            {
+                "id": "pineapple",
+                "name": "pineapple",
+                "x": 548.3085714285714,
+                "y": 500.0342857142857,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/pineapple.jpg"
+            },
+            {
+                "id": "mango",
+                "name": "mango",
+                "x": 315.7142857142857,
+                "y": 855.5085714285714,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/mango.jpg"
+            },
+            {
+                "id": "kiwi",
+                "name": "kiwi",
+                "x": 189.9085714285714,
+                "y": 862.8228571428572,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/kiwi.jpg"
+            },
+            {
+                "id": "lemon",
+                "name": "lemon",
+                "x": 507.3485714285714,
+                "y": 741.4057142857143,
+                "width": 78.05714285714285,
+                "height": 56.11428571428571,
+                "image": "data/uploads/lemon.jpg"
+            },
+            {
+                "id": "pear",
+                "name": "pear",
+                "x": 641.9314285714286,
+                "y": 697.52,
+                "width": 69.28,
+                "height": 73.66857142857143,
+                "image": "data/uploads/pear.jpg"
+            },
+            {
+                "id": "peach",
+                "name": "peach",
+                "x": 580.4914285714285,
+                "y": 794.0685714285715,
+                "width": 85.37142857142857,
+                "height": 82.44571428571429,
+                "image": "data/uploads/peach.jpg"
+            },
+            {
+                "id": "melon",
+                "name": "melon",
+                "x": 118.22857142857146,
+                "y": 748.72,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/melon.jpg"
+            },
+            {
+                "id": "papaya",
+                "name": "papaya",
+                "x": 710.6857142857143,
+                "y": 829.1771428571428,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/papaya.jpg"
+            },
+            {
+                "id": "avocado",
+                "name": "avocado",
+                "x": 551.2342857142858,
+                "y": 883.3028571428572,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/avocado.jpg"
+            }
+        ],
+        "type": "lesson",
+        "thumbnail": "data/uploads/market.png",
+        "questionSetId": ""
+    },
+    {
+        "id": "scene_90256d",
+        "name": "Kitchen flashcard",
+        "difficulty": "Easy",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "objects": [
+            {
+                "id": "card_1790337499306",
+                "name": "bowl",
+                "image": "data/uploads/bowl.png",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "card_1790337521438",
+                "name": "fridge",
+                "image": "data/uploads/fridge.png",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "card_1790337563785",
+                "name": "plate",
+                "image": "data/uploads/plate.png",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "card_1790337578211",
+                "name": "spoon",
+                "image": "data/uploads/spoon.png",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "type": "lesson",
+        "thumbnail": "data/uploads/bowl.png"
+    },
+    {
+        "id": "scene_5tzbp8",
+        "name": "Clothes",
+        "difficulty": "Easy",
+        "image": "data/uploads/clothes_scene.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "objects": [
+            {
+                "id": "obj_71xnpi",
+                "name": "bag",
+                "x": 45.0753768844221,
+                "y": 620.9634579537861,
+                "width": 215.81909547738692,
+                "height": 100,
+                "image": "data/uploads/bag.jpg"
+            },
+            {
+                "id": "obj_qjk25f",
+                "name": "baseball cap",
+                "x": 181.6381909547739,
+                "y": 226.82087714979076,
+                "width": 80.98492462311559,
+                "height": 60.240002813632046,
+                "image": "data/uploads/baseball_cap.jpg"
+            },
+            {
+                "id": "obj_w19i6j",
+                "name": "boots",
+                "x": 701.9597989949749,
+                "y": 527.6138993423135,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/boots.jpg"
+            },
+            {
+                "id": "obj_6wkx8f",
+                "name": "dress",
+                "x": 750.3618090452261,
+                "y": 219.9060950304224,
+                "width": 103.4572864321608,
+                "height": 226.1947736784722,
+                "image": "data/uploads/dress.jpg"
+            },
+            {
+                "id": "obj_eyi9ux",
+                "name": "glasses",
+                "x": 1044.2311557788944,
+                "y": 468.83825132768266,
+                "width": 103.4572864321608,
+                "height": 42.953047515211196,
+                "image": "data/uploads/glasses_new.jpg"
+            },
+            {
+                "id": "obj_l5szox",
+                "name": "handbag",
+                "x": 599.9698492462312,
+                "y": 283.86782963457955,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/handbag.jpg"
+            },
+            {
+                "id": "obj_ovblpq",
+                "name": "hat",
+                "x": 269.7989949748744,
+                "y": 188.78957549326486,
+                "width": 60.24120603015076,
+                "height": 80.98434917173707,
+                "image": "data/uploads/hat.jpg"
+            },
+            {
+                "id": "obj_hmukmz",
+                "name": "jacket",
+                "x": 918.0402010050251,
+                "y": 214.72000844089615,
+                "width": 91.35678391959799,
+                "height": 151.86086589526255,
+                "image": "data/uploads/jacket.jpg"
+            },
+            {
+                "id": "obj_t9hdq8",
+                "name": "trousers",
+                "x": 905.9396984924623,
+                "y": 449.8226004994197,
+                "width": 100,
+                "height": 125.93043294763127,
+                "image": "data/uploads/trousers.jpg"
+            },
+            {
+                "id": "obj_w3xwwp",
+                "name": "shirt",
+                "x": 12.231155778894504,
+                "y": 344.37217317905254,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/shirt.jpg"
+            },
+            {
+                "id": "obj_6ex24b",
+                "name": "shoe",
+                "x": 812.5929648241206,
+                "y": 584.6608518271023,
+                "width": 87.89949748743719,
+                "height": 44.68174304505328,
+                "image": "data/uploads/shoe.jpg"
+            },
+            {
+                "id": "obj_r10jhm",
+                "name": "shorts",
+                "x": 1149.678391959799,
+                "y": 223.36348609010656,
+                "width": 100,
+                "height": 82.71304470157915,
+                "image": "data/uploads/shorts.jpg"
+            },
+            {
+                "id": "obj_o810je",
+                "name": "skirt",
+                "x": 860.9949748743718,
+                "y": 256.2087011571062,
+                "width": 44.68341708542713,
+                "height": 74.06956705236873,
+                "image": "data/uploads/skirt.jpg"
+            },
+            {
+                "id": "obj_xdn8ot",
+                "name": "sock",
+                "x": 653.5577889447236,
+                "y": 658.994759610312,
+                "width": 91.35678391959799,
+                "height": 72.34087152252664,
+                "image": "data/uploads/sock.jpg"
+            },
+            {
+                "id": "obj_jiu9a2",
+                "name": "sock",
+                "x": 357.9597989949749,
+                "y": 669.3669327893645,
+                "width": 86.17085427135679,
+                "height": 55.05391622410579
+            },
+            {
+                "id": "obj_l7kdtm",
+                "name": "sock",
+                "x": 534.2814070351759,
+                "y": 665.9095417296803,
+                "width": 82.71356783919597,
+                "height": 29.123483276474516
+            },
+            {
+                "id": "obj_rfyvkx",
+                "name": "T-shirt",
+                "x": 1018.3015075376884,
+                "y": 233.73565926915907,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/t_shirt.jpg"
+            }
+        ],
+        "type": "lesson",
+        "thumbnail": "data/uploads/brand.png",
+        "questionSetId": "qset_default12"
+    },
+    {
+        "id": "scene_hjt8k0",
+        "name": "Morning",
+        "difficulty": "Easy",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "objects": [
+            {
+                "id": "obj_0zc465",
+                "name": "I wake up at 6:30",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/wake_up.jpg"
+            },
+            {
+                "id": "obj_df5n4v",
+                "name": "I get up.",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/get_up.jpg"
+            },
+            {
+                "id": "obj_08yiqj",
+                "name": "I brush my teeth.",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/brush_teeth.jpg"
+            },
+            {
+                "id": "obj_5psjkl",
+                "name": "I wash my face.",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/wash_face.jpg"
+            },
+            {
+                "id": "obj_dl3lo3",
+                "name": "I get dressed.",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/get_dressed.jpg"
+            },
+            {
+                "id": "obj_657ufq",
+                "name": "I have breakfast.",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/have_breakfast.jpg"
+            },
+            {
+                "id": "obj_lq6tej",
+                "name": "I brush my hair",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/brush_hair.jpg"
+            },
+            {
+                "id": "obj_296fbr",
+                "name": "I go to school.",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/go_to_school.jpg"
+            }
+        ],
+        "thumbnail": "data/uploads/good-morning.png",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_p1mchz",
+        "name": "What's the weather like?",
+        "difficulty": "Easy",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "objects": [
+            {
+                "id": "obj_7thkq9",
+                "name": "It's sunny",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/its_sunny_cute_simple.jpg"
+            },
+            {
+                "id": "obj_neqs0b",
+                "name": "It's cloudy",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/its_cloudy.jpg"
+            },
+            {
+                "id": "obj_sbovvg",
+                "name": "It's raining",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/its_raining.jpg"
+            },
+            {
+                "id": "obj_wr5f2v",
+                "name": "It's windy",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/its_windy.jpg"
+            },
+            {
+                "id": "obj_bob2xd",
+                "name": "It's very hot",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/its_very_hot.jpg"
+            },
+            {
+                "id": "obj_vyrw1e",
+                "name": "It's quite cold",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/its_quite_cold.jpg"
+            },
+            {
+                "id": "obj_tkigb5",
+                "name": "There is heavy rain",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/there_is_heavy_rain.jpg"
+            },
+            {
+                "id": "obj_87u4jl",
+                "name": "There is a storm",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/there_is_a_storm.jpg"
+            },
+            {
+                "id": "obj_ko634q",
+                "name": "The sun is shining",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/the_sun_is_shining.jpg"
+            },
+            {
+                "id": "obj_wlekcz",
+                "name": "The wind is blowing",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/the_wind_is_blowing.jpg"
+            },
+            {
+                "id": "obj_6oekjj",
+                "name": "There is some light rain",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/there_is_some_light_rain.jpg"
+            }
+        ],
+        "questionSetId": "none",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_jepujm",
+        "name": "Natural object",
+        "difficulty": "Easy",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "objects": [
+            {
+                "id": "obj_toj9u3",
+                "name": "sun",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/its_sunny_icon.jpg"
+            },
+            {
+                "id": "obj_ean30r",
+                "name": "cloud",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_cloud.jpg"
+            },
+            {
+                "id": "obj_6y1z6e",
+                "name": "rain",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_rain.jpg"
+            },
+            {
+                "id": "obj_0wzhci",
+                "name": "wind",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_wind.jpg"
+            },
+            {
+                "id": "obj_noxxw8",
+                "name": "snow",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_snow.jpg"
+            },
+            {
+                "id": "obj_afln8k",
+                "name": "spring",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_spring.jpg"
+            },
+            {
+                "id": "obj_08ojog",
+                "name": "summer",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_summer.jpg"
+            },
+            {
+                "id": "obj_ofb560",
+                "name": "autumn",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_autumn.jpg"
+            },
+            {
+                "id": "obj_vax82l",
+                "name": "winter",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_winter.jpg"
+            },
+            {
+                "id": "obj_eun12n",
+                "name": "tree",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_tree.jpg"
+            },
+            {
+                "id": "obj_n4tq5o",
+                "name": "flower",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_flower.jpg"
+            },
+            {
+                "id": "obj_lundbf",
+                "name": "grass",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_grass.jpg"
+            },
+            {
+                "id": "obj_a84n2y",
+                "name": "beach",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_beach.jpg"
+            },
+            {
+                "id": "obj_xhb79p",
+                "name": "river",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_river.jpg"
+            },
+            {
+                "id": "obj_r7hges",
+                "name": "mountain",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_mountain.jpg"
+            },
+            {
+                "id": "obj_5khbj4",
+                "name": "sea",
+                "x": -50,
+                "y": -50,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_sea.jpg"
+            }
+        ],
+        "questionSetId": "qset_default12",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_6p5if5",
+        "name": "Transport",
+        "difficulty": "Easy",
+        "image": "data/uploads/transportation_collection.jpg",
+        "originalWidth": 1024,
+        "originalHeight": 1024,
+        "objects": [
+            {
+                "id": "obj_p01grw",
+                "name": "bike",
+                "x": 198.68571428571428,
+                "y": 845.2685714285715,
+                "width": 154.12571428571428,
+                "height": 108.77714285714286,
+                "image": "data/uploads/flashcard_bike.jpg"
+            },
+            {
+                "id": "obj_aonzp2",
+                "name": "boat",
+                "x": 786.7542857142856,
+                "y": 434.2057142857143,
+                "width": 124.86857142857147,
+                "height": 45.87428571428572,
+                "image": "data/uploads/flashcard_boat.jpg"
+            },
+            {
+                "id": "obj_e9w6ux",
+                "name": "bus",
+                "x": 321.5657142857143,
+                "y": 442.98285714285714,
+                "width": 290.1714285714286,
+                "height": 143.8857142857143,
+                "image": "data/uploads/flashcard_bus.jpg"
+            },
+            {
+                "id": "obj_zqxgv5",
+                "name": "car",
+                "x": 660.9485714285714,
+                "y": 495.6457142857143,
+                "width": 195.0857142857143,
+                "height": 111.70285714285714,
+                "image": "data/uploads/flashcard_car.jpg"
+            },
+            {
+                "id": "obj_1ii1la",
+                "name": "helicopter",
+                "x": 659.4857142857143,
+                "y": 69.95428571428572,
+                "width": 265.30285714285714,
+                "height": 151.2,
+                "image": "data/uploads/flashcard_helicopter.jpg"
+            },
+            {
+                "id": "obj_7o364l",
+                "name": "lorry",
+                "x": 549.7714285714286,
+                "y": 643.3942857142857,
+                "width": 336.98285714285714,
+                "height": 104.38857142857142,
+                "image": "data/uploads/flashcard_lorry.jpg"
+            },
+            {
+                "id": "obj_1gpty3",
+                "name": "motorbike",
+                "x": 362.5257142857143,
+                "y": 754.5714285714286,
+                "width": 168.7542857142857,
+                "height": 94.14857142857142,
+                "image": "data/uploads/flashcard_motorbike.jpg"
+            },
+            {
+                "id": "obj_w48ih7",
+                "name": "plane",
+                "x": 122.61714285714285,
+                "y": 97.74857142857144,
+                "width": 304.8,
+                "height": 149.73714285714286,
+                "image": "data/uploads/flashcard_plane.jpg"
+            },
+            {
+                "id": "obj_ep3pl8",
+                "name": "ship",
+                "x": 625.84,
+                "y": 308.4,
+                "width": 290.1714285714286,
+                "height": 111.70285714285714,
+                "image": "data/uploads/flashcard_ship.jpg"
+            },
+            {
+                "id": "obj_e1wk3g",
+                "name": "train",
+                "x": -1.7257142857142824,
+                "y": 540.9942857142858,
+                "width": 288.7085714285715,
+                "height": 140.96,
+                "image": "data/uploads/flashcard_train.jpg"
+            },
+            {
+                "id": "obj_t4p8ga",
+                "name": "truck",
+                "x": 687.28,
+                "y": 788.2171428571429,
+                "width": 296.0228571428571,
+                "height": 110.24,
+                "image": "data/uploads/flashcard_truck.jpg"
+            },
+            {
+                "id": "obj_uh9t84",
+                "name": "helmet",
+                "x": 502.96000000000004,
+                "y": 877.4514285714286,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_helmet.jpg"
+            }
+        ],
+        "thumbnail": "data/uploads/transportation.png",
+        "questionSetId": "qset_default12",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_pb7wlv",
+        "name": "Transport - A1",
+        "difficulty": "Medium",
+        "image": "data/uploads/transportation_scene_2.jpg",
+        "originalWidth": 1024,
+        "originalHeight": 1024,
+        "objects": [
+            {
+                "id": "obj_atqcai",
+                "name": "bus station",
+                "x": 425.42857142857144,
+                "y": 271.8285714285714,
+                "width": 168.75428571428571,
+                "height": 151.2,
+                "image": "data/uploads/flashcard_bus_station.jpg"
+            },
+            {
+                "id": "obj_asb2m6",
+                "name": "bus stop",
+                "x": 323.02857142857147,
+                "y": 489.7942857142857,
+                "width": 79.52000000000004,
+                "height": 174.6057142857143,
+                "image": "data/uploads/flashcard_bus_stop.jpg"
+            },
+            {
+                "id": "obj_kmgom4",
+                "name": "driver",
+                "x": 785.2914285714286,
+                "y": 546.8457142857143,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_driver.jpg"
+            },
+            {
+                "id": "obj_bkpd4d",
+                "name": "train station",
+                "x": 744.3314285714285,
+                "y": 138.70857142857136,
+                "width": 189.2342857142857,
+                "height": 107.3142857142857,
+                "image": "data/uploads/flashcard_train_station.jpg"
+            },
+            {
+                "id": "obj_tuil54",
+                "name": "ticket",
+                "x": 732.6285714285714,
+                "y": 791.1428571428571,
+                "width": 164.3657142857143,
+                "height": 100,
+                "image": "data/uploads/flashcard_ticket.jpg"
+            },
+            {
+                "id": "obj_g9kk7w",
+                "name": "tractor",
+                "x": 52.40000000000002,
+                "y": 308.4,
+                "width": 238.97142857142856,
+                "height": 86.83428571428571,
+                "image": "data/uploads/flashcard_tractor.jpg"
+            },
+            {
+                "id": "obj_u99m5m",
+                "name": "tractor",
+                "x": 137.2457142857143,
+                "y": 562.9371428571428,
+                "width": 151.2,
+                "height": 108.77714285714286
+            }
+        ],
+        "thumbnail": "data/uploads/bus-stop.png",
+        "questionSetId": "qset_default12",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_ul66q0",
+        "name": "Transport - A2",
+        "difficulty": "Hard",
+        "image": "data/uploads/transportation_scene_3_wide.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "objects": [
+            {
+                "id": "obj_8axpaf",
+                "name": "ambulance",
+                "x": 124.9145728643216,
+                "y": 432.61217599268457,
+                "width": 321.26633165829145,
+                "height": 165.69043013399923,
+                "image": "data/uploads/flashcard_ambulance.jpg"
+            },
+            {
+                "id": "obj_w5nqop",
+                "name": "bicycle",
+                "x": 384.2110552763819,
+                "y": 619.3112932156298,
+                "width": 214.09045226130652,
+                "height": 110.37217317905251,
+                "image": "data/uploads/flashcard_bike_1.jpg"
+            },
+            {
+                "id": "obj_bdj03e",
+                "name": "fire engine",
+                "x": 501.75879396984925,
+                "y": 318.51827102310693,
+                "width": 388.68341708542715,
+                "height": 153.58956142510465,
+                "image": "data/uploads/flashcard_fire_engine.jpg"
+            },
+            {
+                "id": "obj_gp8tju",
+                "name": "motorway",
+                "x": 69.59798994974875,
+                "y": 285.6730559561073,
+                "width": 329.90954773869345,
+                "height": 122.4730418879471,
+                "image": "data/uploads/flashcard_motorway.jpg"
+            },
+            {
+                "id": "obj_dbnu4d",
+                "name": "passenger",
+                "x": 1039.3668341708542,
+                "y": 313.33218443358066,
+                "width": 42.95477386934673,
+                "height": 70.61217599268456,
+                "image": "data/uploads/flashcard_passenger.jpg"
+            },
+            {
+                "id": "obj_fvykfe",
+                "name": "platform",
+                "x": 927.0050251256281,
+                "y": 268.3861006576865,
+                "width": 96.5427135678392,
+                "height": 131.11651953715753,
+                "image": "data/uploads/flashcard_platform.jpg"
+            },
+            {
+                "id": "obj_0oehy2",
+                "name": "railway",
+                "x": 1110.2412060301508,
+                "y": 368.6504413885274,
+                "width": 127.65829145728644,
+                "height": 131.1165195371575,
+                "image": "data/uploads/flashcard_railway.jpg"
+            },
+            {
+                "id": "obj_no604c",
+                "name": "rocket",
+                "x": 436.070351758794,
+                "y": 26.368726479794574,
+                "width": 198.53266331658293,
+                "height": 158.77564801463092,
+                "image": "data/uploads/flashcard_rocket.jpg"
+            },
+            {
+                "id": "obj_6yqbev",
+                "name": "spaceship",
+                "x": 793.8994974874372,
+                "y": 24.640030949952504,
+                "width": 367.9396984924623,
+                "height": 167.41912566384133,
+                "image": "data/uploads/flashcard_spaceship.jpg"
+            },
+            {
+                "id": "obj_zpxamf",
+                "name": "wheel",
+                "x": 882.0603015075376,
+                "y": 602.0243379172089,
+                "width": 119.01507537688443,
+                "height": 106.91478211936834,
+                "image": "data/uploads/flashcard_wheel.jpg"
+            },
+            {
+                "id": "obj_8ialaw",
+                "name": "light traffic",
+                "x": 1222.6030150753768,
+                "y": 207.8817571132135,
+                "width": 115.55778894472363,
+                "height": 144.9460837758942,
+                "image": "data/uploads/flashcard_light_traffic.jpg"
+            }
+        ],
+        "questionSetId": "qset_default12",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_zs632g",
+        "name": "Transport example",
+        "difficulty": "Easy",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "objects": [
+            {
+                "id": "obj_ubaj95",
+                "name": "I ride my bike with my friends",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/i_ride_my_bike_with_my_friends.jpg"
+            },
+            {
+                "id": "obj_gehidz",
+                "name": "I go to school by motorbike",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/i_go_to_school_by_motorbike.jpg"
+            },
+            {
+                "id": "obj_37spul",
+                "name": "I travelled by train",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/i_travelled_by_train.jpg"
+            },
+            {
+                "id": "obj_zi3wzh",
+                "name": "He drives a car",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/he_drives_a_car.jpg"
+            },
+            {
+                "id": "obj_td9lby",
+                "name": "She rides a bicycle",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/she_rides_a_bicycle.jpg"
+            },
+            {
+                "id": "obj_ip44o8",
+                "name": "You must wear a helmet when riding a motorbike",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/you_must_wear_a_helmet.jpg"
+            }
+        ],
+        "questionSetId": "none",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_gybuso",
+        "name": "Snack Food",
+        "difficulty": "Easy",
+        "image": "data/uploads/food_collection_scene.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "objects": [
+            {
+                "id": "obj_oeaqo2",
+                "name": "candy",
+                "x": 39.88944723618093,
+                "y": 378.9460837758942,
+                "width": 75.79899497487438,
+                "height": 82.71304470157915,
+                "image": "data/uploads/flashcard_candy.jpg"
+            },
+            {
+                "id": "obj_iax3lq",
+                "name": "cake",
+                "x": 129.77889447236186,
+                "y": 399.69043013399926,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_cake.jpg"
+            },
+            {
+                "id": "obj_nla2fd",
+                "name": "burger",
+                "x": 235.22613065326635,
+                "y": 309.7982625822108,
+                "width": 132.84422110552765,
+                "height": 119.01565082826293,
+                "image": "data/uploads/flashcard_burger.jpg"
+            },
+            {
+                "id": "obj_va05n2",
+                "name": "chips",
+                "x": 321.65829145728645,
+                "y": 437.7217317905251,
+                "width": 91.35678391959799,
+                "height": 72.34087152252664,
+                "image": "data/uploads/flashcard_chips.jpg"
+            },
+            {
+                "id": "obj_enyd1e",
+                "name": "chocolate",
+                "x": 406.36180904522615,
+                "y": 344.37217317905254,
+                "width": 79.25628140703517,
+                "height": 79.25565364189498,
+                "image": "data/uploads/flashcard_chocolate.jpg"
+            },
+            {
+                "id": "obj_7ks0ai",
+                "name": "ice cream",
+                "x": 499.70854271356785,
+                "y": 278.6817430450533,
+                "width": 68.88442211055276,
+                "height": 155.31825695494672,
+                "image": "data/uploads/flashcard_ice_cream.jpg"
+            },
+            {
+                "id": "obj_d3b5a7",
+                "name": "sausage",
+                "x": 580.9547738693467,
+                "y": 328.8139134104738,
+                "width": 131.11557788944722,
+                "height": 55.05391622410579,
+                "image": "data/uploads/flashcard_sausage.jpg"
+            },
+            {
+                "id": "obj_wp4ksz",
+                "name": "pancake",
+                "x": 644.9145728643216,
+                "y": 408.3339077832096,
+                "width": 125.92964824120604,
+                "height": 98.27130447015792,
+                "image": "data/uploads/flashcard_pancake.jpg"
+            },
+            {
+                "id": "obj_ez6gjx",
+                "name": "noodles",
+                "x": 762.4623115577889,
+                "y": 304.61217599268457,
+                "width": 162.23115577889448,
+                "height": 80.98434917173707,
+                "image": "data/uploads/flashcard_noodles.jpg"
+            },
+            {
+                "id": "obj_hd3cns",
+                "name": "pasta",
+                "x": 838.5226130653266,
+                "y": 422.16347202194635,
+                "width": 169.14572864321607,
+                "height": 101.72869552984208,
+                "image": "data/uploads/flashcard_pasta.jpg"
+            },
+            {
+                "id": "obj_nvs6ia",
+                "name": "salad",
+                "x": 969.8994974874372,
+                "y": 311.5269581120529,
+                "width": 163.95979899497488,
+                "height": 108.64347764921042,
+                "image": "data/uploads/flashcard_salad.jpg"
+            },
+            {
+                "id": "obj_0u8iot",
+                "name": "sandwich",
+                "x": 489.3366834170854,
+                "y": 448.0939049695776,
+                "width": 112.10050251256281,
+                "height": 82.71304470157915,
+                "image": "data/uploads/flashcard_sandwich.jpg"
+            },
+            {
+                "id": "obj_pmninq",
+                "name": "biscuit",
+                "x": 1059.788944723618,
+                "y": 448.09390496957764,
+                "width": 94.8140703517588,
+                "height": 77.5269581120529,
+                "image": "data/uploads/flashcard_biscuit.jpg"
+            },
+            {
+                "id": "obj_5c74i0",
+                "name": "jam",
+                "x": 1158.321608040201,
+                "y": 342.64347764921047,
+                "width": 86.17085427135679,
+                "height": 120.74434635810502,
+                "image": "data/uploads/flashcard_jam.jpg"
+            },
+            {
+                "id": "obj_hf76m0",
+                "name": "yoghurt",
+                "x": 1253.3969849246232,
+                "y": 408.3339077832096,
+                "width": 84.44221105527639,
+                "height": 101.72869552984208,
+                "image": "data/uploads/flashcard_yoghurt.jpg"
+            }
+        ],
+        "questionSetId": "qset_default12",
+        "type": "lesson",
+        "thumbnail": "data/uploads/candies.png"
+    },
+    {
+        "id": "scene_klt2c9",
+        "name": "Mom came back from the market",
+        "difficulty": "Easy",
+        "image": "data/uploads/food_collection_scene_2.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "objects": [
+            {
+                "id": "obj_vtz45t",
+                "name": "bean",
+                "x": 145.65829145728645,
+                "y": 285.6730559561073,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_bean.jpg"
+            },
+            {
+                "id": "obj_h3s24y",
+                "name": "carrot",
+                "x": 266.6633165829146,
+                "y": 290.8591425456336,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_carrot.jpg"
+            },
+            {
+                "id": "obj_duh2d0",
+                "name": "coconut",
+                "x": 418.78391959798995,
+                "y": 282.21566489642316,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_coconut.jpg"
+            },
+            {
+                "id": "obj_zwltan",
+                "name": "egg",
+                "x": 531.1457286432161,
+                "y": 297.7739246650019,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_egg.jpg"
+            },
+            {
+                "id": "obj_00r35j",
+                "name": "lime",
+                "x": 646.964824120603,
+                "y": 299.502620194844,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_lime.jpg"
+            },
+            {
+                "id": "obj_px0zt3",
+                "name": "meat",
+                "x": 785.2562814070352,
+                "y": 285.6730559561073,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_meat.jpg"
+            },
+            {
+                "id": "obj_0dv68h",
+                "name": "onion",
+                "x": 937.3768844221106,
+                "y": 283.94436042626523,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_onion.jpg"
+            },
+            {
+                "id": "obj_e057jc",
+                "name": "pea",
+                "x": 1079.1256281407036,
+                "y": 297.7739246650019,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_pea.jpg"
+            },
+            {
+                "id": "obj_sfq2x6",
+                "name": "potato",
+                "x": 111.0854271356784,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_potato.jpg"
+            },
+            {
+                "id": "obj_cwah1a",
+                "name": "rice",
+                "x": 441.2562814070352,
+                "y": 437.7982625822108,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_rice.jpg"
+            },
+            {
+                "id": "obj_w4lpg2",
+                "name": "tomato",
+                "x": 584.7336683417085,
+                "y": 458.54260894031586,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_tomato.jpg"
+            },
+            {
+                "id": "obj_xxoqkp",
+                "name": "watermelon",
+                "x": 729.9396984924623,
+                "y": 448.1704357612633,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_watermelon.jpg"
+            },
+            {
+                "id": "obj_5962b9",
+                "name": "cheese",
+                "x": 869.9597989949748,
+                "y": 448.1704357612633,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_cheese.jpg"
+            },
+            {
+                "id": "obj_7dvtq5",
+                "name": "broccoli",
+                "x": 1025.537688442211,
+                "y": 441.255653641895,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_broccoli.jpg"
+            },
+            {
+                "id": "obj_23d85o",
+                "name": "honey",
+                "x": 1175.929648241206,
+                "y": 437.7982625822108,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_honey.jpg"
+            }
+        ],
+        "questionSetId": "qset_default12",
+        "thumbnail": "data/uploads/shopping-cart.png",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_m3uqi8",
+        "name": "Vegetable",
+        "difficulty": "Easy",
+        "image": "data/uploads/vegetable_hidden_object_scene.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "objects": [
+            {
+                "id": "obj_rax3l3",
+                "name": "cabbage",
+                "x": 950.8844221105528,
+                "y": 185.33218443358072,
+                "width": 169.14572864321607,
+                "height": 70.61217599268456,
+                "image": "data/uploads/flashcard_cabbage.jpg"
+            },
+            {
+                "id": "obj_2cvt1w",
+                "name": "broccoli",
+                "x": 15.68844221105531,
+                "y": 268.30956986600074,
+                "width": 86.17085427135679,
+                "height": 61.96869834347413,
+                "image": "data/uploads/flashcard_broccoli_2.jpg"
+            },
+            {
+                "id": "obj_fn7bey",
+                "name": "cauliflower",
+                "x": 1073.6180904522612,
+                "y": 268.30956986600074,
+                "width": 94.8140703517588,
+                "height": 65.4260894031583,
+                "image": "data/uploads/flashcard_cauliflower.jpg"
+            },
+            {
+                "id": "obj_8hek0i",
+                "name": "corn",
+                "x": 565.3969849246231,
+                "y": 98.89740794147646,
+                "width": 176.06030150753767,
+                "height": 105.18608658952625,
+                "image": "data/uploads/flashcard_corn.jpg"
+            },
+            {
+                "id": "obj_mlxj1a",
+                "name": "mushrooms",
+                "x": 539.4673366834171,
+                "y": 313.255653641895,
+                "width": 68.88442211055276,
+                "height": 75.79826258221081,
+                "image": "data/uploads/flashcard_mushrooms.jpg"
+            },
+            {
+                "id": "obj_emu5rg",
+                "name": "potato",
+                "x": 812.5929648241206,
+                "y": 444.63651390989344,
+                "width": 120.74371859296483,
+                "height": 112.1008687088946,
+                "image": "data/uploads/flashcard_potato_2.jpg"
+            },
+            {
+                "id": "obj_gi4x19",
+                "name": "sweet potato",
+                "x": 124.59296482412067,
+                "y": 297.69739387331623,
+                "width": 108.64321608040201,
+                "height": 98.27130447015792,
+                "image": "data/uploads/flashcard_sweet_potato.jpg"
+            },
+            {
+                "id": "obj_nc37a4",
+                "name": "garlic",
+                "x": 653.5577889447237,
+                "y": 344.3721731790525,
+                "width": 79.25628140703517,
+                "height": 68.88348046284247,
+                "image": "data/uploads/flashcard_garlic.jpg"
+            },
+            {
+                "id": "obj_17gqn0",
+                "name": "ginger",
+                "x": 764.1909547738693,
+                "y": 309.7982625822108,
+                "width": 86.17085427135679,
+                "height": 74.06956705236873,
+                "image": "data/uploads/flashcard_ginger.jpg"
+            },
+            {
+                "id": "obj_vrlsss",
+                "name": "lotus root",
+                "x": 978.5427135678392,
+                "y": 335.72869552984207,
+                "width": 255.57788944723617,
+                "height": 74.06956705236873,
+                "image": "data/uploads/flashcard_lotus_root.jpg"
+            },
+            {
+                "id": "obj_bm9mpb",
+                "name": "onion",
+                "x": 534.2814070351759,
+                "y": 406.60521225336754,
+                "width": 94.8140703517588,
+                "height": 61.96869834347413,
+                "image": "data/uploads/flashcard_onion_2.jpg"
+            },
+            {
+                "id": "obj_53cgk5",
+                "name": "cucumber",
+                "x": 954.3417085427136,
+                "y": 665.9095417296803,
+                "width": 210.63316582914572,
+                "height": 77.5269581120529,
+                "image": "data/uploads/flashcard_cucumber.jpg"
+            },
+            {
+                "id": "obj_d36ds8",
+                "name": "pumpkin",
+                "x": 276.713567839196,
+                "y": 544.9008546407343,
+                "width": 139.75879396984925,
+                "height": 120.74434635810502,
+                "image": "data/uploads/flashcard_pumpkin.jpg"
+            },
+            {
+                "id": "obj_g59neu",
+                "name": "winter melon",
+                "x": 994.1005025125628,
+                "y": 432.53564520099883,
+                "width": 93.0854271356784,
+                "height": 139.75999718636797,
+                "image": "data/uploads/flashcard_winter_melon.jpg"
+            },
+            {
+                "id": "obj_tl1cpi",
+                "name": "eggplant",
+                "x": 278.4422110552764,
+                "y": 387.58956142510465,
+                "width": 65.42713567839196,
+                "height": 94.81391341047375,
+                "image": "data/uploads/flashcard_eggplant.jpg"
+            },
+            {
+                "id": "obj_7wce4o",
+                "name": "chili",
+                "x": 658.7437185929648,
+                "y": 501.6834663946822,
+                "width": 117.28643216080403,
+                "height": 105.18608658952625,
+                "image": "data/uploads/flashcard_chilli.jpg"
+            },
+            {
+                "id": "obj_ygfc9o",
+                "name": "napa cabbage",
+                "x": 1255.1256281407036,
+                "y": 455.0086870889459,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_napa_cabbage.jpg"
+            },
+            {
+                "id": "obj_73nyc7",
+                "name": "beetroot",
+                "x": 736.5326633165829,
+                "y": 669.3669327893646,
+                "width": 70.61306532663316,
+                "height": 67.15478493300039,
+                "image": "data/uploads/flashcard_beetroot.jpg"
+            },
+            {
+                "id": "obj_r8xgi6",
+                "name": "green onion",
+                "x": 357.9597989949749,
+                "y": 190.51827102310693,
+                "width": 106.91457286432161,
+                "height": 119.01565082826293,
+                "image": "data/uploads/flashcard_green_onion.jpg"
+            },
+            {
+                "id": "obj_xtjbfq",
+                "name": "cucumber",
+                "x": 98.6633165829146,
+                "y": 461.92346920831426,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_y250yo",
+                "name": "green onion",
+                "x": 354.5025125628141,
+                "y": 399.69043013399926,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_dvwgga",
+                "name": "beetroot",
+                "x": 539.4673366834171,
+                "y": 619.234762423944,
+                "width": 100,
+                "height": 100
+            }
+        ],
+        "thumbnail": "data/uploads/vegetable.png",
+        "questionSetId": "qset_default12",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_e6p3s8",
+        "name": "Five types of grains",
+        "difficulty": "Hard",
+        "image": "data/uploads/grains_collection_scene.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "objects": [
+            {
+                "id": "obj_xmupwe",
+                "name": "rice",
+                "x": 841.9798994974874,
+                "y": 439.22083494531006,
+                "width": 198.5326633165829,
+                "height": 138.03130165652587,
+                "image": "data/uploads/flashcard_rice_1.jpg"
+            },
+            {
+                "id": "obj_zjt3ev",
+                "name": "wheat",
+                "x": 65.81909547738692,
+                "y": 240.42084901347027,
+                "width": 248.66331658291458,
+                "height": 364.490416065839,
+                "image": "data/uploads/flashcard_wheat.jpg"
+            },
+            {
+                "id": "obj_8jvp98",
+                "name": "Corn",
+                "x": 1094.361809045226,
+                "y": 257.7078043118911,
+                "width": 162.23115577889448,
+                "height": 357.57563394647065,
+                "image": "data/uploads/flashcard_corn_1.jpg"
+            },
+            {
+                "id": "obj_ucucg6",
+                "name": "Barley",
+                "x": 366.60301507537685,
+                "y": 205.84693841662857,
+                "width": 162.23115577889448,
+                "height": 393.8782400731544,
+                "image": "data/uploads/flashcard_barley.jpg"
+            },
+            {
+                "id": "obj_g5b8j9",
+                "name": "Oats",
+                "x": 572.3115577889447,
+                "y": 257.70780431189115,
+                "width": 226.19095477386935,
+                "height": 340.2886786480498,
+                "image": "data/uploads/flashcard_oats.jpg"
+            }
+        ],
+        "thumbnail": "data/uploads/wheat-plant.png",
+        "questionSetId": "qset_default12",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_nlp5dt",
+        "name": "Tableware",
+        "difficulty": "Easy",
+        "image": "data/uploads/tableware_scene_final.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "objects": [
+            {
+                "id": "obj_blocj5",
+                "name": "plate",
+                "x": 676.0301507537688,
+                "y": 380.6747793057363,
+                "width": 283.2361809045226,
+                "height": 120.74434635810502,
+                "image": "data/uploads/flashcard_plate.jpg"
+            },
+            {
+                "id": "obj_e7gefo",
+                "name": "bowl",
+                "x": 197.1959798994975,
+                "y": 334,
+                "width": 186.4321608040201,
+                "height": 120.74434635810502,
+                "image": "data/uploads/flashcard_bowl.jpg"
+            },
+            {
+                "id": "obj_2zvyta",
+                "name": "cup",
+                "x": 990.643216080402,
+                "y": 225.09218161994863,
+                "width": 148.40201005025125,
+                "height": 136.30260612668377,
+                "image": "data/uploads/flashcard_cup.jpg"
+            },
+            {
+                "id": "obj_ti2n29",
+                "name": "glass",
+                "x": 542.9246231155779,
+                "y": 465.38086026799846,
+                "width": 113.82914572864321,
+                "height": 160.504343544473,
+                "image": "data/uploads/flashcard_glass.jpg"
+            },
+            {
+                "id": "obj_bkyeyc",
+                "name": "mug",
+                "x": 90.0201005025126,
+                "y": 494.7686842753139,
+                "width": 179.5175879396985,
+                "height": 143.2173882460521,
+                "image": "data/uploads/flashcard_mug.jpg"
+            },
+            {
+                "id": "obj_i2tbfh",
+                "name": "spoon",
+                "x": 833.3366834170854,
+                "y": 541.4434635810502,
+                "width": 143.21608040201005,
+                "height": 108.64347764921042,
+                "image": "data/uploads/flashcard_spoon.jpg"
+            },
+            {
+                "id": "obj_sdvnja",
+                "name": "fork",
+                "x": 682.9447236180905,
+                "y": 285.5965251644216,
+                "width": 226.19095477386932,
+                "height": 80.98434917173707,
+                "image": "data/uploads/flashcard_fork.jpg"
+            },
+            {
+                "id": "obj_4icw9c",
+                "name": "knife",
+                "x": 202.38190954773873,
+                "y": 225.09218161994863,
+                "width": 226.19095477386935,
+                "height": 58.51130728378996,
+                "image": "data/uploads/flashcard_knife.jpg"
+            },
+            {
+                "id": "obj_yiv2k7",
+                "name": "chopsticks",
+                "x": 421.91959798994975,
+                "y": 290.7826117539479,
+                "width": 191.61809045226133,
+                "height": 141.48869271621004,
+                "image": "data/uploads/flashcard_chopsticks.jpg"
+            },
+            {
+                "id": "obj_9ktiwe",
+                "name": "straw",
+                "x": 985.4572864321608,
+                "y": 397.96173460415713,
+                "width": 148.40201005025125,
+                "height": 188.16347202194635,
+                "image": "data/uploads/flashcard_straw.jpg"
+            },
+            {
+                "id": "obj_o81cw8",
+                "name": "bottle",
+                "x": 577.4974874371859,
+                "y": 110.99827665037105,
+                "width": 82.71356783919597,
+                "height": 146.6747793057363,
+                "image": "data/uploads/flashcard_bottle.jpg"
+            }
+        ],
+        "thumbnail": "data/uploads/knife.png",
+        "questionSetId": "qset_default12",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_qajv2t",
+        "name": "Kitchenware",
+        "difficulty": "Medium",
+        "image": "data/uploads/kitchenware_hidden_object_scene.jpg",
+        "originalWidth": 1376,
+        "originalHeight": 768,
+        "objects": [
+            {
+                "id": "obj_hy9mqb",
+                "name": "wooden cutting board",
+                "x": 76.19095477386941,
+                "y": 195.7043576126332,
+                "width": 162.23115577889448,
+                "height": 264.2260753349981,
+                "image": "data/uploads/flashcard_wooden_cutting_board.jpg"
+            },
+            {
+                "id": "obj_dzm6u1",
+                "name": "rice cooker",
+                "x": 255.96984924623115,
+                "y": 297.69739387331623,
+                "width": 205.44723618090453,
+                "height": 186.43477649210425,
+                "image": "data/uploads/flashcard_rice_cooker.jpg"
+            },
+            {
+                "id": "obj_2sg67x",
+                "name": "pot",
+                "x": 561.9396984924623,
+                "y": 351.2869552984208,
+                "width": 234.83417085427135,
+                "height": 151.86086589526255,
+                "image": "data/uploads/flashcard_pot.jpg"
+            },
+            {
+                "id": "obj_m2tvpa",
+                "name": "pan",
+                "x": 812.5929648241206,
+                "y": 468.83825132768266,
+                "width": 200.2613065326633,
+                "height": 80.98434917173707,
+                "image": "data/uploads/flashcard_pan.jpg"
+            },
+            {
+                "id": "obj_jtvl64",
+                "name": "lid",
+                "x": 677.7587939698492,
+                "y": 522.4278127527873,
+                "width": 124.20100502512562,
+                "height": 101.72869552984208,
+                "image": "data/uploads/flashcard_lid.jpg"
+            },
+            {
+                "id": "obj_e7engs",
+                "name": "ladle",
+                "x": 532.5527638190955,
+                "y": 541.4434635810502,
+                "width": 125.92964824120602,
+                "height": 79.25565364189498,
+                "image": "data/uploads/flashcard_ladle.jpg"
+            },
+            {
+                "id": "obj_pwp53m",
+                "name": " pepper shaker",
+                "x": 904.2110552763818,
+                "y": 373.75999718636797,
+                "width": 60.24120603015076,
+                "height": 82.71304470157915,
+                "image": "data/uploads/flashcard_pepper_shaker.jpg"
+            },
+            {
+                "id": "obj_onh1g5",
+                "name": "salt shaker",
+                "x": 987.1859296482412,
+                "y": 389.3182569549467,
+                "width": 58.512562814070364,
+                "height": 67.15478493300039,
+                "image": "data/uploads/flashcard_salt_shaker.jpg"
+            },
+            {
+                "id": "obj_przbcb",
+                "name": "sauce bottle",
+                "x": 1101.2763819095476,
+                "y": 353.015650828263,
+                "width": 79.25628140703517,
+                "height": 155.31825695494672,
+                "image": "data/uploads/flashcard_sauce_bottle.jpg"
+            },
+            {
+                "id": "obj_2g4sun",
+                "name": "jar",
+                "x": 1210.1809045226128,
+                "y": 512.0556395737347,
+                "width": 94.8140703517588,
+                "height": 117.28695529842085,
+                "image": "data/uploads/flashcard_jar.jpg"
+            },
+            {
+                "id": "obj_sikj8u",
+                "name": "pot",
+                "x": 0.1306532663317217,
+                "y": 5.5478493300038565,
+                "width": 312.62311557788945,
+                "height": 115.55825976857876
+            }
+        ],
+        "thumbnail": "data/uploads/cookware.png",
+        "questionSetId": "",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_3k49td",
+        "name": "Meal",
+        "difficulty": "Easy",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "objects": [
+            {
+                "id": "obj_pv4nl2",
+                "name": "This is my favorite meal",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_favorite_meal.jpg"
+            },
+            {
+                "id": "obj_cm4wn2",
+                "name": "I have eggs for breakfast",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_eggs_breakfast.jpg"
+            },
+            {
+                "id": "obj_8g2i31",
+                "name": "I have lunch at school",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_lunch_school.jpg"
+            },
+            {
+                "id": "obj_tw72hd",
+                "name": "Mom is cooking dinner",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_mom_cooking.jpg"
+            },
+            {
+                "id": "obj_iuo4gq",
+                "name": "I'm hungry",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_im_hungry.jpg"
+            },
+            {
+                "id": "obj_21s155",
+                "name": "I'm thirsty",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_im_thirsty.jpg"
+            },
+            {
+                "id": "obj_8bmxzd",
+                "name": "I eat an apple",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_eat_apple.jpg"
+            },
+            {
+                "id": "obj_o34r9r",
+                "name": "I drink milk",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_drink_milk.jpg"
+            },
+            {
+                "id": "obj_9poeod",
+                "name": "I don't like onions",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_no_onions.jpg"
+            },
+            {
+                "id": "obj_b3qvxw",
+                "name": "The soup is hot",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/sentence_soup_hot.jpg"
+            }
+        ],
+        "thumbnail": "data/uploads/lunch.png",
+        "questionSetId": "none",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_tg6jy4",
+        "name": "Everyday items",
+        "difficulty": "Easy",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "objects": [
+            {
+                "id": "obj_n896bt",
+                "name": "broom",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/flashcard_broom.jpg"
+            },
+            {
+                "id": "obj_ks7hu0",
+                "name": "trash can",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/trash_can.jpg"
+            },
+            {
+                "id": "obj_6grupv",
+                "name": "bed",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/bed_1.jpg"
+            },
+            {
+                "id": "obj_g1m7yy",
+                "name": "pillow",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/pillow_1.jpg"
+            },
+            {
+                "id": "obj_nz9ivg",
+                "name": "blanket",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/blanket_1.jpg"
+            },
+            {
+                "id": "obj_h5ff20",
+                "name": "mattress",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/mattress.jpg"
+            },
+            {
+                "id": "obj_w1sl70",
+                "name": "garbage bin",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/garbage_bin.jpg"
+            },
+            {
+                "id": "obj_734lw4",
+                "name": "body pillow",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/body_pillow.jpg"
+            },
+            {
+                "id": "obj_40c530",
+                "name": "wardrobe",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/wardrobe.jpg"
+            },
+            {
+                "id": "obj_dlgh3m",
+                "name": "closet",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/closet_1.jpg"
+            },
+            {
+                "id": "obj_rber7y",
+                "name": "towel",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/towel_1.jpg"
+            },
+            {
+                "id": "obj_naw5hj",
+                "name": "mirror",
+                "x": 462,
+                "y": 462,
+                "width": 100,
+                "height": 100,
+                "image": "data/uploads/mirror_1.jpg"
+            }
+        ],
+        "questionSetId": "qset_default12",
+        "type": "lesson",
+        "thumbnail": "data/uploads/task-list.png"
+    },
+    {
+        "id": "scene_byxlv8",
+        "name": "School subjects",
+        "difficulty": "Hard",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "objects": [
+            {
+                "id": "obj_il6utk",
+                "name": "Math",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_f5twmo",
+                "name": "English",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_n2sa3t",
+                "name": "Vietnamese",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_3pdqcb",
+                "name": "Science",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_2txflc",
+                "name": "History",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_usyolq",
+                "name": "Geography",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_s5kw0d",
+                "name": "Art",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_xa7wbx",
+                "name": "Music",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_artana",
+                "name": "Physical Education",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_oaf4sz",
+                "name": "Biology",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_3cyicu",
+                "name": "Chemistry",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_nldw23",
+                "name": "Literature",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_bkldgy",
+                "name": "Computer Science",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_3nno5k",
+                "name": "Civic Education",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            }
+        ],
+        "questionSetId": "",
+        "type": "lesson"
+    },
+    {
+        "id": "scene_wo8vex",
+        "name": "CORE VERBS",
+        "difficulty": "Easy",
+        "image": "",
+        "originalWidth": 0,
+        "originalHeight": 0,
+        "objects": [
+            {
+                "id": "obj_bxvm14",
+                "name": "walk",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_43w51p",
+                "name": "run",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_xdsc14",
+                "name": "jump",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_lvz65w",
+                "name": "swim",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_s36840",
+                "name": "play",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_w0t1qp",
+                "name": "draw",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_v6iypi",
+                "name": "sing",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            },
+            {
+                "id": "obj_r09miu",
+                "name": "sleep",
+                "x": 638,
+                "y": 334,
+                "width": 100,
+                "height": 100
+            }
+        ],
+        "questionSetId": "",
+        "type": "lesson"
+    }
+]

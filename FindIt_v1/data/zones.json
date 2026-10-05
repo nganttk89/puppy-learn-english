@@ -1,0 +1,591 @@
+[
+    {
+        "id": "region_starters",
+        "name": "Home",
+        "image": "data/uploads/house.png",
+        "subMapBg": "images/ocean_surface.jpg?v=1",
+        "questions": [
+            "scene_starters_family_1",
+            "scene_routine_morning",
+            "scene_living_room",
+            "scene_tg6jy4",
+            "scene_starters_kitchen_1",
+            "scene_5tzbp8",
+            "scene_starters_bedroom_1",
+            "scene_starters_bathroom_1"
+        ],
+        "subLevels": [
+            {
+                "id": "level_scene_starters_family_1",
+                "name": "Family",
+                "type": "lesson",
+                "image": "data/uploads/home.png",
+                "questions": [
+                    "scene_starters_family_1"
+                ]
+            },
+            {
+                "id": "level_scene_routine_morning",
+                "name": "Morning Routine",
+                "type": "lesson",
+                "image": "data/uploads/good-morning.png",
+                "questions": [
+                    "scene_routine_morning"
+                ]
+            },
+            {
+                "id": "level_scene_living_room",
+                "name": "Living Room",
+                "type": "lesson",
+                "image": "data/uploads/interior-design.png",
+                "questions": [
+                    "scene_living_room"
+                ]
+            },
+            {
+                "id": "level_scene_starters_kitchen_1",
+                "name": "Kitchen",
+                "type": "lesson",
+                "image": "data/uploads/kitchen.png",
+                "questions": [
+                    "scene_starters_kitchen_1"
+                ]
+            },
+            {
+                "id": "level_scene_5tzbp8",
+                "name": "Clothes",
+                "type": "lesson",
+                "image": "data/uploads/brand.png",
+                "questions": [
+                    "scene_5tzbp8"
+                ]
+            },
+            {
+                "id": "level_scene_starters_bedroom_1",
+                "name": "Bedroom",
+                "type": "lesson",
+                "image": "data/uploads/bedroom.png",
+                "questions": [
+                    "scene_starters_bedroom_1"
+                ]
+            },
+            {
+                "id": "level_scene_starters_bathroom_1",
+                "name": "Bathroom",
+                "type": "lesson",
+                "image": "data/uploads/bathroom-icon.png",
+                "questions": [
+                    "scene_starters_bathroom_1"
+                ]
+            },
+            {
+                "id": "level_scene_1hn8ui",
+                "name": "Fruit Market ",
+                "type": "lesson",
+                "image": "data/uploads/market.png",
+                "questions": [
+                    "scene_1hn8ui"
+                ]
+            }
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_starters_family_1",
+                "name": "Family",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/home.png",
+                "questions": [
+                    "scene_starters_family_1"
+                ]
+            },
+            {
+                "id": "level_scene_routine_morning",
+                "name": "Morning Routine",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/good-morning.png",
+                "questions": [
+                    "scene_routine_morning"
+                ]
+            },
+            {
+                "id": "level_scene_living_room",
+                "name": "Living Room",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/interior-design.png",
+                "questions": [
+                    "scene_living_room"
+                ]
+            },
+            {
+                "id": "level_scene_tg6jy4",
+                "name": "Everyday items",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/task-list.png",
+                "questions": [
+                    "scene_tg6jy4"
+                ]
+            },
+            {
+                "id": "level_scene_starters_kitchen_1",
+                "name": "Kitchen",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/kitchen.png",
+                "questions": [
+                    "scene_starters_kitchen_1"
+                ]
+            },
+            {
+                "id": "level_scene_5tzbp8",
+                "name": "Clothes",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/brand.png",
+                "questions": [
+                    "scene_5tzbp8"
+                ]
+            },
+            {
+                "id": "level_scene_starters_bedroom_1",
+                "name": "Bedroom",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/bedroom.png",
+                "questions": [
+                    "scene_starters_bedroom_1"
+                ]
+            },
+            {
+                "id": "level_scene_starters_bathroom_1",
+                "name": "Bathroom",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/bathroom-icon.png",
+                "questions": [
+                    "scene_starters_bathroom_1"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lvl_ebwmau",
+        "name": "Food & Drink",
+        "image": "data/uploads/fast-food.png",
+        "questions": [
+            "scene_gybuso",
+            "scene_klt2c9",
+            "scene_m3uqi8",
+            "scene_e6p3s8",
+            "scene_nlp5dt",
+            "scene_qajv2t",
+            "scene_1hn8ui",
+            "scene_3k49td"
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_gybuso",
+                "name": "Snack Food",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/candies.png",
+                "questions": [
+                    "scene_gybuso"
+                ]
+            },
+            {
+                "id": "level_scene_klt2c9",
+                "name": "Mom came back from the market",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/shopping-cart.png",
+                "questions": [
+                    "scene_klt2c9"
+                ]
+            },
+            {
+                "id": "level_scene_m3uqi8",
+                "name": "Vegetable",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/vegetable.png",
+                "questions": [
+                    "scene_m3uqi8"
+                ]
+            },
+            {
+                "id": "level_scene_e6p3s8",
+                "name": "Five types of grains",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "image": "data/uploads/wheat-plant.png",
+                "questions": [
+                    "scene_e6p3s8"
+                ]
+            },
+            {
+                "id": "level_scene_nlp5dt",
+                "name": "Tableware",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/knife.png",
+                "questions": [
+                    "scene_nlp5dt"
+                ]
+            },
+            {
+                "id": "level_scene_qajv2t",
+                "name": "Kitchenware",
+                "difficulty": "Medium",
+                "type": "lesson",
+                "image": "data/uploads/cookware.png",
+                "questions": [
+                    "scene_qajv2t"
+                ]
+            },
+            {
+                "id": "level_scene_1hn8ui",
+                "name": "Fruit Market ",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/market.png",
+                "questions": [
+                    "scene_1hn8ui"
+                ]
+            },
+            {
+                "id": "level_scene_3k49td",
+                "name": "Meal",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/lunch.png",
+                "questions": [
+                    "scene_3k49td"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "region_movers",
+        "name": "Farm",
+        "image": "data/uploads/farmer.png",
+        "questions": [
+            "scene_forest",
+            "scene_starters_animals_1"
+        ],
+        "subLevels": [
+            {
+                "id": "level_scene_starters_animals_1",
+                "name": "Farm Animals",
+                "type": "lesson",
+                "image": "data/uploads/farm_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_1"
+                ]
+            }
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_starters_animals_1",
+                "name": "Farm Animals",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/animal.png",
+                "questions": [
+                    "scene_starters_animals_1"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "region_flyers",
+        "name": "City",
+        "image": "data/uploads/skyscraper.png",
+        "questions": [
+            "scene_flyers",
+            "scene_routine_park",
+            "scene_starters",
+            "scene_cinema",
+            "scene_6p5if5",
+            "scene_pb7wlv",
+            "scene_ul66q0",
+            "scene_zs632g"
+        ],
+        "subLevels": [
+            {
+                "id": "level_scene_starters_school_1",
+                "name": "School Supplies",
+                "type": "hidden_object",
+                "image": "images/school_supplies.jpg",
+                "questions": [
+                    "scene_starters_school_1"
+                ]
+            },
+            {
+                "id": "level_scene_flyers",
+                "name": "Flyers City",
+                "type": "hidden_object",
+                "image": "images/city_flyers.jpg",
+                "questions": [
+                    "scene_flyers"
+                ]
+            },
+            {
+                "id": "level_scene_routine_park",
+                "name": "Park Activities",
+                "type": "lesson",
+                "image": "",
+                "questions": [
+                    "scene_routine_park"
+                ]
+            },
+            {
+                "id": "level_scene_starters",
+                "name": "Starters Beach",
+                "type": "lesson",
+                "image": "data/uploads/beach_starters.jpg",
+                "questions": [
+                    "scene_starters"
+                ]
+            },
+            {
+                "id": "level_scene_cinema",
+                "name": "Cinema",
+                "type": "lesson",
+                "image": "",
+                "questions": [
+                    "scene_cinema"
+                ]
+            }
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_flyers",
+                "name": "Flyers City",
+                "difficulty": "Medium",
+                "type": "hidden_object",
+                "image": "images/city_flyers.jpg",
+                "questions": [
+                    "scene_flyers"
+                ]
+            },
+            {
+                "id": "level_scene_routine_park",
+                "name": "Park Activities",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "",
+                "questions": [
+                    "scene_routine_park"
+                ]
+            },
+            {
+                "id": "level_scene_starters",
+                "name": "Starters Beach",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/beach_starters.jpg",
+                "questions": [
+                    "scene_starters"
+                ]
+            },
+            {
+                "id": "level_scene_cinema",
+                "name": "Cinema",
+                "difficulty": "Medium",
+                "type": "lesson",
+                "image": "",
+                "questions": [
+                    "scene_cinema"
+                ]
+            },
+            {
+                "id": "level_scene_6p5if5",
+                "name": "Transport",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/transportation.png",
+                "questions": [
+                    "scene_6p5if5"
+                ]
+            },
+            {
+                "id": "level_scene_pb7wlv",
+                "name": "Transport - A1",
+                "difficulty": "Medium",
+                "type": "lesson",
+                "image": "data/uploads/bus-stop.png",
+                "questions": [
+                    "scene_pb7wlv"
+                ]
+            },
+            {
+                "id": "level_scene_ul66q0",
+                "name": "Transport - A2",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "image": "data/uploads/transportation_scene_3_wide.jpg",
+                "questions": [
+                    "scene_ul66q0"
+                ]
+            },
+            {
+                "id": "level_scene_zs632g",
+                "name": "Transport example",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "",
+                "questions": [
+                    "scene_zs632g"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lvl_7s91h3",
+        "name": "School",
+        "image": "data/uploads/school.png",
+        "questions": [
+            "scene_starters_school_1"
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_starters_school_1",
+                "name": "School Supplies",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/school_supplies_1.jpg",
+                "questions": [
+                    "scene_starters_school_1"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lvl_02dvwk",
+        "name": "Natural",
+        "image": "data/uploads/forest.png",
+        "questions": [
+            "scene_starters_animals_3",
+            "scene_starters_animals_2",
+            "scene_starters_animals_4",
+            "scene_jepujm",
+            "scene_p1mchz"
+        ],
+        "subLevels": [
+            {
+                "id": "level_scene_starters_animals_3",
+                "name": "Forest Animals",
+                "type": "lesson",
+                "image": "data/uploads/forest_water_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_3"
+                ]
+            },
+            {
+                "id": "level_scene_starters_animals_2",
+                "name": "Jungle Animals",
+                "type": "lesson",
+                "image": "data/uploads/jungle_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_2"
+                ]
+            },
+            {
+                "id": "level_scene_starters_animals_4",
+                "name": "Sea Animals",
+                "type": "lesson",
+                "image": "data/uploads/sea_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_4"
+                ]
+            }
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_starters_animals_3",
+                "name": "Forest Animals",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/forest_water_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_3"
+                ]
+            },
+            {
+                "id": "level_scene_starters_animals_2",
+                "name": "Jungle Animals",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/jungle_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_2"
+                ]
+            },
+            {
+                "id": "level_scene_starters_animals_4",
+                "name": "Sea Animals",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/sea_animals.jpg",
+                "questions": [
+                    "scene_starters_animals_4"
+                ]
+            },
+            {
+                "id": "level_scene_jepujm",
+                "name": "Natural object",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "",
+                "questions": [
+                    "scene_jepujm"
+                ]
+            },
+            {
+                "id": "level_scene_p1mchz",
+                "name": "What's the weather like?",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "",
+                "questions": [
+                    "scene_p1mchz"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lvl_tryjmo",
+        "name": "Daily activities",
+        "image": "data/uploads/play.png",
+        "questions": [
+            "scene_hjt8k0"
+        ],
+        "subLevels": [
+            {
+                "id": "level_scene_hjt8k0",
+                "name": "Morning",
+                "type": "lesson",
+                "image": "data/uploads/good-morning.png",
+                "questions": [
+                    "scene_hjt8k0"
+                ]
+            }
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_hjt8k0",
+                "name": "Morning",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "image": "data/uploads/good-morning.png",
+                "questions": [
+                    "scene_hjt8k0"
+                ]
+            }
+        ]
+    }
+]
