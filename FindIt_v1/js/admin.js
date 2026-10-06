@@ -632,33 +632,60 @@ document.getElementById('btn-save').addEventListener('click', () => {
     const selectedRegionId = document.getElementById('edit-scene-region').value;
     const lvls = typeof ZoneStorage !== 'undefined' ? ZoneStorage.getZones() : [];
     
-    // Remove from any existing region
-    lvls.forEach(r => {
-        if (r.questions) {
-            r.questions = r.questions.filter(id => id !== currentScene.id);
-        }
-        if (r.subScenes) {
-            r.subScenes = r.subScenes.filter(s => !s.questions.includes(currentScene.id));
-        }
-    });
+    let originalRegionId = null;
+    let originalSubsceneIndex = -1;
     
-    // Add to selected region
-    if (selectedRegionId) {
+    // Find original position
+    for (let r of lvls) {
+        if (r.questions && r.questions.includes(currentScene.id)) {
+            originalRegionId = r.id;
+            if (r.subScenes) {
+                originalSubsceneIndex = r.subScenes.findIndex(s => s.questions && s.questions.includes(currentScene.id));
+            }
+            break;
+        }
+    }
+    
+    if (originalRegionId === selectedRegionId && selectedRegionId) {
+        // Just update in-place
         const region = lvls.find(r => r.id === selectedRegionId);
-        if (region) {
-            if (!region.questions) region.questions = [];
-            region.questions.push(currentScene.id);
-            
-            if (!region.subScenes) region.subScenes = [];
-            region.subScenes.push({
-                id: 'level_' + currentScene.id,
-                name: currentScene.name,
-                difficulty: currentScene.difficulty || 'Easy',
-                type: currentScene.type || 'lesson',
-                disableSpelling: currentScene.disableSpelling || false,
-                image: currentScene.thumbnail || 'images/puppy.png',
-                questions: [currentScene.id]
-            });
+        if (region && region.subScenes && originalSubsceneIndex !== -1) {
+            const ss = region.subScenes[originalSubsceneIndex];
+            ss.name = currentScene.name;
+            ss.difficulty = currentScene.difficulty || 'Easy';
+            ss.type = currentScene.type || 'lesson';
+            ss.disableSpelling = currentScene.disableSpelling || false;
+            ss.image = currentScene.thumbnail || 'images/puppy.png';
+        }
+    } else {
+        // Remove from any existing region
+        lvls.forEach(r => {
+            if (r.questions) {
+                r.questions = r.questions.filter(id => id !== currentScene.id);
+            }
+            if (r.subScenes) {
+                r.subScenes = r.subScenes.filter(s => !(s.questions && s.questions.includes(currentScene.id)));
+            }
+        });
+        
+        // Add to selected region
+        if (selectedRegionId) {
+            const region = lvls.find(r => r.id === selectedRegionId);
+            if (region) {
+                if (!region.questions) region.questions = [];
+                region.questions.push(currentScene.id);
+                
+                if (!region.subScenes) region.subScenes = [];
+                region.subScenes.push({
+                    id: 'level_' + currentScene.id,
+                    name: currentScene.name,
+                    difficulty: currentScene.difficulty || 'Easy',
+                    type: currentScene.type || 'lesson',
+                    disableSpelling: currentScene.disableSpelling || false,
+                    image: currentScene.thumbnail || 'images/puppy.png',
+                    questions: [currentScene.id]
+                });
+            }
         }
     }
     

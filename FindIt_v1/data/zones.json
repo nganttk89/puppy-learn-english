@@ -1,5 +1,185 @@
 [
     {
+        "id": "region_starters",
+        "name": "Home",
+        "image": "data/uploads/house.png",
+        "subMapBg": "images/ocean_surface.jpg?v=1",
+        "questions": [
+            "scene_starters_family_1",
+            "scene_routine_morning",
+            "scene_living_room",
+            "scene_starters_bedroom_1",
+            "scene_starters_bathroom_1",
+            "scene_tg6jy4",
+            "scene_starters_kitchen_1",
+            "scene_5tzbp8"
+        ],
+        "subLevels": [
+            {
+                "id": "level_scene_starters_family_1",
+                "name": "Family",
+                "type": "lesson",
+                "image": "data/uploads/home.png",
+                "questions": [
+                    "scene_starters_family_1"
+                ]
+            },
+            {
+                "id": "level_scene_routine_morning",
+                "name": "Morning Routine",
+                "type": "lesson",
+                "image": "data/uploads/good-morning.png",
+                "questions": [
+                    "scene_routine_morning"
+                ]
+            },
+            {
+                "id": "level_scene_living_room",
+                "name": "Living Room",
+                "type": "lesson",
+                "image": "data/uploads/interior-design.png",
+                "questions": [
+                    "scene_living_room"
+                ]
+            },
+            {
+                "id": "level_scene_starters_kitchen_1",
+                "name": "Kitchen",
+                "type": "lesson",
+                "image": "data/uploads/kitchen.png",
+                "questions": [
+                    "scene_starters_kitchen_1"
+                ]
+            },
+            {
+                "id": "level_scene_5tzbp8",
+                "name": "Clothes",
+                "type": "lesson",
+                "image": "data/uploads/brand.png",
+                "questions": [
+                    "scene_5tzbp8"
+                ]
+            },
+            {
+                "id": "level_scene_starters_bedroom_1",
+                "name": "Bedroom",
+                "type": "lesson",
+                "image": "data/uploads/bedroom.png",
+                "questions": [
+                    "scene_starters_bedroom_1"
+                ]
+            },
+            {
+                "id": "level_scene_starters_bathroom_1",
+                "name": "Bathroom",
+                "type": "lesson",
+                "image": "data/uploads/bathroom-icon.png",
+                "questions": [
+                    "scene_starters_bathroom_1"
+                ]
+            },
+            {
+                "id": "level_scene_1hn8ui",
+                "name": "Fruit Market ",
+                "type": "lesson",
+                "image": "data/uploads/market.png",
+                "questions": [
+                    "scene_1hn8ui"
+                ]
+            }
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_starters_family_1",
+                "name": "Family",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/home.png",
+                "questions": [
+                    "scene_starters_family_1"
+                ]
+            },
+            {
+                "id": "level_scene_routine_morning",
+                "name": "Morning Routine",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/good-morning.png",
+                "questions": [
+                    "scene_routine_morning"
+                ]
+            },
+            {
+                "id": "level_scene_living_room",
+                "name": "Living Room",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/interior-design.png",
+                "questions": [
+                    "scene_living_room"
+                ]
+            },
+            {
+                "id": "level_scene_starters_bedroom_1",
+                "name": "Bedroom",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/bedroom.png",
+                "questions": [
+                    "scene_starters_bedroom_1"
+                ]
+            },
+            {
+                "id": "level_scene_starters_bathroom_1",
+                "name": "Bathroom",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/bathroom-icon.png",
+                "questions": [
+                    "scene_starters_bathroom_1"
+                ]
+            },
+            {
+                "id": "level_scene_tg6jy4",
+                "name": "Everyday items",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/task-list.png",
+                "questions": [
+                    "scene_tg6jy4"
+                ]
+            },
+            {
+                "id": "level_scene_starters_kitchen_1",
+                "name": "Kitchen",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/kitchen.png",
+                "questions": [
+                    "scene_starters_kitchen_1"
+                ]
+            },
+            {
+                "id": "level_scene_5tzbp8",
+                "name": "Clothes",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/brand.png",
+                "questions": [
+                    "scene_5tzbp8"
+                ]
+            }
+        ]
+    },
+    {
         "id": "lvl_02dvwk",
         "name": "Natural",
         "image": "data/uploads/forest.png",
@@ -56,6 +236,7 @@
                 "name": "Forest Animals",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/forest_water_animals.jpg",
                 "questions": [
                     "scene_starters_animals_3"
@@ -66,6 +247,7 @@
                 "name": "Jungle Animals",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/jungle_animals.jpg",
                 "questions": [
                     "scene_starters_animals_2"
@@ -76,6 +258,7 @@
                 "name": "Sea Animals",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/sea_animals.jpg",
                 "questions": [
                     "scene_starters_animals_4"
@@ -86,181 +269,10 @@
                 "name": "Natural object",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "",
                 "questions": [
                     "scene_jepujm"
-                ]
-            }
-        ]
-    },
-    {
-        "id": "region_starters",
-        "name": "Home",
-        "image": "data/uploads/house.png",
-        "subMapBg": "images/ocean_surface.jpg?v=1",
-        "questions": [
-            "scene_starters_family_1",
-            "scene_routine_morning",
-            "scene_living_room",
-            "scene_starters_kitchen_1",
-            "scene_5tzbp8",
-            "scene_starters_bedroom_1",
-            "scene_starters_bathroom_1",
-            "scene_tg6jy4"
-        ],
-        "subLevels": [
-            {
-                "id": "level_scene_starters_family_1",
-                "name": "Family",
-                "type": "lesson",
-                "image": "data/uploads/home.png",
-                "questions": [
-                    "scene_starters_family_1"
-                ]
-            },
-            {
-                "id": "level_scene_routine_morning",
-                "name": "Morning Routine",
-                "type": "lesson",
-                "image": "data/uploads/good-morning.png",
-                "questions": [
-                    "scene_routine_morning"
-                ]
-            },
-            {
-                "id": "level_scene_living_room",
-                "name": "Living Room",
-                "type": "lesson",
-                "image": "data/uploads/interior-design.png",
-                "questions": [
-                    "scene_living_room"
-                ]
-            },
-            {
-                "id": "level_scene_starters_kitchen_1",
-                "name": "Kitchen",
-                "type": "lesson",
-                "image": "data/uploads/kitchen.png",
-                "questions": [
-                    "scene_starters_kitchen_1"
-                ]
-            },
-            {
-                "id": "level_scene_5tzbp8",
-                "name": "Clothes",
-                "type": "lesson",
-                "image": "data/uploads/brand.png",
-                "questions": [
-                    "scene_5tzbp8"
-                ]
-            },
-            {
-                "id": "level_scene_starters_bedroom_1",
-                "name": "Bedroom",
-                "type": "lesson",
-                "image": "data/uploads/bedroom.png",
-                "questions": [
-                    "scene_starters_bedroom_1"
-                ]
-            },
-            {
-                "id": "level_scene_starters_bathroom_1",
-                "name": "Bathroom",
-                "type": "lesson",
-                "image": "data/uploads/bathroom-icon.png",
-                "questions": [
-                    "scene_starters_bathroom_1"
-                ]
-            },
-            {
-                "id": "level_scene_1hn8ui",
-                "name": "Fruit Market ",
-                "type": "lesson",
-                "image": "data/uploads/market.png",
-                "questions": [
-                    "scene_1hn8ui"
-                ]
-            }
-        ],
-        "subScenes": [
-            {
-                "id": "level_scene_starters_family_1",
-                "name": "Family",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/home.png",
-                "questions": [
-                    "scene_starters_family_1"
-                ]
-            },
-            {
-                "id": "level_scene_routine_morning",
-                "name": "Morning Routine",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/good-morning.png",
-                "questions": [
-                    "scene_routine_morning"
-                ]
-            },
-            {
-                "id": "level_scene_living_room",
-                "name": "Living Room",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/interior-design.png",
-                "questions": [
-                    "scene_living_room"
-                ]
-            },
-            {
-                "id": "level_scene_starters_kitchen_1",
-                "name": "Kitchen",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/kitchen.png",
-                "questions": [
-                    "scene_starters_kitchen_1"
-                ]
-            },
-            {
-                "id": "level_scene_5tzbp8",
-                "name": "Clothes",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/brand.png",
-                "questions": [
-                    "scene_5tzbp8"
-                ]
-            },
-            {
-                "id": "level_scene_starters_bedroom_1",
-                "name": "Bedroom",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/bedroom.png",
-                "questions": [
-                    "scene_starters_bedroom_1"
-                ]
-            },
-            {
-                "id": "level_scene_starters_bathroom_1",
-                "name": "Bathroom",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/bathroom-icon.png",
-                "questions": [
-                    "scene_starters_bathroom_1"
-                ]
-            },
-            {
-                "id": "level_scene_tg6jy4",
-                "name": "Everyday items",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "image": "data/uploads/task-list.png",
-                "questions": [
-                    "scene_tg6jy4"
                 ]
             }
         ]
@@ -285,6 +297,7 @@
                 "name": "Snack Food",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/candies.png",
                 "questions": [
                     "scene_gybuso"
@@ -295,6 +308,7 @@
                 "name": "Mom came back from the market",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/shopping-cart.png",
                 "questions": [
                     "scene_klt2c9"
@@ -305,6 +319,7 @@
                 "name": "Vegetable",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/vegetable.png",
                 "questions": [
                     "scene_m3uqi8"
@@ -315,6 +330,7 @@
                 "name": "Five types of grains",
                 "difficulty": "Hard",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/wheat-plant.png",
                 "questions": [
                     "scene_e6p3s8"
@@ -325,6 +341,7 @@
                 "name": "Tableware",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/knife.png",
                 "questions": [
                     "scene_nlp5dt"
@@ -335,6 +352,7 @@
                 "name": "Kitchenware",
                 "difficulty": "Medium",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/cookware.png",
                 "questions": [
                     "scene_qajv2t"
@@ -345,6 +363,7 @@
                 "name": "Fruit Market ",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/market.png",
                 "questions": [
                     "scene_1hn8ui"
@@ -355,6 +374,7 @@
                 "name": "Meal",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/lunch.png",
                 "questions": [
                     "scene_3k49td"
@@ -387,6 +407,7 @@
                 "name": "Farm Animals",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/animal.png",
                 "questions": [
                     "scene_starters_animals_1"
@@ -461,6 +482,7 @@
                 "name": "Flyers City",
                 "difficulty": "Medium",
                 "type": "hidden_object",
+                "disableSpelling": false,
                 "image": "images/city_flyers.jpg",
                 "questions": [
                     "scene_flyers"
@@ -471,6 +493,7 @@
                 "name": "Park Activities",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "",
                 "questions": [
                     "scene_routine_park"
@@ -481,6 +504,7 @@
                 "name": "Starters Beach",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/beach_starters.jpg",
                 "questions": [
                     "scene_starters"
@@ -491,6 +515,7 @@
                 "name": "Cinema",
                 "difficulty": "Medium",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "",
                 "questions": [
                     "scene_cinema"
@@ -501,6 +526,7 @@
                 "name": "Transport",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/transportation.png",
                 "questions": [
                     "scene_6p5if5"
@@ -511,6 +537,7 @@
                 "name": "Transport - A1",
                 "difficulty": "Medium",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/bus-stop.png",
                 "questions": [
                     "scene_pb7wlv"
@@ -521,6 +548,7 @@
                 "name": "Transport - A2",
                 "difficulty": "Hard",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/transportation_scene_3_wide.jpg",
                 "questions": [
                     "scene_ul66q0"
@@ -531,6 +559,7 @@
                 "name": "Transport example",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "",
                 "questions": [
                     "scene_zs632g"
@@ -551,6 +580,7 @@
                 "name": "School Supplies",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/school_supplies_1.jpg",
                 "questions": [
                     "scene_starters_school_1"
@@ -582,9 +612,292 @@
                 "name": "Morning",
                 "difficulty": "Easy",
                 "type": "lesson",
+                "disableSpelling": false,
                 "image": "data/uploads/good-morning.png",
                 "questions": [
                     "scene_hjt8k0"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lvl_5e1bbw",
+        "name": "A1 Expansion",
+        "image": "images/default_avatar.png",
+        "questions": [
+            "scene_xkadgj",
+            "scene_l4ugdq",
+            "scene_6xzerj",
+            "scene_psxftm",
+            "scene_w61be2",
+            "scene_65m50l",
+            "scene_8wkzgf",
+            "scene_ii086i",
+            "scene_6ilq8i",
+            "scene_rftnhh",
+            "scene_oqp4el",
+            "scene_k8tdsm"
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_xkadgj",
+                "name": "Hobbies",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_xkadgj"
+                ]
+            },
+            {
+                "id": "level_scene_l4ugdq",
+                "name": "Colors",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_l4ugdq"
+                ]
+            },
+            {
+                "id": "level_scene_6xzerj",
+                "name": "Body Parts",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/endocrine-system.png",
+                "questions": [
+                    "scene_6xzerj"
+                ]
+            },
+            {
+                "id": "level_scene_psxftm",
+                "name": "Face Parts",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_psxftm"
+                ]
+            },
+            {
+                "id": "level_scene_w61be2",
+                "name": "Feelings & Emotions",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_w61be2"
+                ]
+            },
+            {
+                "id": "level_scene_65m50l",
+                "name": "Jobs & Professions",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_65m50l"
+                ]
+            },
+            {
+                "id": "level_scene_8wkzgf",
+                "name": "Shapes",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_8wkzgf"
+                ]
+            },
+            {
+                "id": "level_scene_ii086i",
+                "name": "Opposites",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_ii086i"
+                ]
+            },
+            {
+                "id": "level_scene_6ilq8i",
+                "name": "Sentences: Body",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_6ilq8i"
+                ]
+            },
+            {
+                "id": "level_scene_rftnhh",
+                "name": "Sentences: Jobs",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_rftnhh"
+                ]
+            },
+            {
+                "id": "level_scene_oqp4el",
+                "name": "Sentences: Feelings",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_oqp4el"
+                ]
+            },
+            {
+                "id": "level_scene_k8tdsm",
+                "name": "Sentences: Hobbies",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_k8tdsm"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lvl_ws4frs",
+        "name": "A2 Expansion",
+        "image": "images/default_avatar.png",
+        "questions": [
+            "scene_9m5fr3",
+            "scene_wgeckh",
+            "scene_7reiu0",
+            "scene_zcjxai",
+            "scene_f4bemu",
+            "scene_8xlt2m",
+            "scene_h4z6d4",
+            "scene_snexw1",
+            "scene_u5lhe0",
+            "scene_9ykg91"
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_9m5fr3",
+                "name": "Materials",
+                "difficulty": "Medium",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_9m5fr3"
+                ]
+            },
+            {
+                "id": "level_scene_wgeckh",
+                "name": "Space & Universe",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_wgeckh"
+                ]
+            },
+            {
+                "id": "level_scene_7reiu0",
+                "name": "Health & Illness",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_7reiu0"
+                ]
+            },
+            {
+                "id": "level_scene_zcjxai",
+                "name": "In the City",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_zcjxai"
+                ]
+            },
+            {
+                "id": "level_scene_f4bemu",
+                "name": "Environment",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_f4bemu"
+                ]
+            },
+            {
+                "id": "level_scene_8xlt2m",
+                "name": "Sentences: Health",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_8xlt2m"
+                ]
+            },
+            {
+                "id": "level_scene_h4z6d4",
+                "name": "Sentences: Space",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_h4z6d4"
+                ]
+            },
+            {
+                "id": "level_scene_snexw1",
+                "name": "Sentences: Environment",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_snexw1"
+                ]
+            },
+            {
+                "id": "level_scene_u5lhe0",
+                "name": "Sentences: City",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_u5lhe0"
+                ]
+            },
+            {
+                "id": "level_scene_9ykg91",
+                "name": "Technology",
+                "difficulty": "Hard",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_9ykg91"
                 ]
             }
         ]

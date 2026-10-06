@@ -110,7 +110,8 @@
         "type": "lesson",
         "thumbnail": "data/uploads/bathroom-icon.png",
         "questionTemplates": [],
-        "questionSetId": "qset_default12"
+        "questionSetId": "qset_default12",
+        "disableSpelling": false
     },
     {
         "id": "scene_starters_bedroom_1",
@@ -632,7 +633,7 @@
     {
         "id": "scene_starters_kitchen_1",
         "name": "Kitchen",
-        "image": "data/uploads/kitchen.png",
+        "image": "data/uploads/kitchen_1.png",
         "originalWidth": 1470,
         "originalHeight": 1070,
         "difficulty": "Easy",
@@ -711,7 +712,9 @@
             }
         ],
         "type": "lesson",
-        "thumbnail": "data/uploads/kitchen.png"
+        "thumbnail": "data/uploads/kitchen.png",
+        "disableSpelling": false,
+        "questionSetId": ""
     },
     {
         "id": "scene_living_room",
@@ -1663,7 +1666,8 @@
         ],
         "type": "lesson",
         "thumbnail": "data/uploads/brand.png",
-        "questionSetId": "qset_default12"
+        "questionSetId": "qset_default12",
+        "disableSpelling": false
     },
     {
         "id": "scene_hjt8k0",
@@ -3599,5 +3603,1779 @@
         ],
         "questionSetId": "",
         "type": "lesson"
+    },
+    {
+        "id": "scene_6xzerj",
+        "name": "Body Parts",
+        "type": "lesson",
+        "questionSetId": "qset_default12",
+        "disableSpelling": false,
+        "thumbnail": "data/uploads/endocrine-system.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_h91c8d",
+                "name": "head",
+                "image": "data/uploads/head_1791200217870.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_u6qltv",
+                "name": "shoulder",
+                "image": "data/uploads/shoulder_1791200493503.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_8fgf68",
+                "name": "arm",
+                "image": "data/uploads/arm_1791200241195.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_rhivly",
+                "name": "hand",
+                "image": "data/uploads/hand_1791200251741.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_0q9nda",
+                "name": "finger",
+                "image": "data/uploads/finger_1791200262215.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_9zgo6v",
+                "name": "leg",
+                "image": "data/uploads/leg_1791200283304.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_fuslr0",
+                "name": "foot",
+                "image": "data/uploads/foot_1791200293658.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_0b7tjw",
+                "name": "toe",
+                "image": "data/uploads/toe_1791200306903.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_mflv1f",
+                "name": "back",
+                "image": "data/uploads/back_1791200549000.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_yl523z",
+                "name": "stomach",
+                "image": "data/uploads/stomach_1791200332340.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_psxftm",
+        "name": "Face Parts",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_at4p8v",
+                "name": "eye",
+                "image": "data/uploads/eye_1791200669540.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_xr52om",
+                "name": "ear",
+                "image": "data/uploads/ear_1791200679132.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_4g9xt6",
+                "name": "nose",
+                "image": "data/uploads/nose_1791200690584.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_pwojrl",
+                "name": "mouth",
+                "image": "data/uploads/mouth_1791200701729.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_6juchj",
+                "name": "face",
+                "image": "data/uploads/face_1791200882786_1.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_7pwaqh",
+                "name": "hair",
+                "image": "data/uploads/hair_1791200869182.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_1dp4xv",
+                "name": "tooth",
+                "image": "data/uploads/tooth_1791200741526.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_1li6yq",
+                "name": "teeth",
+                "image": "data/uploads/teeth_1791200752535.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_65m50l",
+        "name": "Jobs & Professions",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_8ixbwz",
+                "name": "teacher",
+                "image": "data/uploads/teacher_1791201031350.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_0h1pl0",
+                "name": "doctor",
+                "image": "data/uploads/doctor_1791201042536.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_vxjj9y",
+                "name": "nurse",
+                "image": "data/uploads/nurse_1791201058578.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_5joirk",
+                "name": "police officer",
+                "image": "data/uploads/police_officer_1791201069573.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_3uwpz9",
+                "name": "farmer",
+                "image": "data/uploads/farmer_1791201081300.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_e7ng2l",
+                "name": "pilot",
+                "image": "data/uploads/pilot_1791201091742.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_297rmh",
+                "name": "driver",
+                "image": "data/uploads/driver_1791201102200.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_gcm9na",
+                "name": "singer",
+                "image": "data/uploads/singer_1791201113272.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_4v1lse",
+                "name": "student",
+                "image": "data/uploads/student_1791201155598.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_w1zipv",
+                "name": "dentist",
+                "image": "data/uploads/dentist_1791201169120.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_w61be2",
+        "name": "Feelings & Emotions",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_avbise",
+                "name": "happy",
+                "image": "data/uploads/happy_1791201313772.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_xylz34",
+                "name": "sad",
+                "image": "data/uploads/sad_1791201324691.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_v0z9m5",
+                "name": "angry",
+                "image": "data/uploads/angry_1791201335528.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_46hk67",
+                "name": "scared",
+                "image": "data/uploads/scared_1791201348131.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_yqy7kc",
+                "name": "tired",
+                "image": "data/uploads/tired_1791201358312.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_j9icwt",
+                "name": "hungry",
+                "image": "data/uploads/hungry_1791201371278.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_4c64o9",
+                "name": "thirsty",
+                "image": "data/uploads/thirsty_1791201382660.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_y84g4y",
+                "name": "bored",
+                "image": "data/uploads/bored_1791201396768.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_mdwdcy",
+                "name": "excited",
+                "image": "data/uploads/excited_1791201409269.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_7lvmht",
+                "name": "surprised",
+                "image": "data/uploads/surprised_1791201421795.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_xkadgj",
+        "name": "Hobbies",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_46ff54",
+                "name": "reading",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_oj7z32",
+                "name": "swimming",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_fgwt3z",
+                "name": "singing",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_zac4xr",
+                "name": "dancing",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_hvv2n9",
+                "name": "playing football",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_6v38t6",
+                "name": "listening to music",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_3foyk4",
+                "name": "watching TV",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ub8nkv",
+                "name": "painting",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_setabk",
+                "name": "drawing",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ]
+    },
+    {
+        "id": "scene_l4ugdq",
+        "name": "Colors",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_en3tzy",
+                "name": "red",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_4xs32l",
+                "name": "blue",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_twjjsf",
+                "name": "green",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_uyx1e9",
+                "name": "yellow",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_olwvh4",
+                "name": "black",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_e9r6tk",
+                "name": "white",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_7ipacn",
+                "name": "orange",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_bxyuu8",
+                "name": "pink",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_bih90t",
+                "name": "purple",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_6tn4z4",
+                "name": "brown",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_46rijq",
+                "name": "grey",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ]
+    },
+    {
+        "id": "scene_8wkzgf",
+        "name": "Shapes",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_glyxee",
+                "name": "circle",
+                "image": "data/uploads/circle_1791202203241.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_8738nw",
+                "name": "square",
+                "image": "data/uploads/square_1791202219079.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_v8l3y6",
+                "name": "triangle",
+                "image": "data/uploads/triangle_1791202229311.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_dfw7zz",
+                "name": "star",
+                "image": "data/uploads/star_1791202241345.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ugiuv3",
+                "name": "rectangle",
+                "image": "data/uploads/rectangle_1791202252654.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_sk5isc",
+                "name": "heart",
+                "image": "data/uploads/heart_1791202265765.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_ii086i",
+        "name": "Opposites",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_63ayti",
+                "name": "big",
+                "image": "data/uploads/big_1791202343163.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_w3z0dy",
+                "name": "small",
+                "image": "data/uploads/small_1791202354676.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_1hgo0d",
+                "name": "long",
+                "image": "data/uploads/long_1791202365267.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_bjxvds",
+                "name": "short",
+                "image": "data/uploads/short_1791202377140.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_xcahjz",
+                "name": "fast",
+                "image": "data/uploads/fast_1791202389789.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_egued7",
+                "name": "slow",
+                "image": "data/uploads/slow_1791202399479.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_xwvlpa",
+                "name": "hot",
+                "image": "data/uploads/hot_1791202413797.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_mp48pi",
+                "name": "cold",
+                "image": "data/uploads/cold_1791202425752.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_pe2sic",
+                "name": "clean",
+                "image": "data/uploads/clean_1791202439005.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_j40nzg",
+                "name": "dirty",
+                "image": "data/uploads/dirty_1791202449658.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_em5pfx",
+                "name": "beautiful",
+                "image": "data/uploads/beautiful_1791202463226.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_cx8oti",
+                "name": "ugly",
+                "image": "data/uploads/ugly_1791202474352.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_6ilq8i",
+        "name": "Sentences: Body",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": true,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_rr5g3w",
+                "name": "I have two eyes",
+                "image": "data/uploads/i_have_two_eyes_1791202827969.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_22rybr",
+                "name": "Touch your nose",
+                "image": "data/uploads/touch_your_nose_1791202841176.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_84sktc",
+                "name": "Wash your hands",
+                "image": "data/uploads/wash_your_hands_1791202857333.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_7dssue",
+                "name": "Brush your hair",
+                "image": "data/uploads/brush_your_hair_1791202872708.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_rftnhh",
+        "name": "Sentences: Jobs",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": true,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_2sb4di",
+                "name": "My mom is a teacher",
+                "image": "data/uploads/my_mom_is_a_teacher_1791206658154.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_zukrn6",
+                "name": "He is a doctor",
+                "image": "data/uploads/he_is_a_doctor_1791206670687.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_5gbu0l",
+                "name": "I want to be a pilot",
+                "image": "data/uploads/i_want_to_be_a_pilot_1791206683388.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_do1vxm",
+                "name": "She works in a hospital",
+                "image": "data/uploads/she_works_in_a_hospital_1791206698238.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_oqp4el",
+        "name": "Sentences: Feelings",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": true,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_qurlk0",
+                "name": "I am happy today",
+                "image": "data/uploads/i_am_happy_today_1791206754769.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_85xxoe",
+                "name": "Are you hungry?",
+                "image": "data/uploads/are_you_hungry_1791206767804.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_vph3sf",
+                "name": "He is very tired",
+                "image": "data/uploads/he_is_very_tired_1791206844633.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_heiffu",
+                "name": "Don't be sad",
+                "image": "data/uploads/dont_be_sad_1791206881058.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_k8tdsm",
+        "name": "Sentences: Hobbies",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": true,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_0kudud",
+                "name": "I like reading books",
+                "image": "data/uploads/i_like_reading_books_1791206958328.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_d6ho6k",
+                "name": "She loves dancing",
+                "image": "data/uploads/she_loves_dancing_1791206980305.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_u3slms",
+                "name": "Do you like playing football?",
+                "image": "data/uploads/do_you_like_playing_football_1791206998160.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_qg2a7a",
+                "name": "Let's watch TV",
+                "image": "data/uploads/lets_watch_tv_1791207011187.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_9m5fr3",
+        "name": "Materials",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_ss1st3",
+                "name": "wood",
+                "image": "data/uploads/wood_1791207766435.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_fhsl5i",
+                "name": "plastic",
+                "image": "data/uploads/plastic_1791207782976.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_pbom59",
+                "name": "metal",
+                "image": "data/uploads/metal_1791207795156.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_yxap09",
+                "name": "glass",
+                "image": "data/uploads/glass_1791207805958.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_xi5axn",
+                "name": "paper",
+                "image": "data/uploads/paper_1791207816615.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_dhdbb7",
+                "name": "gold",
+                "image": "data/uploads/gold_1791207830466.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_81d664",
+                "name": "silver",
+                "image": "data/uploads/silver_1791207844661.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_xzoa6n",
+                "name": "wool",
+                "image": "data/uploads/wool_1791207858246.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_vjznfi",
+                "name": "cotton",
+                "image": "data/uploads/cotton_1791207900324.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_5yjxpj",
+                "name": "leather",
+                "image": "data/uploads/leather_1791207923930.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Medium"
+    },
+    {
+        "id": "scene_wgeckh",
+        "name": "Space & Universe",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_cjjs2b",
+                "name": "planet",
+                "image": "data/uploads/planet_1791207971246.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_fgdiha",
+                "name": "star",
+                "image": "data/uploads/star_1791207983798.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_c44n6g",
+                "name": "moon",
+                "image": "data/uploads/moon_1791207997095.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_3ufy1w",
+                "name": "astronaut",
+                "image": "data/uploads/astronaut_1791208010193.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_fsr16b",
+                "name": "spaceship",
+                "image": "data/uploads/spaceship_1791208020973.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_lnfr34",
+                "name": "rocket",
+                "image": "data/uploads/rocket_1791208037720.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_zr26jp",
+                "name": "satellite",
+                "image": "data/uploads/satellite_1791251986222.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_375rdy",
+                "name": "earth",
+                "image": "data/uploads/earth_1791251996503.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_lkqo42",
+                "name": "alien",
+                "image": "data/uploads/alien_1791252007087.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_sh9nsr",
+                "name": "comet",
+                "image": "data/uploads/comet_1791252018689.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "id": "scene_7reiu0",
+        "name": "Health & Illness",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_dwvhm5",
+                "name": "headache",
+                "image": "data/uploads/headache_1791252060763.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_0bpnaa",
+                "name": "stomach ache",
+                "image": "data/uploads/stomach_ache_1791252071396.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_xdbdiu",
+                "name": "cold",
+                "image": "data/uploads/cold_1791252082592.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_6qm679",
+                "name": "cough",
+                "image": "data/uploads/cough_1791252093518.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_67ayh0",
+                "name": "temperature",
+                "image": "data/uploads/temperature_1791252103257.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_kdb7qf",
+                "name": "medicine",
+                "image": "data/uploads/medicine_1791252112621.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ougx8q",
+                "name": "hospital",
+                "image": "data/uploads/hospital_1791252122946.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_k75gsx",
+                "name": "bandage",
+                "image": "data/uploads/bandage_1791252132460.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_lhelkw",
+                "name": "dentist",
+                "image": "data/uploads/dentist_1791252142976.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_r64cxx",
+                "name": "pharmacy",
+                "image": "data/uploads/pharmacy_1791252153094.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "id": "scene_f4bemu",
+        "name": "Environment",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_mugadt",
+                "name": "pollution",
+                "image": "data/uploads/pollution_1791252196248.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_q1czhb",
+                "name": "recycle",
+                "image": "data/uploads/recycle_1791252207193.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_7cb8sj",
+                "name": "environment",
+                "image": "data/uploads/environment_1791252216229.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_7pj1ih",
+                "name": "wildlife",
+                "image": "data/uploads/wildlife_1791252228233.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_qcffww",
+                "name": "forest",
+                "image": "data/uploads/forest_1791252237917.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ruevmv",
+                "name": "ocean",
+                "image": "data/uploads/ocean_1791252249682.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_w5ampx",
+                "name": "factory",
+                "image": "data/uploads/factory_1791252261246.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_1qts4c",
+                "name": "rubbish",
+                "image": "data/uploads/rubbish_1791252271491.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_h6hd75",
+                "name": "plastic bag",
+                "image": "data/uploads/plastic_bag_1791252282312.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_uug0eq",
+                "name": "solar energy",
+                "image": "data/uploads/solar_energy_1791252292551.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "id": "scene_zcjxai",
+        "name": "In the City",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_xkobf9",
+                "name": "museum",
+                "image": "data/uploads/museum_1791252332432.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ralomf",
+                "name": "police station",
+                "image": "data/uploads/police_station_1791252343151.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_k1xrnk",
+                "name": "post office",
+                "image": "data/uploads/post_office_1791252352936.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_2y2qfs",
+                "name": "fire station",
+                "image": "data/uploads/fire_station_1791252363115.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_yw51mu",
+                "name": "airport",
+                "image": "data/uploads/airport_1791252373464.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_upc88x",
+                "name": "stadium",
+                "image": "data/uploads/stadium_1791252383540.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_vxh5fi",
+                "name": "theatre",
+                "image": "data/uploads/theatre_1791252394277.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_cii61p",
+                "name": "castle",
+                "image": "data/uploads/castle_1791252406446.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_pyq0wt",
+                "name": "bridge",
+                "image": "data/uploads/bridge_1791252416176.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ikhuua",
+                "name": "roundabout",
+                "image": "data/uploads/roundabout_1791252426667.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "id": "scene_9ykg91",
+        "name": "Technology",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_fywwxs",
+                "name": "internet",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ved6ca",
+                "name": "website",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_viatyi",
+                "name": "email",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_t914bc",
+                "name": "laptop",
+                "image": "data/uploads/laptop_1791252490073.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_z3h1zn",
+                "name": "screen",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_y6vkdh",
+                "name": "keyboard",
+                "image": "data/uploads/keyboard_1791254512064.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_zf5ygk",
+                "name": "message",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_wa3sv2",
+                "name": "password",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_mcizr2",
+                "name": "download",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_0x6gcq",
+                "name": "smartphone",
+                "image": "data/uploads/smartphone_1791252468078.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "id": "scene_h4z6d4",
+        "name": "Sentences: Space",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": true,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_q7xg4e",
+                "name": "The earth is a planet",
+                "image": "data/uploads/sentence_21_earth_1791253985416.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_74vn6u",
+                "name": "Astronauts travel in spaceships",
+                "image": "data/uploads/sentence_22_astronaut_1791253996918.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_nq6qvh",
+                "name": "Look at the stars",
+                "image": "data/uploads/sentence_23_stars_1791254009715.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_eibdzu",
+                "name": "The moon is bright tonight",
+                "image": "data/uploads/sentence_24_moon_1791254019799.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "id": "scene_8xlt2m",
+        "name": "Sentences: Health",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": true,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_7ao3yd",
+                "name": "I have a bad headache",
+                "image": "data/uploads/headache_1791252060763_1.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_tgn9oc",
+                "name": "You should take some medicine",
+                "image": "data/uploads/sentence_18_medicine_1791253899845.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_56v2ju",
+                "name": "He is coughing a lot",
+                "image": "data/uploads/sentence_19_coughing_1791253910557.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_9aughd",
+                "name": "She went to the hospital",
+                "image": "data/uploads/sentence_20_hospital_1791253920047.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "id": "scene_snexw1",
+        "name": "Sentences: Environment",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": true,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_s5pr9x",
+                "name": "We must recycle plastic",
+                "image": "data/uploads/sentence_25_recycle_1791254256087.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_2bgigm",
+                "name": "Don't throw rubbish in the ocean",
+                "image": "data/uploads/sentence_26_ocean_rubbish_1791254266746.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_mbjyoq",
+                "name": "Factories cause pollution",
+                "image": "data/uploads/sentence_27_pollution_1791254279419.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_w7n0xb",
+                "name": "Protect the wildlife",
+                "image": "data/uploads/sentence_28_wildlife_1791254291442.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Hard"
+    },
+    {
+        "id": "scene_u5lhe0",
+        "name": "Sentences: City",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": true,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_qd5du5",
+                "name": "The museum is very big",
+                "image": "data/uploads/sentence_29_museum_1791254302642.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_93qffe",
+                "name": "We went to the stadium",
+                "image": "data/uploads/sentence_30_stadium_1791254315328.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_br21hr",
+                "name": "Send a letter at the post office",
+                "image": "data/uploads/sentence_31_post_office_1791254324406.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_85iyae",
+                "name": "The castle is on a hill",
+                "image": "data/uploads/sentence_32_castle_1791254335435.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Hard"
     }
 ]
