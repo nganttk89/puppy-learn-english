@@ -17,6 +17,27 @@ let displayScaleX = 1;
 let displayScaleY = 1;
 
 document.addEventListener('DOMContentLoaded', async () => {
+    // Admin Login Logic
+    const loginOverlay = document.getElementById('login-overlay');
+    const btnLogin = document.getElementById('btn-login');
+    const errorMsg = document.getElementById('login-error');
+    if (sessionStorage.getItem('adminLoggedIn') === 'true') {
+        if (loginOverlay) loginOverlay.style.display = 'none';
+    } else {
+        if (btnLogin) {
+            btnLogin.addEventListener('click', () => {
+                const user = document.getElementById('admin-username').value;
+                const pass = document.getElementById('admin-password').value;
+                if (user === 'banhmy' && pass === 'motngaythatdep') {
+                    sessionStorage.setItem('adminLoggedIn', 'true');
+                    loginOverlay.style.display = 'none';
+                } else {
+                    errorMsg.style.display = 'block';
+                }
+            });
+        }
+    }
+
     if (typeof window.scenes === 'undefined') {
         try {
             const res = await fetch('data/scenes.json?v=' + Date.now());

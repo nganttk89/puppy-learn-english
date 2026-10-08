@@ -12,7 +12,8 @@
             "scene_starters_bathroom_1",
             "scene_tg6jy4",
             "scene_starters_kitchen_1",
-            "scene_5tzbp8"
+            "scene_5tzbp8",
+            "scene_xa84vt"
         ],
         "subLevels": [
             {
@@ -176,6 +177,170 @@
                 "questions": [
                     "scene_5tzbp8"
                 ]
+            },
+            {
+                "id": "level_scene_xa84vt",
+                "name": "Household Chores",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_xa84vt"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "lvl_5e1bbw",
+        "name": "A1 Expansion",
+        "image": "images/default_avatar.png",
+        "questions": [
+            "scene_xkadgj",
+            "scene_l4ugdq",
+            "scene_6xzerj",
+            "scene_psxftm",
+            "scene_w61be2",
+            "scene_65m50l",
+            "scene_8wkzgf",
+            "scene_ii086i",
+            "scene_6ilq8i",
+            "scene_rftnhh",
+            "scene_oqp4el",
+            "scene_k8tdsm"
+        ],
+        "subScenes": [
+            {
+                "id": "level_scene_xkadgj",
+                "name": "Hobbies",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_xkadgj"
+                ]
+            },
+            {
+                "id": "level_scene_l4ugdq",
+                "name": "Colors",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_l4ugdq"
+                ]
+            },
+            {
+                "id": "level_scene_6xzerj",
+                "name": "Body Parts",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "data/uploads/endocrine-system.png",
+                "questions": [
+                    "scene_6xzerj"
+                ]
+            },
+            {
+                "id": "level_scene_psxftm",
+                "name": "Face Parts",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_psxftm"
+                ]
+            },
+            {
+                "id": "level_scene_w61be2",
+                "name": "Feelings & Emotions",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_w61be2"
+                ]
+            },
+            {
+                "id": "level_scene_65m50l",
+                "name": "Jobs & Professions",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_65m50l"
+                ]
+            },
+            {
+                "id": "level_scene_8wkzgf",
+                "name": "Shapes",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_8wkzgf"
+                ]
+            },
+            {
+                "id": "level_scene_ii086i",
+                "name": "Opposites",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_ii086i"
+                ]
+            },
+            {
+                "id": "level_scene_6ilq8i",
+                "name": "Sentences: Body",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_6ilq8i"
+                ]
+            },
+            {
+                "id": "level_scene_rftnhh",
+                "name": "Sentences: Jobs",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_rftnhh"
+                ]
+            },
+            {
+                "id": "level_scene_oqp4el",
+                "name": "Sentences: Feelings",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_oqp4el"
+                ]
+            },
+            {
+                "id": "level_scene_k8tdsm",
+                "name": "Sentences: Hobbies",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": true,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_k8tdsm"
+                ]
             }
         ]
     },
@@ -289,7 +454,9 @@
             "scene_nlp5dt",
             "scene_qajv2t",
             "scene_1hn8ui",
-            "scene_3k49td"
+            "scene_3k49td",
+            "scene_k28yjg",
+            "scene_7vxrq2"
         ],
         "subScenes": [
             {
@@ -378,6 +545,28 @@
                 "image": "data/uploads/lunch.png",
                 "questions": [
                     "scene_3k49td"
+                ]
+            },
+            {
+                "id": "level_scene_k28yjg",
+                "name": "Cooking Verbs",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_k28yjg"
+                ]
+            },
+            {
+                "id": "level_scene_7vxrq2",
+                "name": "Spices & Condiments",
+                "difficulty": "Easy",
+                "type": "lesson",
+                "disableSpelling": false,
+                "image": "images/default_avatar.png",
+                "questions": [
+                    "scene_7vxrq2"
                 ]
             }
         ]
@@ -593,7 +782,8 @@
         "name": "Daily activities",
         "image": "data/uploads/play.png",
         "questions": [
-            "scene_hjt8k0"
+            "scene_hjt8k0",
+            "scene_0gok0v"
         ],
         "subLevels": [
             {
@@ -617,158 +807,16 @@
                 "questions": [
                     "scene_hjt8k0"
                 ]
-            }
-        ]
-    },
-    {
-        "id": "lvl_5e1bbw",
-        "name": "A1 Expansion",
-        "image": "images/default_avatar.png",
-        "questions": [
-            "scene_xkadgj",
-            "scene_l4ugdq",
-            "scene_6xzerj",
-            "scene_psxftm",
-            "scene_w61be2",
-            "scene_65m50l",
-            "scene_8wkzgf",
-            "scene_ii086i",
-            "scene_6ilq8i",
-            "scene_rftnhh",
-            "scene_oqp4el",
-            "scene_k8tdsm"
-        ],
-        "subScenes": [
+            },
             {
-                "id": "level_scene_xkadgj",
-                "name": "Hobbies",
+                "id": "level_scene_0gok0v",
+                "name": "Phrasal Verbs",
                 "difficulty": "Easy",
                 "type": "lesson",
                 "disableSpelling": false,
                 "image": "images/default_avatar.png",
                 "questions": [
-                    "scene_xkadgj"
-                ]
-            },
-            {
-                "id": "level_scene_l4ugdq",
-                "name": "Colors",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": false,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_l4ugdq"
-                ]
-            },
-            {
-                "id": "level_scene_6xzerj",
-                "name": "Body Parts",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": false,
-                "image": "data/uploads/endocrine-system.png",
-                "questions": [
-                    "scene_6xzerj"
-                ]
-            },
-            {
-                "id": "level_scene_psxftm",
-                "name": "Face Parts",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": false,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_psxftm"
-                ]
-            },
-            {
-                "id": "level_scene_w61be2",
-                "name": "Feelings & Emotions",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": false,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_w61be2"
-                ]
-            },
-            {
-                "id": "level_scene_65m50l",
-                "name": "Jobs & Professions",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": false,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_65m50l"
-                ]
-            },
-            {
-                "id": "level_scene_8wkzgf",
-                "name": "Shapes",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": false,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_8wkzgf"
-                ]
-            },
-            {
-                "id": "level_scene_ii086i",
-                "name": "Opposites",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": false,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_ii086i"
-                ]
-            },
-            {
-                "id": "level_scene_6ilq8i",
-                "name": "Sentences: Body",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": true,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_6ilq8i"
-                ]
-            },
-            {
-                "id": "level_scene_rftnhh",
-                "name": "Sentences: Jobs",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": true,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_rftnhh"
-                ]
-            },
-            {
-                "id": "level_scene_oqp4el",
-                "name": "Sentences: Feelings",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": true,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_oqp4el"
-                ]
-            },
-            {
-                "id": "level_scene_k8tdsm",
-                "name": "Sentences: Hobbies",
-                "difficulty": "Easy",
-                "type": "lesson",
-                "disableSpelling": true,
-                "image": "images/default_avatar.png",
-                "questions": [
-                    "scene_k8tdsm"
+                    "scene_0gok0v"
                 ]
             }
         ]
@@ -901,5 +949,33 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "lvl_4cbtml",
+        "name": "Cooking Verbs Topic",
+        "image": "images/default_avatar.png",
+        "questions": [],
+        "subScenes": []
+    },
+    {
+        "id": "lvl_cv4jpk",
+        "name": "Phrasal Verbs Topic",
+        "image": "images/default_avatar.png",
+        "questions": [],
+        "subScenes": []
+    },
+    {
+        "id": "lvl_qyh4bh",
+        "name": "Spices & Condiments Topic",
+        "image": "images/default_avatar.png",
+        "questions": [],
+        "subScenes": []
+    },
+    {
+        "id": "lvl_15xly6",
+        "name": "Household Chores Topic",
+        "image": "images/default_avatar.png",
+        "questions": [],
+        "subScenes": []
     }
 ]

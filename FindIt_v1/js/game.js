@@ -316,7 +316,7 @@ function renderMap() {
         }
 
         filteredScenes.forEach((lvl, index) => {
-            const isUnlocked = index === 0 || completed.includes(filteredScenes[index - 1].id) || completed.includes(lvl.id);
+            const isUnlocked = true;
             const isCompleted = completed.includes(lvl.id);
             
             const node = document.createElement('div');
@@ -354,7 +354,7 @@ function renderMap() {
         let previousCompleted = true;
         try {
             lvls.forEach((region, index) => {
-                let isRegionUnlocked = previousCompleted;
+                let isRegionUnlocked = true;
                 
                 if (region.subScenes && region.subScenes.length > 0) {
                     previousCompleted = isRegionUnlocked && region.subScenes.every(sub => completed.includes(sub.id));
@@ -471,7 +471,7 @@ function openProgressionPopup(lvlId) {
 
     if (hasBigImage) {
         // Stage 2 (Find It) unlocks if S1 is completed OR if S1 is not available
-        const s2Unlocked = !hasThumbnails || stageProg.s1;
+        const s2Unlocked = true;
         
         if (s2Unlocked) {
             btn2.className = 'btn-large';
@@ -494,7 +494,7 @@ function openProgressionPopup(lvlId) {
     
     if (hasThumbnails) {
         // Stage 3 (Matching) requires Stage 2 if hasBigImage, else Stage 1
-        const s3Unlocked = hasBigImage ? stageProg.s2 : stageProg.s1;
+        const s3Unlocked = true;
         
         if (s3Unlocked) {
             btn3.className = 'btn-large';
@@ -516,7 +516,7 @@ function openProgressionPopup(lvlId) {
         
         // Stage 4 (Spelling) requires Stage 3
         if (!disableSpelling) {
-            if (stageProg.s3) {
+            if (true) {
                 btn4.className = 'btn-large';
                 btn4.style.backgroundColor = stageProg.s4 ? '#27ae60' : '#e74c3c';
                 btn4.style.color = 'white';
@@ -537,7 +537,7 @@ function openProgressionPopup(lvlId) {
 
         if (btn5) {
             // Stage 5 (Shuffle Game) requires Stage 4 (or Stage 3 if Spelling is disabled)
-            const s5Unlocked = disableSpelling ? stageProg.s3 : stageProg.s4;
+            const s5Unlocked = true;
             let shuffleNum = hasBigImage ? 5 : 4;
             if (disableSpelling) shuffleNum -= 1;
             

@@ -5377,5 +5377,406 @@
             }
         ],
         "difficulty": "Hard"
+    },
+    {
+        "id": "scene_k28yjg",
+        "name": "Cooking Verbs",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_psqw6r",
+                "name": "cut",
+                "image": "data/uploads/069888f2bf48c487b10d78a1b374842c.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_4x31g9",
+                "name": "chop",
+                "image": "data/uploads/cutting-ginger-two-plaid-aprons_1.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_lqhqon",
+                "name": "slice",
+                "image": "data/uploads/slice.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_tf2scx",
+                "name": "peel",
+                "image": "data/uploads/peel.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_4dozhd",
+                "name": "dice",
+                "image": "data/uploads/dice.jpeg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_qx2mxw",
+                "name": "grate",
+                "image": "data/uploads/grate.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_k0sudk",
+                "name": "mix",
+                "image": "data/uploads/mix.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ldazx7",
+                "name": "stir",
+                "image": "data/uploads/stir.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_1wuywv",
+                "name": "pour",
+                "image": "data/uploads/pour.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_rk9utf",
+                "name": "boil",
+                "image": "data/uploads/egg-boiling.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_01b0hy",
+                "name": "fry",
+                "image": "data/uploads/fry.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_mzi6an",
+                "name": "bake",
+                "image": "data/uploads/bake.webp",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_349dnf",
+                "name": "roast",
+                "image": "data/uploads/roast.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_jvabet",
+                "name": "grill",
+                "image": "data/uploads/grill.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_edgsae",
+                "name": "knead",
+                "image": "data/uploads/knead.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_0ltgja",
+                "name": "sprinkle",
+                "image": "data/uploads/sprinkling-alex-boye.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_0gok0v",
+        "name": "Phrasal Verbs",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_x287tx",
+                "name": "flip up",
+                "image": "data/uploads/flip-up.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ufate8",
+                "name": "peel off",
+                "image": "data/uploads/peel off.webp",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_gs33ki",
+                "name": "take off",
+                "image": "data/uploads/take-headphones-off_1.gif",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_7lg2hr",
+                "name": "twist off",
+                "image": "data/uploads/twist_off.jpg",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_7vxrq2",
+        "name": "Spices & Condiments",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "",
+        "objects": [
+            {
+                "id": "obj_07y260",
+                "name": "salt",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_tx3j3z",
+                "name": "pepper",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_tnvs40",
+                "name": "sugar",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_8gbhns",
+                "name": "vinegar",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_qfnat5",
+                "name": "fish sauce",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_wcrbew",
+                "name": "soy sauce",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_zg6i1n",
+                "name": "garlic",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_vrjbxt",
+                "name": "onion",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_ycp71k",
+                "name": "ginger",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            },
+            {
+                "id": "obj_rhhw34",
+                "name": "chili",
+                "image": "",
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0
+            }
+        ],
+        "difficulty": "Easy"
+    },
+    {
+        "id": "scene_xa84vt",
+        "name": "Household Chores",
+        "type": "lesson",
+        "questionSetId": "none",
+        "disableSpelling": false,
+        "thumbnail": "images/default_avatar.png",
+        "image": "data/uploads/chores_poster_notext.jpg",
+        "objects": [
+            {
+                "id": "obj_nw7in0",
+                "name": "mop the floor",
+                "image": "data/uploads/mop_the_floor_1791360686111.jpg",
+                "x": 48.27428571428571,
+                "y": 49.73714285714287,
+                "width": 263.3142857142857,
+                "height": 272.0914285714286
+            },
+            {
+                "id": "obj_5oi4sz",
+                "name": "sweep the floor",
+                "image": "data/uploads/sweep_the_floor_1791360697138.jpg",
+                "x": 361.3257142857143,
+                "y": 32.18285714285716,
+                "width": 289.6457142857143,
+                "height": 295.4971428571429
+            },
+            {
+                "id": "obj_leozga",
+                "name": "wash the dishes",
+                "image": "data/uploads/wash_the_dishes_1791360708583.jpg",
+                "x": 683.1542857142857,
+                "y": 39.49714285714286,
+                "width": 290.8685714285714,
+                "height": 286.71999999999997
+            },
+            {
+                "id": "obj_d060m0",
+                "name": "cook",
+                "image": "data/uploads/cook_1791360726877.jpg",
+                "x": 30.720000000000027,
+                "y": 364.25142857142856,
+                "width": 302.81142857142856,
+                "height": 299.88571428571424
+            },
+            {
+                "id": "obj_a3635j",
+                "name": "do the laundry",
+                "image": "data/uploads/do_the_laundry_1791360738146.jpg",
+                "x": 362.78857142857146,
+                "y": 359.86285714285714,
+                "width": 291.1085714285714,
+                "height": 301.3485714285714
+            },
+            {
+                "id": "obj_sxzbxh",
+                "name": "tidy the room",
+                "image": "data/uploads/tidy_the_room_1791360751619.jpg",
+                "x": 687.5428571428571,
+                "y": 370.10285714285715,
+                "width": 299.8857142857143,
+                "height": 288.18285714285713
+            },
+            {
+                "id": "obj_dw9r2n",
+                "name": "water the plants",
+                "image": "data/uploads/water_the_plants_1791360770458.jpg",
+                "x": 359.86285714285714,
+                "y": 686.08,
+                "width": 292.57142857142856,
+                "height": 289.6457142857143
+            },
+            {
+                "id": "obj_q9zvse",
+                "name": "fold the clothes",
+                "image": "data/uploads/fold_the_clothes_1791360780679.jpg",
+                "x": 690.4685714285713,
+                "y": 687.5428571428572,
+                "width": 296.72,
+                "height": 289.4057142857143
+            },
+            {
+                "id": "obj_82t8z4",
+                "name": "organize things",
+                "image": "data/uploads/organize_things_1791360792460.jpg",
+                "x": 35.10857142857143,
+                "y": 687.5428571428572,
+                "width": 289.6457142857143,
+                "height": 294.0342857142857
+            }
+        ],
+        "originalWidth": 1024,
+        "originalHeight": 1024,
+        "difficulty": "Easy"
     }
 ]

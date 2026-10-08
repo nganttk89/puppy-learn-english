@@ -1,2 +1,1 @@
-
-- When generating images or designs for this project, always save them to the `v-1/design` directory.
+- When generating images or designs for this project, always save them to the `FindIt_v1/design` directory.
