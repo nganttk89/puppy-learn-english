@@ -20,7 +20,7 @@ bgMusic.volume = 0.15;
 const btnToggleMusic = document.getElementById('btn-toggle-music');
 if (btnToggleMusic) {
     if (musicPref === 'off') {
-        btnToggleMusic.innerText = "🔇 Music: OFF";
+        btnToggleMusic.innerHTML = `🔇 <span class="hide-mobile">Music: OFF</span>`;
     }
     btnToggleMusic.addEventListener('click', () => {
         if (isMusicPlaying || musicPref === 'on') {
@@ -28,13 +28,13 @@ if (btnToggleMusic) {
             isMusicPlaying = false;
             musicPref = 'off';
             localStorage.setItem('musicPref', 'off');
-            btnToggleMusic.innerText = "🔇 Music: OFF";
+            btnToggleMusic.innerHTML = `🔇 <span class="hide-mobile">Music: OFF</span>`;
         } else {
             bgMusic.play().catch(e => console.log(e));
             isMusicPlaying = true;
             musicPref = 'on';
             localStorage.setItem('musicPref', 'on');
-            btnToggleMusic.innerText = "🎵 Music: ON";
+            btnToggleMusic.innerHTML = `🎵 <span class="hide-mobile">Music: ON</span>`;
         }
     });
 }
@@ -44,7 +44,7 @@ function playBGM() {
     if (!isMusicPlaying) {
         bgMusic.play().then(() => {
             isMusicPlaying = true;
-            if(btnToggleMusic) btnToggleMusic.innerText = "🎵 Music: ON";
+            if(btnToggleMusic) btnToggleMusic.innerHTML = `🎵 <span class="hide-mobile">Music: ON</span>`;
         }).catch(e => {
             console.log("Autoplay prevented:", e);
         });

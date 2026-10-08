@@ -1085,8 +1085,34 @@ svg.sad #puppy-tail {
     }
 
     #top-bar {
-        font-size: 1rem;
-        padding: 5px 10px;
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+    
+    #top-bar > div[style*="gap: 20px"] {
+        gap: 5px !important;
+    }
+    
+    #lives {
+        font-size: 0.8rem;
+    }
+    
+    #score {
+        font-size: 1rem !important;
+    }
+    
+    #score .coin-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    #top-bar .btn-topbar {
+        font-size: 0.75rem !important;
+        padding: 4px 8px !important;
+    }
+    
+    .hide-mobile {
+        display: none !important;
     }
 
     #game-container {
