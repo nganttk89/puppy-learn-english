@@ -181,21 +181,39 @@
             margin-top: 30px;
         }
 
-        .gift-box {
-            width: 150px;
-            height: 150px;
-            background-image: url('images/shuffle/giftbox.jpg');
-            background-size: cover;
-            background-position: center;
-            border-radius: 20px;
-            cursor: pointer;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            transition: transform 0.2s;
-            mix-blend-mode: multiply;
+        @keyframes float-gift {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
 
+        .gift-box {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            background-color: white;
+            background-image: url('images/shuffle/giftbox.jpg');
+            background-size: 85%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-blend-mode: multiply;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08), 0 4px 10px rgba(0,0,0,0.05);
+            border: 3px solid #f9f9f9;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: float-gift 3s ease-in-out infinite;
+            filter: contrast(1.15) brightness(1.05); /* Make JPG background pure white */
+        }
+        
+        .gift-box:nth-child(1) { animation-delay: 0s; }
+        .gift-box:nth-child(2) { animation-delay: 0.2s; }
+        .gift-box:nth-child(3) { animation-delay: 0.4s; }
+
         .gift-box:hover {
-            transform: scale(1.1) rotate(5deg);
+            transform: translateY(-15px) scale(1.05) !important;
+            box-shadow: 0 15px 30px rgba(241, 196, 15, 0.3);
+            border-color: #f1c40f;
+            animation-play-state: paused;
         }
 
         .reward-result {
