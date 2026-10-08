@@ -24,7 +24,7 @@ body {
 #game-container {
     width: 100%;
     max-width: 1000px;
-    height: 98vh;
+    height: 100vh;
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -56,8 +56,8 @@ body {
 }
 
 #character-image-container {
-    width: 80px;
-    height: 80px;
+    width: 140px;
+    height: 140px;
     flex-shrink: 0;
 }
 
@@ -513,7 +513,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: flex-start;
     gap: 30px;
     padding: 40px;
     overflow-y: auto;
@@ -854,17 +854,58 @@ body {
     margin-right: 5px;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2));
 }
+
 /* Enhanced Puppy SVG Animations */
-@keyframes tailWag { 0% { transform: rotate(-15deg); } 100% { transform: rotate(15deg); } }
-#puppy-tongue.hidden { display: none; }
-svg.happy #puppy-tongue { display: block !important; }
-svg.happy #puppy-tail { animation-duration: 0.2s !important; }
-svg.happy #puppy-body { animation-duration: 0.5s !important; transform: scaleY(1.05); }
-svg.asking #left-ear { animation-duration: 1s !important; transform: rotate(-15deg); }
-svg.sad #puppy-mouth { d: path("M 88 105 Q 100 95 112 105") !important; }
-svg.sad #left-ear { transform: rotate(15deg) !important; animation: none !important; }
-svg.sad #right-ear { transform: rotate(-15deg) !important; animation: none !important; }
-svg.sad #puppy-tail { animation: none !important; transform: rotate(-30deg) !important; }
+@keyframes tailWag {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+#puppy-tongue.hidden {
+    display: none;
+}
+
+svg.happy #puppy-tongue {
+    display: block !important;
+}
+
+svg.happy #puppy-tail {
+    animation-duration: 0.2s !important;
+}
+
+svg.happy #puppy-body {
+    animation-duration: 0.5s !important;
+    transform: scaleY(1.05);
+}
+
+svg.asking #left-ear {
+    animation-duration: 1s !important;
+    transform: rotate(-15deg);
+}
+
+svg.sad #puppy-mouth {
+    d: path("M 88 105 Q 100 95 112 105") !important;
+}
+
+svg.sad #left-ear {
+    transform: rotate(15deg) !important;
+    animation: none !important;
+}
+
+svg.sad #right-ear {
+    transform: rotate(-15deg) !important;
+    animation: none !important;
+}
+
+svg.sad #puppy-tail {
+    animation: none !important;
+    transform: rotate(-30deg) !important;
+}
 
 
 /* Difficulty Toggle UI */
@@ -893,7 +934,7 @@ svg.sad #puppy-tail { animation: none !important; transform: rotate(-30deg) !imp
 
 .diff-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .diff-btn.active {
@@ -905,16 +946,19 @@ svg.sad #puppy-tail { animation: none !important; transform: rotate(-30deg) !imp
     border-color: #3498db;
     color: #2980b9;
 }
+
 .diff-btn[data-val="Easy"].active {
     background: #eafaf1;
     border-color: #2ecc71;
     color: #27ae60;
 }
+
 .diff-btn[data-val="Medium"].active {
     background: #fef5e7;
     border-color: #f39c12;
     color: #d35400;
 }
+
 .diff-btn[data-val="Hard"].active {
     background: #fdedec;
     border-color: #e74c3c;
@@ -933,7 +977,7 @@ svg.sad #puppy-tail { animation: none !important; transform: rotate(-30deg) !imp
     transform: translateX(-50%);
     font-size: 1.2rem;
     white-space: nowrap;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     background: none;
     border: none;
     padding: 2px 8px;
@@ -942,9 +986,20 @@ svg.sad #puppy-tail { animation: none !important; transform: rotate(-30deg) !imp
 }
 
 @keyframes starPopIn {
-    0% { transform: translate(-50%, 10px) scale(0); opacity: 0; }
-    80% { transform: translate(-50%, -2px) scale(1.1); opacity: 1; }
-    100% { transform: translate(-50%, 0) scale(1); opacity: 1; }
+    0% {
+        transform: translate(-50%, 10px) scale(0);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translate(-50%, -2px) scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 0) scale(1);
+        opacity: 1;
+    }
 }
 
 /* ========================================= */
@@ -954,9 +1009,25 @@ svg.sad #puppy-tail { animation: none !important; transform: rotate(-30deg) !imp
 
 
 @media screen and (max-width: 768px) {
-    .welcome-form { width: 95%; max-width: none; padding: 20px; }
-    #welcome-screen h1 { font-size: 2.2rem; }
+    html {
+        font-size: 12px;
+    }
+
+    .welcome-form {
+        width: 95%;
+        max-width: none;
+        padding: 20px;
+    }
+
+    #welcome-screen h1 {
+        font-size: 2.2rem;
+    }
     
+    #character-image-container {
+        width: 80px;
+        height: 80px;
+    }
+
     .map-header {
         flex-direction: row;
         flex-wrap: wrap;
@@ -964,77 +1035,85 @@ svg.sad #puppy-tail { animation: none !important; transform: rotate(-30deg) !imp
         justify-content: center;
         gap: 10px;
     }
-    
-    #map-title {
-        font-size: 1.2rem;
-        margin: 5px 0;
-        width: 100%;
-        text-align: center;
+
+    #map-title,
+    #btn-back-to-welcome {
+        display: none !important;
     }
-    
-    .btn-topbar, .btn-large {
+
+    .btn-topbar,
+    .btn-large {
         font-size: 0.9rem !important;
-        padding: 10px 15px !important;
+        padding: 5px 15px !important;
     }
-    
+
     .map-container {
         padding: 15px;
         gap: 15px;
     }
-    
+
     .zone-node {
         width: 110px;
-        height: 110px;
+        height: auto;
+        min-height: 110px;
         border-radius: 15px;
+        padding: 10px 5px;
+        box-sizing: border-box;
     }
-    
+
     .zone-node img {
         width: 60px;
         height: 60px;
     }
-    
+
     .zone-name {
         font-size: 0.85rem;
     }
-    
-    #progression-popup > div {
+
+    #progression-popup>div {
         width: 95%;
         padding: 20px;
     }
-    
+
     #progression-title {
         font-size: 1.5rem !important;
     }
-    
+
     .progression-path .btn-large {
         font-size: 0.9rem;
         padding: 10px;
     }
-    
+
     #top-bar {
         font-size: 1rem;
         padding: 5px 10px;
     }
-    
+
     #game-container {
-        padding: 5px;
+        height: 100vh;
+        padding: 0;
+        border-radius: 0 !important;
     }
-    
+
     #image-container {
         max-width: 100%;
     }
-    
+
     #question-bubble {
         font-size: 1.1rem;
         padding: 8px 12px;
     }
-    
+
     .difficulty-toggle-group {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
+        gap: 3px;
     }
+
     .diff-btn {
-        padding: 8px 12px;
-        font-size: 0.9rem;
+        padding: 5px 8px;
+        font-size: 0.8rem;
+        white-space: nowrap;
+        flex-direction: row;
     }
 }
