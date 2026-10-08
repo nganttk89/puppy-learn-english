@@ -107,7 +107,9 @@
         .cup-image {
             z-index: 10;
             mix-blend-mode: multiply;
-            clip-path: inset(0 0 2px 0); /* Crop bottom JPEG artifact line */
+            clip-path: inset(0 0 2px 0);
+            top: 0;
+            transition: top 0.5s ease;
         }
 
         .hidden-item {
@@ -160,8 +162,8 @@
         }
 
         @keyframes dropCup {
-            0% { transform: translateY(-300px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
+            0% { top: -300px; opacity: 0; }
+            100% { top: 0; opacity: 1; }
         }
 
         .drop-cup-anim {
@@ -169,8 +171,8 @@
         }
 
         .lift-cup .cup-image {
-            transform: translateY(-220px) !important;
-            transition: transform 0.5s ease;
+            top: -220px !important;
+            transition: top 0.5s ease;
         }
 
         /* Modal specific */

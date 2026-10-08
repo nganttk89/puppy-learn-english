@@ -202,7 +202,7 @@ function setupCups(correctWord) {
         cupImg.src = 'images/shuffle/cup.jpg';
         cupImg.className = 'cup-image';
         cupImg.style.opacity = '0'; // Hide cup initially
-        cupImg.style.transform = 'translateY(-300px)'; // Prepare for drop
+        cupImg.style.top = '-300px'; // Prepare for drop
         
         slot.appendChild(hiddenImg);
         slot.appendChild(cupImg);
