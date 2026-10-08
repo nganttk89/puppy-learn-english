@@ -946,3 +946,116 @@ svg.sad #puppy-tail { animation: none !important; transform: rotate(-30deg) !imp
     80% { transform: translate(-50%, -2px) scale(1.1); opacity: 1; }
     100% { transform: translate(-50%, 0) scale(1); opacity: 1; }
 }
+
+/* ========================================= */
+/* MOBILE RESPONSIVENESS                     */
+/* ========================================= */
+
+#rotate-prompt {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: #2c3e50;
+    color: white;
+    z-index: 99999;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate-content h2 { font-size: 1.5rem; margin-top: 20px; margin-bottom: 10px; }
+.rotate-content p { font-size: 1rem; color: #bdc3c7; }
+
+/* Show prompt only on very small portrait screens (phones) */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+    #rotate-prompt {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .welcome-form { width: 95%; max-width: none; padding: 20px; }
+    #welcome-screen h1 { font-size: 2.2rem; }
+    
+    .map-header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    #map-title {
+        font-size: 1.2rem;
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .btn-topbar, .btn-large {
+        font-size: 0.9rem !important;
+        padding: 10px 15px !important;
+    }
+    
+    .map-container {
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .zone-node {
+        width: 110px;
+        height: 110px;
+        border-radius: 15px;
+    }
+    
+    .zone-node img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .zone-name {
+        font-size: 0.85rem;
+    }
+    
+    #progression-popup > div {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    #progression-title {
+        font-size: 1.5rem !important;
+    }
+    
+    .progression-path .btn-large {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    
+    #top-bar {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    
+    #game-container {
+        padding: 5px;
+    }
+    
+    #image-container {
+        max-width: 100%;
+    }
+    
+    #question-bubble {
+        font-size: 1.1rem;
+        padding: 8px 12px;
+    }
+    
+    .difficulty-toggle-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .diff-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
