@@ -137,6 +137,43 @@
             30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
             40%, 60% { transform: translate3d(4px, 0, 0); }
         }
+
+        @media screen and (max-width: 768px) {
+            #spell-image {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 10px;
+                border-width: 3px;
+            }
+            .audio-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            .slots-container {
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+            .slot {
+                width: 35px;
+                height: 45px;
+                font-size: 2rem;
+                line-height: 45px;
+                border-bottom: 3px solid #34495e;
+                margin: 0 2px;
+            }
+            .letters-container {
+                gap: 8px;
+            }
+            .letter-btn {
+                width: 45px;
+                height: 45px;
+                font-size: 1.5rem;
+                border-width: 2px;
+                box-shadow: 0 4px 0 #d35400;
+            }
+        }
     </style>
 </head>
 <body>
